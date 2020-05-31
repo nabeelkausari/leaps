@@ -1,0 +1,102 @@
+.animated-btn {
+  cursor: pointer;
+  display: flex;
+  padding: .5rem;
+  align-items: center;
+  height: 3rem;
+  justify-content: space-evenly;
+  transition: .5s;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    path {
+      transition: .5s;
+    }
+  }
+
+  &__text {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  &:hover,
+  &__loading {
+    .animated-btn__text {
+      width: 6rem;
+      margin-left: .5rem;
+    }
+  }
+
+  &--outlined {
+    color: var(--text-primary);
+    border: 1px solid transparent;
+
+    svg path {
+      fill: var(--text-primary);
+    }
+
+    &:hover,
+    .animated-btn__loading {
+      border: 1px solid var(--highlight-primary);
+
+      svg path {
+        fill: var(--highlight-primary);
+      }
+
+      .animated-btn__text {
+        color: var(--highlight-primary);
+      }
+    }
+  }
+
+  &--outlined-dark {
+    color: var(--bg-1);
+    border: 1px solid transparent;
+
+    svg path {
+      fill: var(--bg-1);
+    }
+
+    &:hover,
+    .animated-btn__loading {
+      border: 1px solid var(--highlight-primary);
+
+      svg path {
+        fill: var(--highlight-primary);
+      }
+
+      .animated-btn__text {
+        color: var(--highlight-primary);
+      }
+    }
+  }
+
+  &--filled {
+    color: var(--text-primary);
+    border: 0;
+    background: var(--bg-1);
+
+    svg path {
+      fill: var(--text-primary);
+    }
+
+    &:hover,
+    .animated-btn__loading {
+      background: var(--highlight-primary);
+    }
+  }
+
+  &--filled-no-highlight {
+    color: var(--text-primary);
+    border: 0;
+    background: var(--bg-1);
+
+    svg path {
+      fill: var(--text-primary);
+    }
+  }
+}

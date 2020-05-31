@@ -1,0 +1,28 @@
+.styled-dropdown{
+  position: relative;
+  z-index: 999;
+
+  &__list {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+  }
+
+  &__item {
+    width: 20rem;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2.3rem;
+    box-shadow: 0 0.3rem 0.6rem 0 rgba(var(--shadow), 0.16);
+    background-color: var(--bg-2);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    &:hover{
+      background-color: var(--highlight-primary);
+      color: var(--text-tertiary);
+    }
+  }
+}

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="322.206" height="167.943" viewBox="0 0 322.206 167.943">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{opacity:.2;fill:url(#linear-gradient)}.cls-4{stroke:#2bb25a;stroke-miterlimit:10;stroke-width:2px}.cls-5,.cls-8,.cls-9{fill:#fff}.cls-6,.cls-7{fill:#2bb25a}.cls-6{opacity:.4}.cls-8,.cls-9{font-size:9px;font-family:Poppins-Regular,Poppins}.cls-9{opacity:.5}.cls-10{filter:url(#Oval-4)}.cls-11{filter:url(#Oval-3)}.cls-12{filter:url(#Oval-2)}.cls-13{filter:url(#Oval)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Mask" d="M0 0h319.206v167.943H0z" class="cls-1"/>
+        </clipPath>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y1="-.509" y2="1.069" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0093ee"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <filter id="Oval" width="32" height="32" x="290.206" y="37" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".125"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Oval-2" width="32" height="32" x="198.206" y="76" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".125"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Oval-3" width="32" height="32" x="106.206" y="37" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".125"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Oval-4" width="32" height="32" x="18.206" y="73" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur result="blur-4" stdDeviation="3"/>
+            <feFlood flood-opacity=".125"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_5337" data-name="Group 5337" transform="translate(-76.904 -397.389)">
+        <g id="Group_5336" data-name="Group 5336">
+            <g id="Graph" class="cls-2" transform="translate(76.904 397.389)">
+                <path id="Path_3_Copy" d="M0 84.621s21.023.381 34.024-6.5 61.949-47.55 97.519-47.55 50.986 32.756 78.811 32.756 49.337-5.864 90.8 14.794 33.734-5.993 66.66-5.993 49.663-42.532 87-42.137c27.838 0 53.463-13.922 62.744-1.853s40.04 40.195 80.489 40.195S674.392 4.681 713.665 4.681s55.227 98.271 90.07 98.271 34.327-54.819 62.01-54.819c.225 26.876 0 104.036 0 104.036H0z" class="cls-3" data-name="Path 3 Copy" transform="translate(-362.481 25.785)"/>
+                <path id="Path_3" d="M0 84.621s21.023.381 34.024-6.5 61.949-47.55 97.519-47.55 50.986 32.756 78.811 32.756 49.337-5.864 90.8 14.794 33.734-5.993 66.66-5.993 49.663-42.532 87-42.137c27.838 0 53.463-13.922 62.744-1.853s40.04 40.195 80.489 40.195S674.392 4.681 713.665 4.681s55.227 98.271 90.07 98.271 34.327-54.819 62.01-54.819" class="cls-4" data-name="Path 3" transform="translate(-361.365 25.047)"/>
+            </g>
+            <g id="pin" transform="translate(376.11 441.389)">
+                <g class="cls-13" transform="translate(-299.21 -44)">
+                    <circle id="Oval-5" cx="7" cy="7" r="7" class="cls-5" data-name="Oval" transform="translate(299.21 44)"/>
+                </g>
+                <circle id="Oval_Copy_2" cx="7" cy="7" r="7" class="cls-6" data-name="Oval Copy 2"/>
+                <circle id="Oval_Copy" cx="5.444" cy="5.444" r="5.444" class="cls-7" data-name="Oval Copy" transform="translate(1.556 1.556)"/>
+            </g>
+            <g id="pin-2" data-name="pin" transform="translate(284.11 480.389)">
+                <g class="cls-12" transform="translate(-207.21 -83)">
+                    <circle id="Oval-6" cx="7" cy="7" r="7" class="cls-5" data-name="Oval" transform="translate(207.21 83)"/>
+                </g>
+                <circle id="Oval_Copy_2-2" cx="7" cy="7" r="7" class="cls-6" data-name="Oval Copy 2"/>
+                <circle id="Oval_Copy-2" cx="5.444" cy="5.444" r="5.444" class="cls-7" data-name="Oval Copy" transform="translate(1.556 1.556)"/>
+            </g>
+            <g id="pin-3" data-name="pin" transform="translate(192.11 441.389)">
+                <g class="cls-11" transform="translate(-115.21 -44)">
+                    <circle id="Oval-7" cx="7" cy="7" r="7" class="cls-5" data-name="Oval" transform="translate(115.21 44)"/>
+                </g>
+                <circle id="Oval_Copy_2-3" cx="7" cy="7" r="7" class="cls-6" data-name="Oval Copy 2"/>
+                <circle id="Oval_Copy-3" cx="5.444" cy="5.444" r="5.444" class="cls-7" data-name="Oval Copy" transform="translate(1.556 1.556)"/>
+            </g>
+            <g id="pin-4" data-name="pin" transform="translate(104.11 477.389)">
+                <g class="cls-10" transform="translate(-27.21 -80)">
+                    <circle id="Oval-8" cx="7" cy="7" r="7" class="cls-5" data-name="Oval" transform="translate(27.21 80)"/>
+                </g>
+                <circle id="Oval_Copy_2-4" cx="7" cy="7" r="7" class="cls-6" data-name="Oval Copy 2"/>
+                <circle id="Oval_Copy-4" cx="5.444" cy="5.444" r="5.444" class="cls-7" data-name="Oval Copy" transform="translate(1.556 1.556)"/>
+            </g>
+        </g>
+        <text id="_15_02_2012" class="cls-8" data-name="15/02/2012" transform="translate(339.11 539.609)">
+            <tspan x="0" y="0">15/02/2012</tspan>
+        </text>
+        <text id="_13_02_2012" class="cls-9" data-name="13/02/2012" transform="translate(175.11 539.609)">
+            <tspan x="0" y="0">13/02/2012</tspan>
+        </text>
+        <text id="_14_02_2012" class="cls-9" data-name="14/02/2012" transform="translate(260.11 539.609)">
+            <tspan x="0" y="0">14/02/2012</tspan>
+        </text>
+        <text id="_12_02_2012" class="cls-9" data-name="12/02/2012" transform="translate(90.11 539.609)">
+            <tspan x="0" y="0">12/02/2012</tspan>
+        </text>
+    </g>
+</svg>

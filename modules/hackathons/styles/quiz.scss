@@ -1,0 +1,113 @@
+.hackathon-quiz{
+
+  .quiz-header{
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    justify-content: space-between;
+    background-color: var(--bg-2);
+    height: 8rem;
+
+    &__title{
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: 2.6rem;
+    }
+
+    &__minimize-icon{
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    &__minimize-btn{
+      color: var(--text-primary);
+      border-radius: .4rem;
+    }
+  }
+
+  .quiz-question{
+    padding: 3rem 4rem 1rem 4rem;
+  }
+
+  &__quiz-container{
+    position: fixed;
+    top: 5.1rem;
+    left: 0;
+    //height: 100%;
+    width: 100vw;
+    background-color: var(--bg-1);
+    height: calc(100vh - 5.1rem);
+    z-index: 99999;
+  }
+
+  &__questions-wrapper{
+    height: calc(100% - 8rem);
+    overflow: auto;
+  }
+
+  .quiz-bar-container{
+    position: fixed;
+    top: 80%;
+    left: 2rem;
+    height: 8rem;
+    width: 35rem;
+    background-color: var(--bg-3);
+    padding-bottom: .2rem;
+    z-index: 1049;
+    box-shadow: 0 0 1rem 0.3rem rgba(var(--shadow), 0.2);
+    cursor: move;
+    //border: .1rem solid var(--highlight-primary);
+    //border-radius: .2rem;
+
+    //display: flex;
+    //flex-direction: column;
+
+    .simple-progress-wrapper{
+      margin-bottom: 1rem;
+    }
+  }
+
+  .hk-quiz-bar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    &__info-wrapper{
+      display: flex;
+      align-items: center;
+    }
+
+    &__action-wrapper{
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-width: 4rem;
+      min-height: 4rem;
+      margin-left: auto;
+    }
+
+    &__loader{
+      background-color: transparent;
+    }
+
+    &__title{
+      margin-bottom: 0;
+      font-size: 2rem;
+    }
+
+    &__action-icon{
+      width: 4rem;
+      height: 4rem;
+      padding: 0 1.2rem;
+      cursor: pointer;
+
+      &:hover{
+        path{
+          fill: var(--highlight-primary);
+        }
+      }
+    }
+  }
+}

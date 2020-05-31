@@ -1,0 +1,292 @@
+
+.flyout-container{
+
+  position: absolute;
+  //width: 35.6%;
+  //height: calc(100vh - 5.8rem);
+  flex: 1;
+  top : 0;
+  //border: .1rem solid black;
+  //padding: 1rem 2rem;
+  background-color: var(--bg-1);
+  z-index: 42;
+  box-shadow: -0.7rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  transition: width .6s, right .6s ease-out;
+
+  &--1{
+    right: 25rem;
+    width: 35.6%;
+  }
+
+  &--2{
+    left : 16.5rem;
+    width: 35.6%;
+  }
+
+  //&--1{
+  //  right: 53.6rem;
+  //  width: 29.7%;
+  //}
+  //
+  //&--2{
+  //  left : 16.5rem;
+  //  width: 29.7%;
+  //}
+
+  &--3{
+    right: 0;
+    width: 44.3%;
+  }
+
+  &--4{
+    left : 16rem;
+    width: 44.3%;
+  }
+
+  &--full-screen{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: width .2s , right .2s, top .2s  !important;
+    z-index: 200;
+    //width: 71.5%;
+  }
+
+  &__action-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+
+    path {
+      fill: var(--text-primary)
+    }
+
+    &.active{
+        path {
+          fill: var(--highlight-primary);
+        }
+    }
+    &--1{
+      path.cls-1{
+        fill: none;
+      }
+    }
+  }
+
+  &__action-wrapper{
+      margin-right: 2rem;
+  }
+
+
+  //Flyout header
+  &__header{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: var(--bg-3);
+    position: relative;
+    margin-left: 8rem;
+  }
+
+  &__index-no-wrapper{
+    position: absolute;
+    top: 0;
+    left: -8rem;
+    height: 8rem;
+    width: 8rem;
+    background-color: var(--bg-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  &__index-no{
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+  }
+
+  &__title-wrapper{
+    margin-right: auto;
+    padding: 0 1rem;
+    width: 60%;
+  }
+
+
+  &__title{
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__options{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__download-option{
+    margin-left: 1rem;
+  }
+
+  &__pin-option{
+    margin-left: 1rem;
+  }
+
+  &__full-screen-option{
+    margin-left: 1rem;
+  }
+
+  &__close-btn{
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: var(--text-primary);
+  }
+
+  //Flyout Content
+
+  &__content{
+    padding: 1rem 0;
+    height: calc(100vh - 6.5rem);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__desc-wrapper{
+    background-color: var(--bg-3);
+
+    .card-header{
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+    }
+
+    &--1{
+      background-color: var(--bg-4) !important;
+    }
+  }
+
+  &__accordion-toggle-icon{
+    height: 1rem;
+    width: 1rem;
+    transform: rotate(90deg);
+    margin-left: auto;
+    transition: all .2s;
+
+    g{
+      fill: currentColor;
+    }
+
+    &--active{
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__desc-wrapper{
+    margin-bottom: 2rem;
+  }
+
+  &__desc-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__desc{
+    //padding:1rem 2rem 1rem 0;
+  }
+
+  &__results{
+    padding: 2rem;
+  }
+
+  &__accordion-content{
+    color: var(--text-primary);
+    padding: 1rem;
+  }
+
+  &__add-info-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    &--1{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__function-description{
+    margin-top: 1rem;
+  }
+
+  &__add-info-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+
+    &--1{
+      margin-top: 3rem;
+    }
+
+    &--2{
+      margin-top: 2rem;
+    }
+  }
+
+  &__parameter-wrapper{
+    margin-bottom: .5rem;
+  }
+
+  &__parameter{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  &__columns-selected-row{
+    width: 100%;
+    display: flex;
+  }
+
+  &__add-info-item{
+    background-color: var(--bg-1);
+    margin-right: .2rem;
+    margin-bottom: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem 1rem;
+    flex: 1;
+    overflow-x: hidden;
+    word-break: break-word;
+
+    &--1{
+      max-width: 20rem;
+    }
+  }
+
+}
+
+.active--1{
+  path{
+    fill : var(--highlight-primary) !important;
+  }
+}
+
+
+
+

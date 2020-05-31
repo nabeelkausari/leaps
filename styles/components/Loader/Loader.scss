@@ -1,0 +1,33 @@
+.ath-loading {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-1);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //&__title {
+  //  text-align: center;
+  //  color: var(--text-secondary);
+  //  font-size: 3rem;
+  //}
+}
+
+.ath-loading-component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-1);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--transparent {
+    background-color: transparent;
+  }
+}

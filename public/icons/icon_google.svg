@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#192e49}
+        </style>
+    </defs>
+    <g id="prefix__Group_10621" data-name="Group 10621" transform="translate(-270 -507)">
+        <circle id="prefix__Ellipse_670" cx="12.5" cy="12.5" r="12.5" data-name="Ellipse 670" transform="translate(270 507)" style="fill:#fff"/>
+        <g id="prefix__google" transform="translate(252.572 491.572)">
+            <path id="prefix__Path_24492" d="M273.055 213.9h-5.885a.469.469 0 0 0-.47.47v1.881a.469.469 0 0 0 .47.47h3.315a4.419 4.419 0 0 1-1.9 2.231l1.412 2.447a7.075 7.075 0 0 0 3.605-6.185 4.876 4.876 0 0 0-.08-.924.476.476 0 0 0-.467-.39z" class="prefix__cls-2" data-name="Path 24492" transform="translate(-236.171 -186.94)"/>
+            <path id="prefix__Path_24493" d="M60.644 327.7a4.39 4.39 0 0 1-3.8-2.2l-2.444 1.409a7.207 7.207 0 0 0 9.852 2.645L62.84 327.1a4.352 4.352 0 0 1-2.196.6z" class="prefix__cls-2" data-name="Path 24493" transform="translate(-30.43 -295.093)"/>
+            <path id="prefix__Path_24494" d="M260.105 379.85l-1.412-2.447a4.363 4.363 0 0 1-2.193.593v2.824a7.183 7.183 0 0 0 3.605-.97z" class="prefix__cls-2" data-name="Path 24494" transform="translate(-226.286 -345.389)"/>
+            <path id="prefix__Path_24495" d="M25.824 141.5a4.364 4.364 0 0 1 .593-2.193L23.97 137.9a7.173 7.173 0 0 0 0 7.2l2.447-1.409a4.333 4.333 0 0 1-.593-2.191z" class="prefix__cls-2" data-name="Path 24495" transform="translate(0 -113.289)"/>
+            <path id="prefix__Path_24496" d="M60.644 23.824a4.372 4.372 0 0 1 2.787 1 .469.469 0 0 0 .63-.028l1.332-1.332a.473.473 0 0 0-.028-.692 7.19 7.19 0 0 0-10.965 1.84l2.447 1.409a4.39 4.39 0 0 1 3.797-2.197z" class="prefix__cls-2" data-name="Path 24496" transform="translate(-30.43)"/>
+            <path id="prefix__Path_24497" d="M259.287 24.825a.469.469 0 0 0 .63-.028l1.332-1.332a.473.473 0 0 0-.028-.692A7.168 7.168 0 0 0 256.5 21v2.824a4.355 4.355 0 0 1 2.787 1.001z" class="prefix__cls-2" data-name="Path 24497" transform="translate(-226.286)"/>
+        </g>
+    </g>
+</svg>

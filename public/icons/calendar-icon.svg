@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.732" height="14.147" viewBox="0 0 12.732 14.147">
+    <defs>
+        <style>
+            .cls-1{fill:#f0f0f0}
+        </style>
+    </defs>
+    <path id="ic_today_24px" d="M14.318 2.415h-.708V1H12.2v1.415H6.537V1H5.122v1.415h-.707a1.408 1.408 0 0 0-1.408 1.414L3 13.732a1.414 1.414 0 0 0 1.415 1.415h9.9a1.419 1.419 0 0 0 1.415-1.415v-9.9a1.419 1.419 0 0 0-1.412-1.417zm0 11.318h-9.9V5.951h9.9zM5.829 7.366h3.537V10.9H5.829z" class="cls-1" transform="translate(-3 -1)"/>
+</svg>

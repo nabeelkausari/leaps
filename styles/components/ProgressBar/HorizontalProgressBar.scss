@@ -1,0 +1,28 @@
+.simple-progress-wrapper{
+  height: .5rem;
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-5);
+  transition: .3s;
+
+  &:after{
+    background-color: var(--text-primary);
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: .5rem;
+    z-index: 1;
+    transition: .3s;
+  }
+}
+
+.simple-progress-indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--highlight-primary);
+  transition: width 1s;
+  z-index: 2;
+}

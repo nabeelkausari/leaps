@@ -1,0 +1,84 @@
+.quiz-bar{
+
+  &__quiz{
+    position: fixed;
+    //top: 0;
+    //left: 0rem;
+    width: 0;
+    height: 0;
+    z-index: 900;
+    transition: height .4s, width .4s, top .2s, left .2s;
+    overflow: hidden;
+
+    &--visible{
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+
+  &__wrapper{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+  }
+
+
+  &__title{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &__timer{
+    display: flex;
+    align-items: center;
+  }
+
+  &__timer-time{
+    color: var(--highlight-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 15rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__action-wrapper{
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  &__action-icon{
+    width: 2rem;
+    height: 2rem;
+
+    path{
+      stroke: var(--text-primary);
+    }
+  }
+
+}
+
+.quiz-bar-container{
+  position: fixed;
+  top: 80%;
+  left: 2rem;
+  height: 8rem;
+  width: 35rem;
+  background-color: var(--bg-3);
+  padding-bottom: .2rem;
+  z-index: 1049;
+  box-shadow: 0 0 1rem 0.3rem rgba(var(--shadow), 0.2);
+  cursor: move;
+
+  //display: flex;
+  //flex-direction: column;
+
+  .simple-progress-wrapper{
+    margin-bottom: 1rem;
+  }
+}

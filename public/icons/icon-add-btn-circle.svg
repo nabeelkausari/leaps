@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="24.5" viewBox="0 0 24.5 24.5">
+    <defs>
+        <style>
+            .class-color-collab-1{fill:#ff9f00}.plus-cls-2{fill:#0a223e}
+        </style>
+    </defs>
+    <g id="Group_6134" data-name="Group 6134" transform="translate(-992 -66)">
+        <ellipse id="Ellipse_475" cx="12.25" cy="12.25" class="class-color-collab-1" data-name="Ellipse 475" rx="12.25" ry="12.25" transform="translate(992 66)"/>
+        <g id="add-plus-button" transform="translate(998 72)">
+            <g id="add">
+                <path id="Path_13474" d="M12.97 7.412H7.412v5.558H5.559V7.412H0V5.559h5.559V0h1.853v5.559h5.558z" class="plus-cls-2" data-name="Path 13474"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none}.cls-1{stroke:#fff}.cls-2{fill:#fff}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="NETEZZA" transform="translate(-304 -270)">
+        <g id="Ellipse_369" class="cls-1" data-name="Ellipse 369" transform="translate(304 270)">
+            <circle cx="18" cy="18" r="18" class="cls-3"/>
+            <circle cx="18" cy="18" r="17.5" class="cls-4"/>
+        </g>
+        <g id="Group_5146" data-name="Group 5146" transform="translate(-714.593 -687.636)">
+            <path id="Path_13145" d="M1043.283 968.636v15.3h-3.728l-6.235-9.439v9.439h-3.728v-15.3h3.728l6.235 9.483v-9.483z" class="cls-2" data-name="Path 13145"/>
+        </g>
+    </g>
+</svg>

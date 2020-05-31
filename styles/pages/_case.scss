@@ -1,0 +1,74 @@
+.flyoutContainer{
+  //width: 100%;
+  //height: calc(100vh - 15.8rem);;
+
+  &--1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color-black, 0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 39;
+  }
+
+  &__bg{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.scenario{
+
+  background-color: var(--bg-1);
+  display: flex;
+  overflow : hidden;
+  position: relative;
+  flex: 1;
+
+  &__container{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main-content{
+    flex: 1;
+    display: flex;
+    overflow-y: auto !important;
+    position: relative;
+    overflow-x: hidden !important;
+
+    &.console {
+      overflow-y: initial;
+    }
+  }
+}
+
+#last-item {
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+//<div className="scenario" style={}}>
+//<div className="scenario__container" style={{flex: "1", position: 'relative'}}>
+//<subHeader/>
+//<div className="scenario__main-content" style={{display: "flex", height : "calc(100vh - 10.9rem)"}}>
+//                                                                                                   {!is_console && <ToolBar/>}
+//{this.renderView()}
+//</div>
+//  {(is_primary_flyout_open || is_secondary_flyout_open) &&
+//  <div className="flyoutContainer">
+//  {is_primary_flyout_open && <ResultsFlyout hideFlyout={hidePrimaryFlyout}/>}
+//  {is_secondary_flyout_open &&
+//                                    <ResultsFlyout secondary hideFlyout={hideSecondaryFlyout}/>}
+//  </div>
+//  }
+//{!!show_notes_flyout && <notes notes={notes_info}/>}
+//</div>
+//  {this.renderSteps()}
+//</div>

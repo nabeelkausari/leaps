@@ -1,0 +1,176 @@
+.simple-editor-wrapper{
+  //default froala theme override
+
+  .fr-box {
+
+    [data-cmd="insertImage"]{
+      display: none;
+    }
+
+    .fr-newline{
+      background: var(--text-secondary);
+    }
+    .fr-element{
+      border: none;
+      color: var(--text-primary) !important;
+      background-color: var(--bg-3);
+      border-radius: .4rem;
+    }
+    .fr-toolbar {
+      display: none;
+      background-color: var(--bg-1) !important;
+      border-color: var(--text-primary) !important;
+
+      .fr-more-toolbar{
+        background-color: var(--bg-1) !important;
+      }
+    }
+
+    .fr-toolbar .fr-command.fr-btn svg path,
+    .fr-popup .fr-command.fr-btn svg path,
+    .fr-modal .fr-command.fr-btn svg path {
+      fill: var(--text-primary) !important;
+    }
+
+    //btn hover
+    .fr-desktop .fr-command:hover:not(.fr-table-cell),
+    .fr-desktop .fr-command:focus:not(.fr-table-cell),
+    .fr-desktop .fr-command.fr-btn-hover:not(.fr-table-cell),
+    .fr-desktop .fr-command.fr-expanded:not(.fr-table-cell){
+      background-color: var(--highlight-primary);
+
+    }
+
+    //btn active, focus
+    .fr-toolbar .fr-command.fr-btn.fr-open:not(:hover):not(:focus):not(:active){
+      background-color: var(--highlight-primary);
+    }
+
+    .fr-wrapper{
+      border: none;
+      background-color: var(--bg-1) !important;
+      border-radius: .4rem;
+    }
+    .second-toolbar{
+      display: none;
+      background-color: var(--bg-1) !important;
+      border-color: var(--text-primary) !important;
+
+    }
+  }
+
+
+  //editor components
+  .desc-model{
+    padding: 2rem 4rem;
+  }
+
+  .editor-container{
+
+    &__btn-container{
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      margin-bottom: 2rem;
+    }
+
+    &__icon{
+      height: 2rem;
+      width: 2rem;
+      cursor: pointer;
+
+      //path{
+      //  fill: var(--text-primary);
+      //}
+
+      path#Path_797{
+        fill: var(--text-primary);
+      }
+
+      &:hover {
+        path#Path_797 {
+          fill: var(--highlight-primary);
+        }
+      }
+      &--save{
+        margin-right: 3rem;
+        path, rect{
+          fill: var(--text-primary);
+        }
+
+        &:hover{
+          path, rect{
+            fill: var(--highlight-primary);
+          }
+        }
+      }
+    }
+
+    &__close-btn{
+      width: 1.6rem;
+      height: 1.6rem;
+      cursor: pointer;
+
+      &:hover{
+        path {
+          fill: var(--highlight-primary);
+        }
+      }
+    }
+
+    &__view {
+      margin-top: 3rem;
+      padding: 1rem;
+      .fr-view span,
+      .fr-view p,
+      .fr-view h1{
+        font-family: "Poppins", sans-serif;
+        color: var(--text-primary);
+      }
+
+
+      .fr-view font{
+        color: var(--text-primary);
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+
+
+  .fr-view {
+    * {
+      background: transparent !important;
+    }
+
+    span,
+    p{
+      font-family: "Poppins", sans-serif !important;
+      color: var(--text-primary) !important;
+      font-size: 1.1rem !important;
+    }
+
+    table {
+      background: transparent !important;
+    }
+
+    h1{
+      font-size: 2rem;
+    }
+    h2{
+      font-size: 1.8rem;
+    }
+    h3{
+      font-size: 1.6rem;
+    }
+    h4{
+      font-size: 1.4rem;
+    }
+    h5{
+      font-size: 1.2rem;
+    }
+    h6{
+      font-size: 1rem;
+    }
+
+  }
+}

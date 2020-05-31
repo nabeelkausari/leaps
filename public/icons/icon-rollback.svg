@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.625" height="8.628" viewBox="0 0 9.625 8.628">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#fff}.cls-2,.cls-3{stroke:#fff;stroke-linecap:round;stroke-width:.5px}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="Group_5138" data-name="Group 5138" transform="translate(-1228.922 -157.18)">
+        <g id="loading" transform="translate(1228.922 157.179)">
+            <g id="Group_3458" data-name="Group 3458" transform="translate(.998)">
+                <path id="Path_824" d="M4.314 10.424A4.314 4.314 0 1 0 0 6.111a.247.247 0 1 0 .493 0 3.819 3.819 0 1 1 .526 1.935.247.247 0 0 0-.425.25 4.334 4.334 0 0 0 3.72 2.128z" class="cls-1" data-name="Path 824" transform="translate(0 -1.797)"/>
+            </g>
+            <g id="Group_3459" data-name="Group 3459" transform="translate(0 2.638)">
+                <path id="Path_825" d="M24.968 13.215a.246.246 0 0 0 .125-.034l1.545-.912a.246.246 0 1 0-.251-.424l-1.348.8-.868-1.245a.246.246 0 1 0-.4.282l1 1.429a.246.246 0 0 0 .197.104z" class="cls-1" data-name="Path 825" transform="translate(-23.723 -11.292)"/>
+            </g>
+        </g>
+        <g id="Group_5137" data-name="Group 5137">
+            <path id="Path_13131" d="M0 0v2.115" class="cls-2" data-name="Path 13131" transform="translate(1234.109 159.773)"/>
+            <path id="Line_1970" d="M1.5 1L0 0" class="cls-3" data-name="Line 1970" transform="translate(1234.109 161.889)"/>
+        </g>
+    </g>
+</svg>

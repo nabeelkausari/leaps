@@ -1,0 +1,12 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a{
+  color : var(--text-primary);
+
+  &:hover{
+    color: var(--highlight-primary);
+    text-decoration: none;
+  }
+}

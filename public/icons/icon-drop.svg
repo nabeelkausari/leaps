@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-1{fill:#253952}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_6142" data-name="Group 6142" transform="translate(-329 -28)">
+        <circle id="Ellipse_476" cx="9" cy="9" r="9" class="cls-1" data-name="Ellipse 476" transform="translate(329 28)"/>
+        <path id="ic_arrow_drop_down_24px" d="M7 10l4.546 4.546L16.091 10z" class="cls-2" transform="translate(326.586 25.854)"/>
+    </g>
+</svg>

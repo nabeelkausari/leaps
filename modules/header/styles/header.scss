@@ -1,0 +1,82 @@
+.ath-logo {
+  path#Path_606,
+  path#Path_607,
+  path#Path_609,
+  path#Path_610 {
+    fill: var(--logo-primary);
+  }
+
+  path#Path_608 {
+    fill: var(--logo-secondary);
+  }
+}
+
+
+.mobile-header{
+  padding: 3rem 4rem 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: height .2s;
+  z-index: 1000;
+
+  &__menu-link{
+    font-size: 2.5rem;
+    &:not(:last-child){
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-1);
+    transition: all .3s;
+
+    &--active{
+      padding: 3rem 5rem;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    }
+  }
+
+  &__menu-container{
+    margin-top: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .1s;
+
+    &--animate{
+      opacity: 1;
+    }
+  }
+
+  &__menu-icon{
+    font-size: 2rem;
+  }
+
+  &__close-icon{
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    opacity: 0;
+    transition: opacity .1s;
+
+    &--animate{
+      opacity: 1;
+    }
+  }
+}

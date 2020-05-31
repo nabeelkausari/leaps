@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53.041" height="53.041" viewBox="0 0 53.041 53.041">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill: #D8000C}
+        </style>
+    </defs>
+    <g id="Group_5103" data-name="Group 5103" transform="translate(-38 -50)">
+        <path id="Rectangle_1799" d="M0 0h53.041v53.041H0z" class="cls-1" data-name="Rectangle 1799" transform="translate(38 50)"/>
+        <g id="warning_sign" transform="translate(48.609 60.608)">
+            <path id="rectangle" d="M0 0h31.825v31.825H0z" class="cls-1"/>
+            <path id="warning_sign-2" d="M.5 27.521h30.057L15.528 1zm16.8-3.536h-3.54v-3.537h3.54zm0-5.3h-3.54v-7.077h3.54z" class="cls-2" data-name="warning_sign" transform="translate(.384 .768)"/>
+        </g>
+    </g>
+</svg>

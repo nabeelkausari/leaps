@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53.041" height="53.041" viewBox="0 0 53.041 53.041">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#2bb25a}
+        </style>
+    </defs>
+    <g id="Group_5101" data-name="Group 5101" transform="translate(-36 -241)">
+        <path id="Rectangle_1799" d="M0 0h53.041v53.041H0z" class="cls-1" data-name="Rectangle 1799" transform="translate(36 241)"/>
+        <path id="checked" d="M14.693 0a14.693 14.693 0 1 0 14.694 14.693A14.694 14.694 0 0 0 14.693 0zM12 22.241l-6.47-6.47 2.156-2.156L12 17.928l9.7-9.7 2.156 2.156z" class="cls-2" transform="translate(48.268 253.268)"/>
+    </g>
+</svg>

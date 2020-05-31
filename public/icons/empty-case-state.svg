@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="230" viewBox="0 0 310 230">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#253952}.prefix__cls-3{fill:#2e435a}
+        </style>
+    </defs>
+    <g id="prefix__Group_10592" data-name="Group 10592" transform="translate(-590 -284)">
+        <g id="prefix__Group_10591" data-name="Group 10591">
+            <g id="prefix__Group_10590" data-name="Group 10590" transform="translate(327 150)">
+                <rect id="prefix__Rectangle_2564" width="310" height="230" data-name="Rectangle 2564" rx="10" transform="translate(263 134)" style="fill:#192e49"/>
+                <rect id="prefix__Rectangle_2596" width="91" height="21" class="prefix__cls-2" data-name="Rectangle 2596" rx="4" transform="translate(279 154)"/>
+                <rect id="prefix__Rectangle_2678" width="241" height="46" class="prefix__cls-2" data-name="Rectangle 2678" rx="4" transform="translate(279 188)"/>
+                <rect id="prefix__Rectangle_2679" width="270" height="15" class="prefix__cls-2" data-name="Rectangle 2679" rx="4" transform="translate(279 242)"/>
+                <rect id="prefix__Rectangle_2680" width="250" height="11" class="prefix__cls-2" data-name="Rectangle 2680" rx="4" transform="translate(279 288)"/>
+                <rect id="prefix__Rectangle_2681" width="250" height="15" class="prefix__cls-2" data-name="Rectangle 2681" rx="4" transform="translate(279 265)"/>
+                <circle id="prefix__Ellipse_355" cx="11" cy="11" r="11" class="prefix__cls-3" data-name="Ellipse 355" transform="translate(279 319)"/>
+                <circle id="prefix__Ellipse_356" cx="10.811" cy="10.811" r="10.811" class="prefix__cls-3" data-name="Ellipse 356" transform="translate(290.624 319)"/>
+                <circle id="prefix__Ellipse_357" cx="10.811" cy="10.811" r="10.811" class="prefix__cls-3" data-name="Ellipse 357" transform="translate(301.528 319)"/>
+                <circle id="prefix__Ellipse_358" cx="10.811" cy="10.811" r="10.811" class="prefix__cls-3" data-name="Ellipse 358" transform="translate(314.831 319)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,365 @@
+.content-input {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 2rem !important;
+  background: var(--bg-2);
+
+  &--1 {
+    padding: 1rem 0 1rem 1rem;
+    background: var(--bg-2);
+  }
+
+  &__title-wrapper {
+    padding: 0.8rem 2rem;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: var(--bg-4);
+  }
+
+  &__main {
+    padding: 1rem 2rem;
+    height: 90%;
+    overflow-y: auto;
+    position: relative;
+    background: var(--bg-2);
+  }
+
+  &__element-wrapper {
+    margin-top: 0.5rem;
+
+    &--1 {
+      margin-bottom: 2rem;
+    }
+
+    &--2 {
+      display: flex;
+    }
+
+    &--3 {
+      margin-top: 0.5rem;
+      &:not(:first-child) {
+        margin-left: 3rem;
+      }
+    }
+
+    &--4 {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__sub-element-wrapper {
+    margin-right: 2rem;
+  }
+
+  &__label {
+    margin-bottom: 0.5rem !important;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    &--1 {
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  &__date-picker {
+    border-radius: 0.2rem;
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 0.1rem solid var(--text-secondary) !important;
+    padding: 0.8rem 1rem !important;
+    font-size: 1.2rem;
+  }
+
+  &__text-box {
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 0.09rem solid var(--text-primary);
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: var(--text-primary);
+
+    &--1 {
+      width: 40%;
+    }
+
+    &--2 {
+      height: 2rem;
+    }
+  }
+
+  &__file-input {
+    width: 20rem;
+  }
+
+  &__file {
+    margin-top: 1rem !important;
+    font-size: 1.2rem;
+  }
+
+  &__add-dataset-wrapper {
+    display: flex;
+  }
+
+  &__left-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  &__right-wrapper {
+    display: flex;
+    flex: 1;
+  }
+
+  &__left-sub-wrapper {
+    flex: 1;
+  }
+
+  &__add-to-table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-right: 4rem;
+  }
+
+  &__element-sub-wrapper {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__element-sub-wrapper-text {
+    width: 8rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  &__action-wrapper {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+
+    table,
+    th,
+    td {
+      border: 0.1rem solid var(--text-primary);
+    }
+  }
+
+  &__row {
+    &--header {
+    }
+
+    &--header-text {
+      padding: 0.5rem;
+    }
+  }
+
+  &__table-index-cell {
+    padding: 0.5rem;
+
+    &--1 {
+      padding: 0.5rem;
+    }
+  }
+
+  &__table-content-cell {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem !important;
+    min-width: 15rem;
+    max-width: 20rem;
+
+    &--1 {
+      font-size: 0.6rem;
+      color: var(--text-primary);
+    }
+  }
+
+  &__empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--title {
+      color: grey;
+    }
+  }
+
+  &__btn {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-radius: 5rem;
+
+    &--filled {
+      background-color: var(--highlight-primary);
+      color: white;
+      padding: 0.6rem 2.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 2rem;
+
+      &--1 {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    &--outline {
+      border: 0.1rem solid var(--highlight-primary);
+      color: var(--highlight-primary);
+    }
+
+    &--filled-1 {
+      background-color: var(--highlight-primary);
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+    }
+
+    &--outline-1 {
+      border: 0.1rem solid black;
+      color: black;
+    }
+
+    &--2 {
+      margin-left: auto;
+    }
+  }
+}
+
+.questions-wrapper {
+  overflow-y: auto;
+  height: 90%;
+  padding-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.question-wrapper {
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+  border: 0.05rem solid lightgray;
+  border-radius: 0.4rem;
+  overflow: hidden;
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.05rem solid var(--bg-2);
+    background-color: var(--bg-4);
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      cursor: pointer;
+      font-size: 1.4rem;
+      padding: 0 1rem;
+    }
+  }
+
+  &__main {
+    display: flex;
+    padding: 1rem;
+  }
+
+  &__left {
+    flex: 1;
+    margin-right: 4rem;
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  &__label {
+    margin-bottom: 0.5rem !important;
+  }
+
+  &__element-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  &__main-options-container {
+    border: 0.05rem solid lightgray;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  &__option-input {
+    display: flex;
+  }
+
+  &__add-btn {
+    width: 2.5rem;
+    background-color: transparent;
+    border: 0.05rem solid var(--highlight-primary);
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+    color: var(--highlight-primary);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  button:disabled {
+    pointer-events: none;
+    border-color: var(--bg-7);
+    color: var(--bg-7);
+  }
+
+  &__options-container {
+    margin-top: 1rem;
+    max-height: 10rem;
+    overflow-y: scroll;
+    padding-right: 1rem;
+  }
+
+  &__option-card {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  &__option-text {
+    margin-right: auto !important;
+  }
+
+  &__option-delete {
+    width: 2.25rem;
+    background-color: transparent;
+    border: 0.05rem solid lightgray;
+    border-radius: 0.3rem;
+    color: gray;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.react-time-picker__wrapper {
+  border-radius: 0.4rem;
+  padding: 0 0.5rem;
+  border: 0.05rem solid lightgray !important;
+}
+
+.empty-course {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    color: grey;
+  }
+}

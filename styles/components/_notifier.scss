@@ -1,0 +1,62 @@
+.Toastify {
+  z-index: 999999 !important;
+  &__toast {
+    background-color: var(--bg-4) !important;
+    border: .1rem solid var(--bg-2);
+    opacity: 1 !important;
+    z-index: 999999 !important;
+    padding: 1rem !important;
+    border-radius: .2rem;
+    box-shadow: 0 0 1rem .2rem rgba(var(--shadow), .5);
+  }
+
+  &__close-button {
+    outline: none !important;
+    color: var(--text-primary);
+    &--success{
+      color: var(--text-primary);
+    }
+  }
+}
+
+
+.ath-notifier {
+  display: flex;
+  background-color: var(--bg-4) !important;
+  font-family: inherit;
+  &__type {
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    //&-success {
+    //  color: var(--color-success);
+    //}
+    //&-error {
+    //  color: var(--color-error);
+    //}
+    //&-warning {
+    //  color: var(--color-warning);
+    //}
+    //&-info {
+    //  color: var(--color-info);
+    //}
+  }
+
+
+  &__sub {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 0;
+  }
+
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="412.436" height="387.689" viewBox="0 0 412.436 387.689">
+    <defs>
+        <filter id="prefix__Ellipse_630" width="252.494" height="252.494" x="0" y="135.195" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-color="#f7f7f7" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Ellipse_631" width="252.494" height="252.494" x="77.814" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="5"/>
+            <feFlood flood-color="#f7f7f7" flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__Ellipse_629" width="252.494" height="252.494" x="159.942" y="134.892" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="3"/>
+            <feGaussianBlur result="blur-3" stdDeviation="5"/>
+            <feFlood flood-color="#f7f7f7" flood-opacity=".161"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="prefix__Group_10358" data-name="Group 10358">
+        <g transform="translate(-116 -1036) translate(116 1036)">
+            <circle id="prefix__Ellipse_630-2" cx="111.247" cy="111.247" r="111.247" data-name="Ellipse 630" transform="translate(13 147.19)" style="fill:#0397ff"/>
+        </g>
+        <g transform="translate(-116 -1036) translate(116 1036)">
+            <circle id="prefix__Ellipse_631-2" cx="111.247" cy="111.247" r="111.247" data-name="Ellipse 631" transform="translate(90.81 12)" style="opacity:.85;fill:#25c7e4"/>
+        </g>
+        <g transform="translate(-116 -1036) translate(116 1036)">
+            <circle id="prefix__Ellipse_629-2" cx="111.247" cy="111.247" r="111.247" data-name="Ellipse 629" transform="translate(172.94 146.89)" style="fill:#7b3fef;opacity:.85"/>
+        </g>
+    </g>
+</svg>

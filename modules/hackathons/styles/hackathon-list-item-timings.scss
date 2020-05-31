@@ -1,0 +1,22 @@
+.hli__timings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.5rem auto;
+
+  > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--title {
+    color: var(--highlight-primary);
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  &--value {
+    font-size: 1.6rem;
+  }
+}

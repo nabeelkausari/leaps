@@ -1,0 +1,35 @@
+@import "structureList";
+@import "structureCards";
+@import "structureContent";
+@import "quiz";
+@import "webinar";
+
+.course-content{
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  color: var(--text-primary);
+
+  &--active-quiz{
+    height: 97.5%;
+  }
+
+  &__structure-panel{
+    padding: 2.5rem 1rem 2rem 2.5rem;
+    flex: 2;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__modules-board{
+    padding: 2.5rem 2.5rem 2rem 1rem;
+    flex: 5;
+  }
+}
+
+.course-content-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}

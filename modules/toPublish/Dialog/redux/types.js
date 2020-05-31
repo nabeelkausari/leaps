@@ -1,0 +1,4 @@
+export const SHOW_DIALOG = "SHOW_DIALOG";
+export const HIDE_DIALOG = "HIDE_DIALOG";
+// export const REMOVE_COMPONENT = "REMOVE_COMPONENT";
+export const CHANGE_CALLBACK = "CHANGE_CALLBACK";

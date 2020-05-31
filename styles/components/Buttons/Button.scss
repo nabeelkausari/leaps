@@ -1,0 +1,152 @@
+.ath-btn {
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: .6;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__xs{
+    padding: .3rem 1rem;
+    font-size: 1rem;
+    min-width: 5rem;
+  }
+
+  &__sm {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    min-width: 8rem;
+  }
+
+  &__md {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.2rem;
+    min-width: 10rem;
+  }
+
+  &__lg {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    min-width: 12rem;
+  }
+
+  &__xl {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    min-width: 16rem;
+  }
+
+  &__default{
+    background-color: var(--bg-4);
+    color: var(--text-primary);
+    border: none;
+    box-shadow: none !important;
+
+    &:hover {
+      background-color: var(--highlight-primary)!important;
+      color: var(--bg-1)!important;
+    }
+  }
+
+  &__edit{
+    border-radius: 0 !important;
+    border: none;
+    border-bottom: .1rem solid var(--text-secondary);
+    font-size: 1rem;
+    padding: .3rem .2rem .1rem .2rem !important;
+    min-width: unset !important;
+    background-color: transparent;
+    color: var(--text-primary);
+
+    &:hover{
+      border-bottom: .1rem solid var(--highlight-primary);
+      color: var(--highlight-primary);
+    }
+  }
+
+  &__primary {
+    background-color: var(--highlight-primary);
+    color: var(--bg-1);
+    border: 0.1rem solid transparent;
+
+    &:hover {
+      //box-shadow: 0 0 1.5rem .7rem rgba(var(--shadow), 0.3);
+    }
+  }
+
+  &__outline-primary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 0.1rem solid var(--text-primary);
+
+    path {
+      fill: var(--text-primary);
+    }
+
+    &:hover {
+      color: var(--highlight-primary);
+      border: 0.1rem solid var(--highlight-primary);
+
+      path {
+        fill: var(--highlight-primary);
+      }
+    }
+  }
+
+  &__secondary {
+  }
+  &__outline-secondary {
+
+  }
+
+  &__tertiary {
+
+  }
+  &__outline-tertiary {
+  }
+
+  &__default {
+    background-color: var(--bg-3);
+    color: var(--text-primary);
+    border: none;
+    box-shadow: none !important;
+
+    &:hover {
+      background-color: var(--bg-4)!important;
+      color: var(--text-primary) !important;
+    }
+  }
+
+  &__link {
+    border: none;
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--highlight-primary);
+    }
+  }
+}
+
+.btn-link {
+  display: inline-block;
+  color: var(--highlight-primary);
+
+  &--no-highlight {
+    color: var(--text-primary);
+  }
+
+  &:hover {
+    color: var(--highlight-primary);
+  }
+}
+
+@import "AnimatedButton";

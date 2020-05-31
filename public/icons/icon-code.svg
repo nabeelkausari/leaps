@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14">
+    <defs>
+        <style>
+            .cls-1{fill:#f0f0f0}
+        </style>
+    </defs>
+    <g id="Group_5050" data-name="Group 5050" transform="translate(-8544 -7010)">
+        <g id="Group_5049" data-name="Group 5049" transform="translate(8544 7010)">
+            <g id="web" transform="translate(1.625 4.759)">
+                <g id="Group_5048" data-name="Group 5048">
+                    <g id="Group_5025" data-name="Group 5025" transform="translate(3.364)">
+                        <g id="Group_5024" data-name="Group 5024">
+                            <path id="Rectangle_1858" d="M0 0h4.882v.671H0z" class="cls-1" data-name="Rectangle 1858" transform="rotate(-74.032 3.112 2.346)"/>
+                        </g>
+                    </g>
+                    <g id="Group_5027" data-name="Group 5027" transform="translate(0 .498)">
+                        <g id="Group_5026" data-name="Group 5026">
+                            <path id="Path_13015" d="M138.566 82.371l-.429-.515-2.012 1.677a.335.335 0 0 0 0 .515l2.012 1.677.429-.515-1.7-1.419z" class="cls-1" data-name="Path 13015" transform="translate(-136.004 -81.856)"/>
+                        </g>
+                    </g>
+                    <g id="Group_5029" data-name="Group 5029" transform="translate(6.158 .498)">
+                        <g id="Group_5028" data-name="Group 5028">
+                            <path id="Path_13016" d="M285.365 83.576a.334.334 0 0 0-.043-.043l-2.012-1.677-.429.515 1.7 1.419-1.7 1.419.429.515 2.012-1.677a.335.335 0 0 0 .043-.471z" class="cls-1" data-name="Path 13016" transform="translate(-282.88 -81.856)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="exam">
+                <g id="Group_5031" data-name="Group 5031">
+                    <g id="Group_5030" data-name="Group 5030">
+                        <path id="Path_13017" d="M51 543.966v-.011-.014-.011c0-.002 0-.009-.006-.014s0-.009 0-.011a.087.087 0 0 0-.012-.023s0-.006-.006-.009-.006-.009-.009-.014 0-.006-.006-.009 0-.006-.006-.009l-2.634-3.368-.015-.017c-.006-.006 0-.006-.006-.006a.076.076 0 0 0-.023-.02l-.023-.017s-.006 0-.009-.006a.139.139 0 0 0-.02-.011h-.009l-.02-.009h-.009a.057.057 0 0 0-.02-.006h-.009a.066.066 0 0 0-.023 0h-8.842a.291.291 0 0 0-.293.287v13.426a.291.291 0 0 0 .293.287h11.414a.291.291 0 0 0 .293-.287v-10.111-.017zm-.884-.235h-1.744l-.006-2.232zm.3 10.058H39.585v-12.852h8.2l.006 3.081a.291.291 0 0 0 .293.287h2.336z" class="cls-1" data-name="Path 13017" transform="translate(-39 -540.36)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

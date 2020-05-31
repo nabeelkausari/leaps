@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+    <defs>
+        <style>
+            .cls-1{fill:#f0f0f0}
+        </style>
+    </defs>
+    <g id="expand_1_" data-name="expand (1)">
+        <g id="Group_5054" data-name="Group 5054">
+            <path id="Path_13077" d="M0 .478v18.044A.477.477 0 0 0 .478 19h8.7a.478.478 0 1 0 0-.955H.951V.951h17.094v8.174a.478.478 0 0 0 .955 0V.478A.477.477 0 0 0 18.522 0H.478A.477.477 0 0 0 0 .478z" class="cls-1" data-name="Path 13077"/>
+            <path id="Path_13078" d="M301.868 301.391v-6.613a.477.477 0 0 0-.478-.478h-6.613a.477.477 0 0 0-.478.478v6.617a.477.477 0 0 0 .478.478h6.617a.482.482 0 0 0 .474-.482zm-.951-.474h-5.665v-5.665h5.665z" class="cls-1" data-name="Path 13078" transform="translate(-282.872 -282.872)"/>
+            <path id="Path_13079" d="M91 86.278a.477.477 0 0 0-.478-.478h-4.244a.477.477 0 0 0-.478.478v4.252a.478.478 0 1 0 .955 0v-3.107l5.386 5.386a.476.476 0 0 0 .676-.672l-5.394-5.386h3.1a.476.476 0 0 0 .477-.473z" class="cls-1" data-name="Path 13079" transform="translate(-82.468 -82.468)"/>
+        </g>
+    </g>
+</svg>

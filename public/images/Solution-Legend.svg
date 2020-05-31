@@ -1,0 +1,425 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="665.165" height="513.67" viewBox="0 0 665.165 513.67">
+    <defs>
+        <style>
+            .cls-1,.cls-13,.cls-14,.cls-23,.cls-24,.cls-28,.cls-3,.cls-33,.cls-34,.cls-39,.cls-4,.cls-5,.cls-6{fill:#fff}.cls-1{font-size:11px}.cls-1,.cls-3,.cls-30,.cls-31,.cls-4{font-family:Poppins-Medium,Poppins;font-weight:500}.cls-1,.cls-11,.cls-13,.cls-3,.cls-34,.cls-4,.cls-9{letter-spacing:.028em}.cls-11,.cls-13,.cls-2,.cls-24,.cls-27,.cls-28,.cls-5,.cls-6,.cls-9{font-family:Poppins-Regular,Poppins}.cls-2{font-weight:400}.cls-3{font-size:21px}.cls-4{font-size:16px}.cls-24,.cls-5,.cls-6{stroke:rgba(0,0,0,0)}.cls-11,.cls-13,.cls-5,.cls-9{font-size:8px}.cls-6{font-size:9px}.cls-21,.cls-22,.cls-25,.cls-32,.cls-35,.cls-36,.cls-38,.cls-7{fill:none}.cls-7{stroke:#f0f0f0;stroke-dasharray:3}.cls-25,.cls-7{stroke-width:.6px}.cls-15,.cls-8{fill:#192e49}.cls-10,.cls-17,.cls-18,.cls-20,.cls-27,.cls-29,.cls-31,.cls-9{fill:#f0f0f0}.cls-11,.cls-12,.cls-30{fill:#ff9f00}.cls-15,.cls-16,.cls-19{stroke:#0d2440}.cls-16{fill:#172e49}.cls-17,.cls-27,.cls-28,.cls-30,.cls-31{font-size:2px}.cls-17,.cls-18,.cls-20{font-family:FiraMono-Regular,Fira Mono}.cls-18{font-size:3px}.cls-19{fill:#2e435a}.cls-20,.cls-29,.cls-33,.cls-34{font-size:1px}.cls-21{stroke:#0c2440}.cls-22{stroke:#fff}.cls-24{font-size:5px}.cls-25{stroke:#ff9f00}.cls-26{fill:#253952}.cls-29,.cls-33,.cls-34{font-family:Poppins-Light,Poppins;font-weight:300}.cls-32{stroke:#192e4a}.cls-35{stroke:#c9ced4;stroke-width:.3px}.cls-36{stroke:#0b233f;stroke-dasharray:6}.cls-37,.cls-39{stroke:none}.cls-40{filter:url(#Rectangle_2247)}.cls-41{filter:url(#Path_13474)}
+        </style>
+        <filter id="Path_13474" width="131.281" height="158.001" x="271" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".506"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_2247" width="106.957" height="212.17" x="495.74" y="301.5" filterUnits="userSpaceOnUse">
+            <feOffset dx="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="6.5"/>
+            <feFlood flood-opacity=".749"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_6141" data-name="Group 6141" transform="translate(-435 -165)">
+        <g id="Group_6132" data-name="Group 6132" transform="translate(437.243 210.642)">
+            <text id="Select_a_dataset_from_the_provided_to_configure_the_form_data_" class="cls-1" data-name="Select a dataset from the provided to configure the form data" transform="translate(-.243 43.358)">
+                <tspan x="0" y="0">Select a dataset from the provided </tspan><tspan x="0" y="17">to configure the </tspan><tspan y="17" class="cls-2">form data</tspan>
+            </text>
+            <text id="_01" class="cls-3" data-name="1" transform="translate(-.243 22.358)">
+                <tspan x="0" y="0">01</tspan>
+            </text>
+        </g>
+        <g id="Group_6135" data-name="Group 6135" transform="translate(435 358.74)">
+            <text id="Based_on_the_dataset_selected_the_forms_will_be_generated" class="cls-4" data-name="Based on the dataset selected the forms will be generated" transform="translate(0 31.26)">
+                <tspan x="0" y="17">Based on the dataset</tspan>
+            </text>
+            <text id="_02" class="cls-3" data-name="2" transform="translate(0 22.26)">
+                <tspan x="0" y="0">02</tspan>
+            </text>
+        </g>
+        <g id="Group_6137" data-name="Group 6137" transform="translate(437.243 535.499)">
+            <text id="Based_on_the_dataset_selected_the_forms_will_be_generated-2" class="cls-4" data-name="Based on the dataset selected the forms will be generated" transform="translate(-.243 31.501)">
+                <tspan x="0" y="17">Based on the dataset</tspan>
+            </text>
+            <text id="_03" class="cls-3" data-name="3" transform="translate(-.243 21.501)">
+                <tspan x="0" y="0">03</tspan>
+            </text>
+        </g>
+        <g id="Group_6136" data-name="Group 6136" transform="translate(820.115 367.715)">
+            <text id="username_password_incorrect" class="cls-5" transform="translate(10.885 41.285)">
+                <tspan x="0" y="0">Help Text</tspan>
+            </text>
+            <text id="username_password_incorrect-2" class="cls-6" data-name="username_password_incorrect" transform="translate(-.115 9.285)">
+                <tspan x="0" y="0">Designation_1</tspan>
+            </text>
+            <g id="Rectangle_2228" class="cls-7" data-name="Rectangle 2228" transform="translate(-.115 23.285)">
+                <rect width="173" height="34" class="cls-37" rx="3"/>
+                <rect width="172.4" height="33.4" x=".3" y=".3" class="cls-38" rx="2.7"/>
+            </g>
+        </g>
+        <g id="Group_6140" data-name="Group 6140" transform="translate(712 174)">
+            <g class="cls-41" transform="translate(-277 -9)">
+                <path id="Path_13474-2" d="M0 0h113.281v140H0z" class="cls-8" data-name="Path 13474" transform="translate(277 9)"/>
+            </g>
+            <g id="Group_6123" data-name="Group 6123" transform="translate(13.46 62.815)">
+                <text id="Data_Set_3" class="cls-9" transform="translate(25.508 8)">
+                    <tspan x="0" y="0">Data_Set_3</tspan>
+                </text>
+                <path id="ic_radio_button_checked_24px" d="M7.575 2a5.575 5.575 0 1 0 5.575 5.575A5.577 5.577 0 0 0 7.575 2zm0 10.034a4.46 4.46 0 1 1 4.46-4.46 4.458 4.458 0 0 1-4.46 4.46z" class="cls-10" transform="translate(-2 -.352)"/>
+            </g>
+            <g id="Group_6126" data-name="Group 6126" transform="translate(13.46 111.422)">
+                <text id="Data_Set_5" class="cls-9" transform="translate(25.508 8)">
+                    <tspan x="0" y="0">Data_Set_5</tspan>
+                </text>
+                <path id="ic_radio_button_checked_24px-2" d="M7.575 2a5.575 5.575 0 1 0 5.575 5.575A5.577 5.577 0 0 0 7.575 2zm0 10.034a4.46 4.46 0 1 1 4.46-4.46 4.458 4.458 0 0 1-4.46 4.46z" class="cls-10" data-name="ic_radio_button_checked_24px" transform="translate(-2 -.352)"/>
+            </g>
+            <g id="Group_6124" data-name="Group 6124" transform="translate(14.208 86.744)">
+                <text id="Data_Set_4" class="cls-9" transform="translate(24.012 8)">
+                    <tspan x="0" y="0">Data_Set_4</tspan>
+                </text>
+                <path id="ic_radio_button_checked_24px-3" d="M7.575 2a5.575 5.575 0 1 0 5.575 5.575A5.577 5.577 0 0 0 7.575 2zm0 10.034a4.46 4.46 0 1 1 4.46-4.46 4.458 4.458 0 0 1-4.46 4.46z" class="cls-10" data-name="ic_radio_button_checked_24px" transform="translate(-2 -.279)"/>
+            </g>
+            <g id="Group_6121" data-name="Group 6121" transform="translate(14.956 14.956)">
+                <text id="Data_Set_1" class="cls-11" transform="translate(25.508 8)">
+                    <tspan x="0" y="0">Data_Set_1</tspan>
+                </text>
+                <path id="ic_radio_button_checked_24px-4" d="M7.575 2a5.575 5.575 0 1 0 5.575 5.575A5.577 5.577 0 0 0 7.575 2zm0 10.034a4.46 4.46 0 1 1 4.46-4.46 4.458 4.458 0 0 1-4.46 4.46z" class="cls-12" data-name="ic_radio_button_checked_24px" transform="translate(-2 -2)"/>
+            </g>
+            <g id="Group_6122" data-name="Group 6122" transform="translate(14.208 38.138)">
+                <text id="Data_Set_2" class="cls-13" transform="translate(24.012 8)">
+                    <tspan x="0" y="0">Data_Set_2</tspan>
+                </text>
+                <path id="ic_radio_button_checked_24px-5" d="M7.575 2a5.575 5.575 0 1 0 5.575 5.575A5.577 5.577 0 0 0 7.575 2zm0 10.034a4.46 4.46 0 1 1 4.46-4.46 4.458 4.458 0 0 1-4.46 4.46z" class="cls-14" data-name="ic_radio_button_checked_24px" transform="translate(-2 -.428)"/>
+            </g>
+            <ellipse id="Ellipse_392" cx="3" cy="2.5" class="cls-12" data-name="Ellipse 392" rx="3" ry="2.5" transform="translate(17.568 18)"/>
+            <g id="Group_6131" data-name="Group 6131" transform="translate(149.559 32.155)">
+                <path id="Rectangle_68" d="M0 0h237.516v8.17H0z" class="cls-15" data-name="Rectangle 68" transform="translate(0 8.034)"/>
+                <path id="Rectangle_68-2" d="M0 0h237.516v8.17H0z" class="cls-15" data-name="Rectangle 68" transform="translate(0 24.103)"/>
+                <path id="Rectangle_68-3" d="M0 0h237.516v8.17H0z" class="cls-16" data-name="Rectangle 68" transform="translate(0 16.205)"/>
+                <path id="Rectangle_68-4" d="M0 0h237.516v8.17H0z" class="cls-16" data-name="Rectangle 68" transform="translate(0 32.273)"/>
+                <text id="_0.5907" class="cls-17" data-name=".591" transform="translate(44.665 10.701)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_0.5907-2" class="cls-17" data-name=".591" transform="translate(44.665 26.769)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_0.5907-3" class="cls-17" data-name=".591" transform="translate(44.665 18.871)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_0.5907-4" class="cls-17" data-name=".591" transform="translate(44.665 34.939)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_Intercept_" class="cls-17" data-name="(Intercept)" transform="translate(4.008 10.845)">
+                    <tspan x="0" y="0">(Intercept)</tspan>
+                </text>
+                <text id="_Intercept_2" class="cls-17" data-name="(Intercept)" transform="translate(4.008 27.845)">
+                    <tspan x="0" y="0">(Intercept)</tspan>
+                </text>
+                <text id="Clientnum" class="cls-17" transform="translate(4.008 18.845)">
+                    <tspan x="0" y="0">Clientnum</tspan>
+                </text>
+                <text id="Clientnum-2" class="cls-17" data-name="Clientnum" transform="translate(4.008 34.845)">
+                    <tspan x="0" y="0">Clientnum</tspan>
+                </text>
+                <text id="_5.026326" class="cls-18" data-name="5.026" transform="translate(81.008 12.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_5.026326-2" class="cls-18" data-name="5.026" transform="translate(81.008 28.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_5.026326-3" class="cls-18" data-name="5.026" transform="translate(81.008 20.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_5.026326-4" class="cls-18" data-name="5.026" transform="translate(81.008 36.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_0.11752" class="cls-18" data-name=".118" transform="translate(116.008 11.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.11752-2" class="cls-18" data-name=".118" transform="translate(116.008 19.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.11752-3" class="cls-18" data-name=".118" transform="translate(116.008 35.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.90645" class="cls-18" data-name=".906" transform="translate(156.008 11.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-2" class="cls-18" data-name=".906" transform="translate(156.008 27.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-3" class="cls-18" data-name=".906" transform="translate(197.008 11.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-4" class="cls-18" data-name=".906" transform="translate(197.008 27.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-5" class="cls-18" data-name=".906" transform="translate(156.008 19.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-6" class="cls-18" data-name=".906" transform="translate(156.008 35.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-7" class="cls-18" data-name=".906" transform="translate(197.008 19.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-8" class="cls-18" data-name=".906" transform="translate(197.008 35.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <path id="Rectangle_68-5" d="M0 0h237.516v8.17H0z" class="cls-15" data-name="Rectangle 68" transform="translate(0 40.444)"/>
+                <path id="Rectangle_68-6" d="M0 0h237.516v8.17H0z" class="cls-15" data-name="Rectangle 68" transform="translate(0 56.511)"/>
+                <path id="Rectangle_68-7" d="M0 0h237.516v8.17H0z" class="cls-16" data-name="Rectangle 68" transform="translate(0 48.614)"/>
+                <path id="Rectangle_68-8" d="M0 0h237.516v8.17H0z" class="cls-16" data-name="Rectangle 68" transform="translate(0 64.683)"/>
+                <text id="_0.5907-5" class="cls-17" data-name=".591" transform="translate(44.665 43.11)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_0.5907-6" class="cls-17" data-name=".591" transform="translate(44.665 59.178)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_0.5907-7" class="cls-17" data-name=".591" transform="translate(44.665 51.28)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_0.5907-8" class="cls-17" data-name=".591" transform="translate(44.665 67.349)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_Intercept_3" class="cls-17" data-name="(Intercept)" transform="translate(4.008 43.845)">
+                    <tspan x="0" y="0">(Intercept)</tspan>
+                </text>
+                <text id="_Intercept_4" class="cls-17" data-name="(Intercept)" transform="translate(4.008 59.845)">
+                    <tspan x="0" y="0">(Intercept)</tspan>
+                </text>
+                <text id="Clientnum-3" class="cls-17" data-name="Clientnum" transform="translate(4.008 51.845)">
+                    <tspan x="0" y="0">Clientnum</tspan>
+                </text>
+                <text id="Clientnum-4" class="cls-17" data-name="Clientnum" transform="translate(4.008 67.845)">
+                    <tspan x="0" y="0">Clientnum</tspan>
+                </text>
+                <text id="_5.026326-5" class="cls-18" data-name="5.026" transform="translate(81.008 44.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_5.026326-6" class="cls-18" data-name="5.026" transform="translate(81.008 60.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_5.026326-7" class="cls-18" data-name="5.026" transform="translate(81.008 52.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_5.026326-8" class="cls-18" data-name="5.026" transform="translate(81.008 69.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_0.11752-4" class="cls-18" data-name=".118" transform="translate(116.008 44.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.11752-5" class="cls-18" data-name=".118" transform="translate(116.008 51.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.11752-6" class="cls-18" data-name=".118" transform="translate(116.008 68.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.90645-9" class="cls-18" data-name=".906" transform="translate(156.008 44.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-10" class="cls-18" data-name=".906" transform="translate(156.008 60.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-11" class="cls-18" data-name=".906" transform="translate(197.008 44.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-12" class="cls-18" data-name=".906" transform="translate(197.008 60.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-13" class="cls-18" data-name=".906" transform="translate(156.008 51.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-14" class="cls-18" data-name=".906" transform="translate(156.008 68.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-15" class="cls-18" data-name=".906" transform="translate(197.008 51.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-16" class="cls-18" data-name=".906" transform="translate(197.008 68.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <path id="Rectangle_68-9" d="M0 0h237.516v8.17H0z" class="cls-15" data-name="Rectangle 68" transform="translate(0 72.853)"/>
+                <path id="Rectangle_68-10" d="M0 0h237.516v8.17H0z" class="cls-16" data-name="Rectangle 68" transform="translate(0 81.023)"/>
+                <text id="_0.5907-9" class="cls-17" data-name=".591" transform="translate(44.665 75.519)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_0.5907-10" class="cls-17" data-name=".591" transform="translate(44.665 83.69)">
+                    <tspan x="0" y="0">0.5907</tspan>
+                </text>
+                <text id="_Intercept_5" class="cls-17" data-name="(Intercept)" transform="translate(4.008 76.845)">
+                    <tspan x="0" y="0">(Intercept)</tspan>
+                </text>
+                <text id="Clientnum-5" class="cls-17" data-name="Clientnum" transform="translate(4.008 83.845)">
+                    <tspan x="0" y="0">Clientnum</tspan>
+                </text>
+                <text id="_5.026326-9" class="cls-18" data-name="5.026" transform="translate(81.008 76.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_5.026326-10" class="cls-18" data-name="5.026" transform="translate(81.008 84.845)">
+                    <tspan x="0" y="0">5.026326</tspan>
+                </text>
+                <text id="_0.11752-7" class="cls-18" data-name=".118" transform="translate(116.008 75.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.11752-8" class="cls-18" data-name=".118" transform="translate(116.008 84.845)">
+                    <tspan x="0" y="0">0.11752</tspan>
+                </text>
+                <text id="_0.90645-17" class="cls-18" data-name=".906" transform="translate(156.008 75.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-18" class="cls-18" data-name=".906" transform="translate(197.008 75.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-19" class="cls-18" data-name=".906" transform="translate(156.008 84.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <text id="_0.90645-20" class="cls-18" data-name=".906" transform="translate(197.008 84.845)">
+                    <tspan x="0" y="0">0.90645</tspan>
+                </text>
+                <path id="Rectangle_68-11" d="M0 0h238v8H0z" class="cls-19" data-name="Rectangle 68" transform="translate(.008 -.155)"/>
+                <text id="Estimate" class="cls-18" transform="translate(45.008 4.845)">
+                    <tspan x="0" y="0">Estimate</tspan>
+                </text>
+                <text id="Std.Error" class="cls-20" transform="translate(80.657 2.135)">
+                    <tspan x="0" y="0">Std.Error</tspan>
+                </text>
+                <text id="Z_value" class="cls-20" data-name="Z value" transform="translate(116.607 2.135)">
+                    <tspan x="0" y="0">Z value</tspan>
+                </text>
+                <text id="Pr_z_" class="cls-17" data-name="Pr(&lt;|z|)" transform="translate(156.055 3.135)">
+                    <tspan x="0" y="0">Pr(&lt;|z|)</tspan>
+                </text>
+                <text id="Pr_y_" class="cls-20" data-name="Pr(&lt;|y)" transform="translate(197.996 2.135)">
+                    <tspan x="0" y="0">Pr(&lt;|y)</tspan>
+                </text>
+                <path id="Line_106" d="M0 0v89" class="cls-21" data-name="Line 106" transform="translate(40.008 -.155)"/>
+                <path id="Line_107" d="M0 0v89" class="cls-21" data-name="Line 107" transform="translate(76.008 -.155)"/>
+                <path id="Line_108" d="M0 0v89" class="cls-21" data-name="Line 108" transform="translate(111.008 -.155)"/>
+                <path id="Line_109" d="M0 0v89" class="cls-21" data-name="Line 109" transform="translate(151.008 -.155)"/>
+                <path id="Line_2003" d="M0 0v89" class="cls-21" data-name="Line 2003" transform="translate(193.008 -.155)"/>
+            </g>
+            <g id="Group_6133" data-name="Group 6133" transform="translate(95.344 22.06)">
+                <path id="Line_2167" d="M47.859 12.713L0 0" class="cls-22" data-name="Line 2167"/>
+                <g id="Polygon_1" class="cls-23" data-name="Polygon 1">
+                    <path d="M4.364 3.987H.871L2.617.992l1.747 2.995z" class="cls-37" transform="rotate(106 21.435 24.992)"/>
+                    <path d="M2.617 1.985l-.876 1.502h1.753l-.877-1.502m0-1.985l2.618 4.487H0L2.617 0z" class="cls-39" transform="rotate(106 21.435 24.992)"/>
+                </g>
+            </g>
+        </g>
+        <g id="Group_6139" data-name="Group 6139" transform="translate(796.933 486)">
+            <g id="Group_6090" data-name="Group 6090" transform="translate(0 61.319)">
+                <g id="Group_6081" data-name="Group 6081" transform="translate(8.226 6.73)">
+                    <text id="username_password_incorrect-3" class="cls-24" data-name="username_password_incorrect" transform="translate(6.841 25.806)">
+                        <tspan x="0" y="0">Help Text</tspan>
+                    </text>
+                    <text id="username_password_incorrect-4" class="cls-24" data-name="username_password_incorrect" transform="translate(-.159 4.806)">
+                        <tspan x="0" y="0">Designation_1</tspan>
+                    </text>
+                    <g id="Rectangle_2228-2" class="cls-7" data-name="Rectangle 2228" transform="translate(-.159 13.806)">
+                        <rect width="109" height="22" class="cls-37" rx="3"/>
+                        <rect width="108.4" height="21.4" x=".3" y=".3" class="cls-38" rx="2.7"/>
+                    </g>
+                </g>
+                <g id="Rectangle_2246" class="cls-25" data-name="Rectangle 2246" transform="translate(.067 -.464)">
+                    <rect width="124" height="51" class="cls-37" rx="3"/>
+                    <rect width="123.4" height="50.4" x=".3" y=".3" class="cls-38" rx="2.7"/>
+                </g>
+            </g>
+            <g id="Group_6089" data-name="Group 6089" transform="translate(150.307)">
+                <g class="cls-40" transform="translate(-512.24 -321)">
+                    <path id="Rectangle_2247-2" d="M0 0h67.957v173.17H0z" class="cls-26" data-name="Rectangle 2247" transform="translate(512.24 321)"/>
+                </g>
+                <text id="Input_Type" class="cls-27" data-name="Input Type" transform="translate(5.235 4.534)">
+                    <tspan x="0" y="0">Input Type</tspan>
+                </text>
+                <text id="Option_Type" class="cls-27" data-name="Option Type" transform="translate(5.235 92.026)">
+                    <tspan x="0" y="0">Option Type</tspan>
+                </text>
+                <text id="Link_to_Column_Name" class="cls-28" data-name="Link to Column Name" transform="translate(5.235 124.181)">
+                    <tspan x="0" y="0">Link To Column Name</tspan>
+                </text>
+                <text id="Identifier" class="cls-27" transform="translate(5.235 55.384)">
+                    <tspan x="0" y="0">Identifier</tspan>
+                </text>
+                <text id="Designation_1" class="cls-29" transform="translate(8.226 64.853)">
+                    <tspan x="0" y="0">Designation_1</tspan>
+                </text>
+                <text id="Help_Text_" class="cls-29" data-name="Help Text" transform="translate(8.226 75.322)">
+                    <tspan x="0" y="0">Help Text</tspan>
+                </text>
+                <g id="Group_6083" data-name="Group 6083" transform="translate(4.829 12.898)">
+                    <text id="username_password_incorrect-5" class="cls-30" data-name="username_password_incorrect" transform="translate(8.317 2)">
+                        <tspan x="0" y="0">Drop Down</tspan>
+                    </text>
+                    <path id="ic_radio_button_checked_24px-6" d="M4.081 3.04a1.04 1.04 0 1 0 1.04 1.04 1.041 1.041 0 0 0-1.04-1.04zm0-1.04a2.081 2.081 0 1 0 2.08 2.081A2.081 2.081 0 0 0 4.081 2zm0 3.745a1.665 1.665 0 1 1 1.664-1.664 1.664 1.664 0 0 1-1.664 1.664z" class="cls-12" data-name="ic_radio_button_checked_24px" transform="translate(-2 -1.655)"/>
+                </g>
+                <g id="Group_6084" data-name="Group 6084" transform="translate(4.829 100.172)">
+                    <text id="username_password_incorrect-6" class="cls-30" data-name="username_password_incorrect" transform="translate(8.317 2)">
+                        <tspan x="0" y="0">Dynamic</tspan>
+                    </text>
+                    <path id="ic_radio_button_checked_24px-7" d="M4.081 3.04a1.04 1.04 0 1 0 1.04 1.04 1.041 1.041 0 0 0-1.04-1.04zm0-1.04a2.081 2.081 0 1 0 2.08 2.081A2.081 2.081 0 0 0 4.081 2zm0 3.745a1.665 1.665 0 1 1 1.664-1.664 1.664 1.664 0 0 1-1.664 1.664z" class="cls-12" data-name="ic_radio_button_checked_24px" transform="translate(-2 -1.655)"/>
+                </g>
+                <g id="Group_6085" data-name="Group 6085" transform="translate(4.829 30.146)">
+                    <text id="username_password_incorrect-7" class="cls-31" data-name="username_password_incorrect" transform="translate(8.317 2)">
+                        <tspan x="0" y="0">Text</tspan>
+                    </text>
+                    <path id="ic_radio_button_checked_24px-8" d="M4.081 2a2.081 2.081 0 1 0 2.08 2.081A2.081 2.081 0 0 0 4.081 2zm0 3.745a1.665 1.665 0 1 1 1.664-1.664 1.664 1.664 0 0 1-1.664 1.664z" class="cls-10" data-name="ic_radio_button_checked_24px" transform="translate(-2 -1.655)"/>
+                </g>
+                <g id="Group_6086" data-name="Group 6086" transform="translate(4.829 21.521)">
+                    <text id="username_password_incorrect-8" class="cls-28" data-name="username_password_incorrect" transform="translate(8.317 2)">
+                        <tspan x="0" y="0">Calendar</tspan>
+                    </text>
+                    <path id="ic_radio_button_checked_24px-9" d="M4.081 2a2.081 2.081 0 1 0 2.08 2.081A2.081 2.081 0 0 0 4.081 2zm0 3.745a1.665 1.665 0 1 1 1.664-1.664 1.664 1.664 0 0 1-1.664 1.664z" class="cls-10" data-name="ic_radio_button_checked_24px" transform="translate(-2 -1.655)"/>
+                </g>
+                <g id="Group_6087" data-name="Group 6087" transform="translate(4.829 108.797)">
+                    <text id="username_password_incorrect-9" class="cls-28" data-name="username_password_incorrect" transform="translate(8.317 2)">
+                        <tspan x="0" y="0">Static</tspan>
+                    </text>
+                    <path id="ic_radio_button_checked_24px-10" d="M4.081 2a2.081 2.081 0 1 0 2.08 2.081A2.081 2.081 0 0 0 4.081 2zm0 3.745a1.665 1.665 0 1 1 1.664-1.664 1.664 1.664 0 0 1-1.664 1.664z" class="cls-10" data-name="ic_radio_button_checked_24px" transform="translate(-2 -1.655)"/>
+                </g>
+                <g id="Group_6088" data-name="Group 6088" transform="translate(4.829 38.77)">
+                    <text id="username_password_incorrect-10" class="cls-28" data-name="username_password_incorrect" transform="translate(8.317 2)">
+                        <tspan x="0" y="0">Number</tspan>
+                    </text>
+                    <path id="ic_radio_button_checked_24px-11" d="M4.081 2a2.081 2.081 0 1 0 2.08 2.081A2.081 2.081 0 0 0 4.081 2zm0 3.745a1.665 1.665 0 1 1 1.664-1.664 1.664 1.664 0 0 1-1.664 1.664z" class="cls-10" data-name="ic_radio_button_checked_24px" transform="translate(-2 -1.655)"/>
+                </g>
+                <path id="Line_2163" d="M0 0h68.129" class="cls-32" data-name="Line 2163" transform="translate(0 49.809)"/>
+                <path id="Line_2164" d="M0 0h68.129" class="cls-32" data-name="Line 2164" transform="translate(0 86.719)"/>
+                <text id="Designation_Role" class="cls-33" transform="translate(7.478 133.651)">
+                    <tspan x="0" y="0">Designation_Role</tspan>
+                </text>
+                <path id="ic_keyboard_arrow_down_24px" d="M6.191 8.6l1.2 1.225L8.618 8.6l.171.15-1.394 1.398L6 8.753z" class="cls-14" transform="translate(52.463 124.686)"/>
+                <text id="Extract_Only_Unique_Values" class="cls-34" data-name="Extract Only Unique Values" transform="translate(12.221 163.61)">
+                    <tspan x="0" y="0">Extract Only Unique Values</tspan>
+                </text>
+                <path id="ic_check_box_24px" d="M6.476 3H3.435A.434.434 0 0 0 3 3.435v3.041a.434.434 0 0 0 .435.435h3.041a.434.434 0 0 0 .435-.435V3.435A.434.434 0 0 0 6.476 3zM4.521 6.042L3.435 4.955l.306-.306.78.778L6.17 3.778l.306.309z" class="cls-12" transform="translate(1.829 159.838)"/>
+                <g id="Group_6082" data-name="Group 6082" transform="translate(4.829 141.912)">
+                    <text id="All_Values_of_the_column_will_be_Extracted_by_default_Use_the_option_below_to_enable_disable_unique_value_extraction" class="cls-34" data-name="All Values of the column will be Extracted by default , Use the option below to enable/disable unique value extraction" transform="translate(6.012 1)">
+                        <tspan x="0" y="0">All Values of the column will be</tspan><tspan x="0" y="1">Extracted by default , Use the option </tspan><tspan x="0" y="2">below to enable/disable unique </tspan><tspan x="0" y="3">value extraction</tspan>
+                    </text>
+                    <path id="ic_info_outline_24px" d="M3.708 4.846h.379V3.708h-.379zM3.9 2a1.9 1.9 0 1 0 1.9 1.9A1.9 1.9 0 0 0 3.9 2zm0 3.415A1.518 1.518 0 1 1 5.415 3.9 1.52 1.52 0 0 1 3.9 5.415zm-.19-2.087h.379v-.379h-.381z" class="cls-14" transform="translate(-2 -2)"/>
+                </g>
+                <g id="Rectangle_2251" class="cls-35" data-name="Rectangle 2251" transform="translate(5.235 61.61)">
+                    <rect width="59.076" height="8.226" class="cls-37" rx="2"/>
+                    <rect width="58.776" height="7.926" x=".15" y=".15" class="cls-38" rx="1.85"/>
+                </g>
+                <g id="Rectangle_2252" class="cls-35" data-name="Rectangle 2252" transform="translate(5.235 72.079)">
+                    <rect width="59.076" height="8.226" class="cls-37" rx="2"/>
+                    <rect width="58.776" height="7.926" x=".15" y=".15" class="cls-38" rx="1.85"/>
+                </g>
+                <g id="Rectangle_2253" class="cls-35" data-name="Rectangle 2253" transform="translate(5.235 129.659)">
+                    <rect width="59.076" height="8.226" class="cls-37" rx="2"/>
+                    <rect width="58.776" height="7.926" x=".15" y=".15" class="cls-38" rx="1.85"/>
+                </g>
+            </g>
+            <g id="Group_6138" data-name="Group 6138" transform="rotate(-73 103.45 -48.86)">
+                <path id="Line_2167-2" d="M47.859 12.713L0 0" class="cls-22" data-name="Line 2167"/>
+                <g id="Polygon_1-2" class="cls-23" data-name="Polygon 1">
+                    <path d="M4.364 3.987H.871L2.617.992l1.747 2.995z" class="cls-37" transform="rotate(106 21.435 24.992)"/>
+                    <path d="M2.617 1.985l-.876 1.502h1.753l-.877-1.502m0-1.985l2.618 4.487H0L2.617 0z" class="cls-39" transform="rotate(106 21.435 24.992)"/>
+                </g>
+            </g>
+        </g>
+        <path id="Line_2168" d="M0 0h662.547" class="cls-36" data-name="Line 2168" transform="translate(437.617 339.411)"/>
+        <path id="Line_2169" d="M0 0h662.547" class="cls-36" data-name="Line 2169" transform="translate(437.617 452.328)"/>
+    </g>
+</svg>

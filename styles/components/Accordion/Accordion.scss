@@ -1,0 +1,40 @@
+.ath-accordion {
+  &__card {
+    background-color: var(--bg-2);
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  &__icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    transform: rotate(90deg);
+    margin-left: auto;
+    transition: all 0.2s;
+
+    g {
+      fill: currentColor;
+    }
+
+    &--active {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__icon {
+  }
+
+  &__body {
+  }
+}

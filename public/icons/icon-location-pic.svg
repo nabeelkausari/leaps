@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.977" height="20.965" viewBox="0 0 13.977 20.965">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__pin" transform="translate(-85.333)">
+        <g id="prefix__Group_13987" data-name="Group 13987" transform="translate(85.333)">
+            <g id="prefix__Group_13986" data-name="Group 13986">
+                <path id="prefix__Path_26999" d="M92.321 0a6.989 6.989 0 0 0-6.149 10.309l5.767 10.43a.437.437 0 0 0 .764 0l5.769-10.434A6.989 6.989 0 0 0 92.321 0zm5.385 9.887l-5.385 9.739-5.383-9.736a6.115 6.115 0 1 1 10.768 0z" class="prefix__cls-1" data-name="Path 26999" transform="translate(-85.333)"/>
+                <path id="prefix__Path_27000" d="M174.161 85.333a3.494 3.494 0 1 0 3.494 3.494 3.5 3.5 0 0 0-3.494-3.494zm0 6.115a2.621 2.621 0 1 1 2.621-2.621 2.623 2.623 0 0 1-2.621 2.621z" class="prefix__cls-1" data-name="Path 27000" transform="translate(-167.173 -81.839)"/>
+            </g>
+        </g>
+    </g>
+</svg>

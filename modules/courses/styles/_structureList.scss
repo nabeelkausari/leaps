@@ -1,0 +1,94 @@
+.course-panel{
+  padding-bottom: .1rem;
+  border-radius: .4rem;
+  box-shadow: .1rem .1rem .4rem .4rem rgba(var(--shadow), .2);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-4);
+  cursor: pointer;
+
+  &__course-name-wrapper{
+    padding: 1.2rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: var(--text-tertiary);
+    display: flex;
+    align-items: center;
+  }
+
+  &__modules-structure-wrapper{
+    flex: 1;
+    overflow: auto;
+  }
+
+  &__module-content{
+    margin-bottom: .2rem;
+    border: none;
+
+    .card-header{
+      background-color: var(--bg-2);
+      display: flex;
+      align-items: center;
+      border-bottom: none !important;
+      border-radius: 0;
+      //cursor: pointer;
+    }
+
+    .card-body{
+      padding: 0;
+    }
+  }
+
+  &__back-icon{
+    width: 1.7rem;
+    height: 1.3rem;
+    margin-right: 1.5rem;
+
+    path{
+      fill: currentColor;
+    }
+  }
+
+  &__module-content-title{
+    padding: .5rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 2rem;
+  }
+
+  &__accordion-lock{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  &__accordion-toggle-icon{
+    height: 1.2rem;
+    width: 1.2rem;
+    transition: all .2s;
+    transform: rotate(90deg);
+    margin-left: auto;
+    margin-right: .5rem;
+
+    g{
+      fill: currentColor;
+    }
+
+    &--active{
+      transform: rotate(-90deg);
+    }
+  }
+
+  p{
+    margin-bottom: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

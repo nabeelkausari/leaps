@@ -1,0 +1,40 @@
+@import "courseStructureCards";
+@import "courseContentList";
+@import "addmodule";
+
+.course-creator{
+
+  display: flex;
+  height: 100%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  background-color: var(--bg-1);
+  overflow: hidden;
+
+  &__structure-panel{
+    background-color: var(--bg-1);
+    width: 30%;
+    height: 101%;
+    border-radius: .3rem;
+    padding-bottom: 4rem;
+    color: var(--text-primary);
+    box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.11);
+
+  }
+
+  &__input-board{
+    flex: 1;
+    height: 101%;
+    background-color: var(--bg-1);
+    margin-left: 1rem;
+    padding-bottom: 4rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    color: var(--text-primary);
+    box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.11);
+
+  }
+
+  p{
+    margin: 0;
+  }
+}

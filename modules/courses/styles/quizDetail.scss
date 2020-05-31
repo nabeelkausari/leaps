@@ -1,0 +1,50 @@
+.course-module-content{
+
+  &__quiz-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+
+  &__quiz-instructions-wrapper{
+    padding: 1rem 3rem;
+  }
+
+  &__quiz-instruction-title{
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__quiz-instructions-list{
+    list-style: none;
+  }
+
+  &__quiz-instruction{
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    padding: .5rem;
+
+    &--index{
+      width: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__no-attempts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &--title{
+      font-size: 3rem;
+      margin: 2rem 0 1rem 0;
+    }
+    &--sub-title{
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

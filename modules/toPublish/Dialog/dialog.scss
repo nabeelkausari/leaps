@@ -1,0 +1,134 @@
+.dialog-view {
+  max-width: none !important;
+  &--sm {
+    width: 40% !important;
+  }
+  &--md {
+    width: 60% !important;
+  }
+  &--lg {
+    width: 90% !important;
+  }
+
+  &--edit-profile{
+    width: 65%;
+    height: 95%;
+
+    .modal-content{
+      height: 100% !important;
+    }
+
+    .modal-body{
+      height: 100% !important;
+      max-height: 100% !important;
+    }
+  }
+
+  &--hide-header{
+    .modal-header{
+      display: none !important;
+    }
+  }
+
+  &--hide-footer{
+    .modal-footer{
+      display: none;
+    }
+  }
+
+  .modal-content {
+    width: 100% !important;
+    height: auto;
+    border: none;
+    position: relative;
+  }
+
+  .modal-header {
+    background-color: var(--bg-2);
+    padding: 1rem 2rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-body {
+    max-height: calc(100vh - 15rem);
+    overflow: auto;
+  }
+
+  .modal-footer {
+    border: none;
+    padding: 0 2rem 1rem 2rem;
+    background-color: var(--bg-2);
+
+  }
+
+  .close {
+    font-size: 3rem;
+    font-weight: 300;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    color: var(--text-primary);
+  }
+
+  .modal {
+    &__headings {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    &__subtitle{
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    &__sub-subtitle{
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    &__action-items {
+
+    }
+
+    &__action-btn{
+      &--primary{
+        //margin-right: 3rem;
+      }
+
+      &--secondary{
+        margin-right: 1rem;
+        margin-left: auto;
+      }
+
+      &--centered{
+        margin-right: 4rem;
+        margin-left: unset;
+      }
+    }
+
+    &__footer-wrapper{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      &--centered{
+        justify-content: center;
+        margin-top: unset;
+      }
+    }
+  }
+}
+
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+}

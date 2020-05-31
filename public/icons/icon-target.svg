@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="target_1_" width="44" height="44" data-name="target (1)" viewBox="0 0 44 44">
+    <defs>
+        <style>
+            .target-class{
+            fill:none;
+            stroke:#fff;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+            stroke-miterlimit:10;
+            stroke-width:2px
+            }
+        </style>
+    </defs>
+    <circle id="Ellipse_388" cx="18.828" cy="18.828" r="18.828" class="target-class" data-name="Ellipse 388" transform="translate(3.172 3.172)"/>
+    <path id="Line_2008" d="M0 0h4.345" class="target-class" data-name="Line 2008" transform="translate(1 22)"/>
+    <path id="Line_2009" d="M0 0h4.345" class="target-class" data-name="Line 2009" transform="translate(38.655 22)"/>
+    <path id="Line_2010" d="M0 0h4.345" class="target-class" data-name="Line 2010" transform="translate(26.345 22)"/>
+    <path id="Line_2011" d="M0 0h4.345" class="target-class" data-name="Line 2011" transform="translate(13.31 22)"/>
+    <path id="Line_2012" d="M0 4.345V0" class="target-class" data-name="Line 2012" transform="translate(22 38.655)"/>
+    <path id="Line_2013" d="M0 4.345V0" class="target-class" data-name="Line 2013" transform="translate(22 1)"/>
+    <path id="Line_2014" d="M0 4.345V0" class="target-class" data-name="Line 2014" transform="translate(22 13.31)"/>
+    <path id="Line_2015" d="M0 4.345V0" class="target-class" data-name="Line 2015" transform="translate(22 26.345)"/>
+    <circle id="Ellipse_389" cx="4.345" cy="4.345" r="4.345" class="target-class" data-name="Ellipse 389" transform="translate(17.655 17.655)"/>
+</svg>

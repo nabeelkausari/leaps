@@ -1,0 +1,266 @@
+$base-color: var(--bg-4);
+$base-color-cells: var(--bg-4);
+$base-color-header: var(--bg-3);
+$shine-color: rgba(var(--highlight-secondary-opaque),0.4);
+
+@mixin background-gradient-step{
+  background-image: linear-gradient(90deg, $base-color 0px, $shine-color 40px, $base-color 80px);
+  background-size: 60rem;
+}
+
+
+
+@mixin background-gradient-table{
+  background-image: linear-gradient(90deg, $base-color-cells 0px, $shine-color 40px, $base-color 80px);
+  background-size: 60rem;
+}
+
+@mixin background-gradient-table-head{
+  background-image: linear-gradient(90deg, $base-color-header 0px, $shine-color 40px, $base-color 80px);
+  background-size: 60rem;
+}
+
+@mixin background-gradient-user{
+  background-image: linear-gradient(90deg, $base-color-header 0px, $shine-color 40px, $base-color 80px);
+  background-size: 30rem;
+}
+
+
+.step-skeleton{
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  background-color: var(--bg-3);
+  height: 8rem;
+
+  &__container{
+    flex: 1;
+    width: 100%;
+    position: relative;
+    //display: flex;
+    //align-items: center;
+  }
+
+  &__wrapper{
+    height: 2rem;
+    display: flex;
+
+    span{
+      height: 2rem;
+    }
+
+    &:last-child{
+      margin-top: 1rem;
+    }
+  }
+
+  &__columns, &__functions{
+    @include background-gradient-step;
+    animation: animate-step-lines 1.2s infinite linear;
+    height: 2rem;
+  }
+
+  &__functions{
+    width: 70%;
+  }
+
+  &__columns{
+    width: 100%;
+  }
+}
+
+
+.table-skeleton{
+
+  height: calc(100vh - 20.3rem);
+
+  margin-top: 0.5rem;
+
+  &--1{
+    width: calc(100vw - 32rem);
+  }
+
+  &--2{
+    width: calc(100vw - 4rem);
+  }
+
+  &__header{
+    height: 3.3rem;
+    background-color: var(--bg3);
+  }
+
+  ul{
+    margin: 0;
+  }
+
+
+  &__header-row{
+    display: flex;
+    @include background-gradient-table-head;
+    animation: animate-table-lines 1s infinite linear;
+  }
+
+  &__row-container{
+
+  }
+
+  &__row{
+    display: flex;
+  }
+
+  &__line{
+    width: .1rem;
+    background-color: var(--bg-1);
+
+    &--header{
+      height: 3.3rem;
+    }
+
+    &--body{
+      height: 2.8rem;
+    }
+  }
+
+  &__cell{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    height: 2.5rem;
+    @include background-gradient-table;
+    animation: animate-table-lines 1s infinite linear;
+    background-color: var(--bg4);
+    border-bottom: .1rem solid var(--bg-1);
+
+    &:not(:last-child){
+      border-right: .1rem solid var(--bg-1);
+    }
+
+    &--header{
+      height: 3.3rem;
+      border-bottom: .2rem solid var(--bg-1);
+    }
+  }
+
+
+}
+
+
+.skeleton-index-no__wrapper{
+  @include background-gradient-step;
+  animation: shine-icons 1.6s infinite linear;
+}
+
+
+
+@keyframes animate-step-lines {
+
+  0% {
+    background-position: -10rem;
+  }
+
+  40%, 100%{
+     background-position: 20rem;
+   }
+}
+
+
+@keyframes animate-table-lines {
+
+  0% {
+    background-position: 0rem;
+  }
+
+  70%, 100%{
+    background-position: 35rem;
+  }
+
+  //100% {
+  //
+  //}
+}
+
+
+//parameter skeleton
+.fx-parameter {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 90%;
+  &__skeleton{
+    height: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    @include background-gradient-table;
+    animation: animate-fx-parameter-lines 1s infinite linear;
+    background-color: var(--bg4);
+
+    &--1{
+      width: 15%;
+    }
+    &--2{
+      width: 30%;
+    }
+    &--3{
+      width: 20%;
+    }
+    &--4{
+      width: 15%;
+    }
+  }
+}
+
+
+
+@keyframes animate-fx-parameter-lines {
+
+  0% {
+    background-position: 0rem;
+  }
+
+  70%, 100%{
+    background-position: 20rem;
+  }
+
+  //100% {
+  //
+  //}
+}
+
+
+
+
+
+//user list (share- cases)
+
+.user-list-skeleton{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  &__user{
+    width: 5.5rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    &--image{
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 50%;
+      border: .1rem solid var(--text-secondary);
+      @include background-gradient-user;
+      animation: animate-table-lines 2s infinite linear;
+      background-color: var(--bg-3);
+      margin-bottom: 1rem;
+    }
+
+    &--name{
+      height: 1rem;
+      width: 80%;
+      @include background-gradient-user;
+      animation: animate-table-lines 2s infinite linear;
+      background-color: var(--bg-3);
+    }
+  }
+}

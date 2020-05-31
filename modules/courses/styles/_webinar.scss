@@ -1,0 +1,12 @@
+.course-module-content{
+
+  &__webinar-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__webinar-material{
+    flex: 1;
+  }
+}

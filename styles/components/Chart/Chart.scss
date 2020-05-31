@@ -1,0 +1,12 @@
+.chart-area {
+  height: 46rem;
+  &__loader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__title {
+    font-size: 2rem;
+    color: var(--text-primary);
+  }
+}

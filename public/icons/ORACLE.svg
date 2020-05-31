@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20">
+    <defs>
+        <style>
+            .cls-1090,.cls-3{fill:none}.cls-1090{stroke:#fff;stroke-width:3px}.cls-2{stroke:none}
+        </style>
+    </defs>
+    <g id="ORACLE" class="cls-1090">
+        <rect width="34" height="20" class="cls-2" rx="10"/>
+        <rect width="31" height="17" x="1.5" y="1.5" class="cls-3" rx="8.5"/>
+    </g>
+</svg>

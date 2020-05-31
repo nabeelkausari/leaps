@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.576" height="10.375" viewBox="0 0 11.576 10.375">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#fff}.cls-2{stroke:rgba(0,0,0,0);font-size:3.6px;font-family:Roboto-Medium,Roboto;font-weight:500;letter-spacing:.028em}
+        </style>
+    </defs>
+    <g id="Group_5051" data-name="Group 5051" transform="translate(-1222.813 -96.791)">
+        <g id="loading" transform="translate(1222.812 96.791)">
+            <g id="Group_3458" data-name="Group 3458" transform="translate(1.2)">
+                <path id="Path_824" d="M5.187 12.172A5.187 5.187 0 1 0 0 6.984a.3.3 0 1 0 .593 0 4.592 4.592 0 1 1 .632 2.327.3.3 0 0 0-.511.3 5.212 5.212 0 0 0 4.473 2.561z" class="cls-1" data-name="Path 824" transform="translate(0 -1.797)"/>
+            </g>
+            <g id="Group_3459" data-name="Group 3459" transform="translate(0 3.172)">
+                <path id="Path_825" d="M25.22 13.6a.3.3 0 0 0 .15-.041l1.858-1.1a.3.3 0 1 0-.3-.51l-1.621.957-1.043-1.494a.3.3 0 1 0-.486.339l1.2 1.719a.3.3 0 0 0 .242.13z" class="cls-1" data-name="Path 825" transform="translate(-23.723 -11.292)"/>
+            </g>
+        </g>
+        <text id="All" class="cls-2" transform="translate(1226.11 103.388)">
+            <tspan x="0" y="0">All</tspan>
+        </text>
+    </g>
+</svg>

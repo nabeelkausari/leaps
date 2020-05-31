@@ -1,0 +1,38 @@
+.search-wrapper {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    z-index: 10;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    path {
+      fill: var(--text-primary);
+    }
+  }
+  .form-control {
+    padding: 0 3rem;
+  }
+
+  input,
+  input:active,
+  input:focus,
+  input:hover {
+    height: 3.4rem;
+    font-size: 1.2rem;
+    background-color: var(--bg-1);
+    border: 0.1rem solid var(--text-primary);
+    color: var(--text-primary);
+    border-radius: 0 !important;
+    outline: none !important;
+
+    &::placeholder {
+      color: var(--text-primary);
+      opacity: .5;
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="379.11" height="292.839" viewBox="0 0 379.11 292.839">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;opacity:.133}.cls-2{fill:#868686}.cls-3{fill:#64707d}.cls-4{fill:#efefef}.cls-5{fill:#ccc}.cls-6,.cls-8{fill:#b5b5b5}.cls-7{fill:#f0f0f0}.cls-8{opacity:.526}.cls-9{filter:url(#Rectangle_)}
+        </style>
+        <filter id="Rectangle_" width="379.11" height="292.839" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="10"/>
+            <feFlood flood-opacity=".455"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_3424" data-name="Group 3424" transform="translate(-11411.89 -7414.612)">
+        <g id="Group_3423" data-name="Group 3423" transform="translate(11441.89 7439.612)">
+            <g class="cls-9" transform="translate(-30 -25)">
+                <path id="Rectangle_2" d="M3.711 0H315.4a3.711 3.711 0 0 1 3.711 3.711v225.418a3.711 3.711 0 0 1-3.711 3.711H3.711A3.711 3.711 0 0 1 0 229.129V3.711A3.711 3.711 0 0 1 3.711 0z" class="cls-1" data-name="Rectangle" transform="translate(30 25)"/>
+            </g>
+            <g id="Group_3410" data-name="Group 3410" transform="translate(18.553 186.457)">
+                <path id="Path_801" d="M1.855 0h44.527a1.855 1.855 0 0 1 1.855 1.855V16.7a1.855 1.855 0 0 1-1.855 1.855H1.855A1.855 1.855 0 0 1 0 16.7V1.855A1.855 1.855 0 0 1 1.855 0z" class="cls-2" data-name="Path 801"/>
+                <g id="Group_3398" data-name="Group 3398" transform="translate(55.659)">
+                    <rect id="Rectangle_1770" width="61.225" height="18.553" class="cls-2" data-name="Rectangle 1770" rx="2"/>
+                </g>
+                <g id="Group_3397" data-name="Group 3397" transform="translate(124.305)">
+                    <rect id="Rectangle_1770-2" width="61.225" height="18.553" class="cls-2" data-name="Rectangle 1770" rx="2"/>
+                </g>
+            </g>
+            <path id="Rectangle_1771" d="M0 0h100.969a2 2 0 0 1 2 2v16.408a2 2 0 0 1-2 2H0V0z" class="cls-3" data-name="Rectangle 1771" transform="translate(0 13.347)"/>
+            <ellipse id="Ellipse_359" cx="10.384" cy="10.384" class="cls-4" data-name="Ellipse 359" rx="10.384" ry="10.384" transform="translate(248.636 12.987)"/>
+            <ellipse id="Ellipse_360" cx="10.384" cy="10.384" class="cls-5" data-name="Ellipse 360" rx="10.384" ry="10.384" transform="translate(259.02 12.987)"/>
+            <ellipse id="Ellipse_361" cx="10.384" cy="10.384" class="cls-6" data-name="Ellipse 361" rx="10.384" ry="10.384" transform="translate(269.405 12.987)"/>
+            <path id="Path_809" d="M10.384 0A10.384 10.384 0 1 1 0 10.384 10.384 10.384 0 0 1 10.384 0z" class="cls-7" data-name="Path 809" transform="translate(279.789 12.987)"/>
+            <path id="Rectangle_1787" d="M0 0h268.09v11.132H0z" class="cls-8" data-name="Rectangle 1787" transform="translate(18.655 53.236)"/>
+            <path id="Rectangle_1792" d="M0 0h268.09v11.132H0z" class="cls-8" data-name="Rectangle 1792" transform="translate(18.655 120.026)"/>
+            <path id="Rectangle_1788" d="M0 0h217.997v11.132H0z" class="cls-8" data-name="Rectangle 1788" transform="translate(18.655 72.717)"/>
+            <path id="Rectangle_1791" d="M0 0h217.997v11.132H0z" class="cls-8" data-name="Rectangle 1791" transform="translate(18.655 134.869)"/>
+            <path id="Rectangle_1789" d="M0 0h158.628v11.132H0z" class="cls-8" data-name="Rectangle 1789" transform="translate(18.655 91.269)"/>
+            <path id="Rectangle_1790" d="M0 0h158.628v11.132H0z" class="cls-8" data-name="Rectangle 1790" transform="translate(18.655 148.783)"/>
+            <path id="Rectangle_1793" d="M0 0h158.628v11.132H0z" class="cls-8" data-name="Rectangle 1793" transform="translate(18.655 163.626)"/>
+        </g>
+    </g>
+</svg>

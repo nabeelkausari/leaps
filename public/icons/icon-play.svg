@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.946" height="12.946" viewBox="0 0 12.946 12.946">
+    <defs>
+        <style>
+            .cls-1{fill:#e4e4e4}
+        </style>
+    </defs>
+    <path id="play-button_1_" d="M6.473 12.946a6.473 6.473 0 1 1 6.473-6.473 6.473 6.473 0 0 1-6.473 6.473zM8.71 6.13L5.474 4.107a.4.4 0 0 0-.619.343V8.5a.4.4 0 0 0 .619.343L8.71 6.816a.4.4 0 0 0 0-.686z" class="cls-1" data-name="play-button (1)"/>
+</svg>

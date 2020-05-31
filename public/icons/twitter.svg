@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.946" height="17.439" viewBox="0 0 20.946 17.439">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#302a25;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <path id="twitter" d="M20.946 3A9.882 9.882 0 0 1 18.1 4.386a4.062 4.062 0 0 0-7.126 2.72v.907a9.665 9.665 0 0 1-8.16-4.107s-3.627 8.16 4.533 11.786A10.553 10.553 0 0 1 1 17.505c8.16 4.533 18.133 0 18.133-10.426a4.08 4.08 0 0 0-.073-.753A7 7 0 0 0 20.946 3z" class="cls-1" transform="translate(-.5 -2.425)"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="137.756" viewBox="0 0 123 137.756">
+    <defs>
+        <style>
+            .cls-1{fill:#192e49}.cls-10,.cls-2,.cls-3{fill:#fff}.cls-2{font-size:8px;letter-spacing:-.008em}.cls-10,.cls-2{font-family:Poppins-Regular,Poppins}.cls-3{font-size:48px;font-family:Helvetica-Bold,Helvetica;font-weight:700}.cls-4{font-size:28px}.cls-5,.cls-6{fill:#b90000}.cls-5{font-size:13px;font-family:FiraMono-Regular,Fira Mono}.cls-7{clip-path:url(#clip-path)}.cls-8{fill:none;stroke:#b90000}.cls-9{opacity:.535;fill:url(#linear-gradient)}.cls-10{font-size:5px;opacity:.5}
+        </style>
+        <clipPath id="clip-path">
+            <rect id="Rectangle_2089" width="123" height="74.755" class="cls-1" data-name="Rectangle 2089" rx="2" transform="translate(13280 16549)"/>
+        </clipPath>
+        <linearGradient id="linear-gradient" x1=".513" x2=".516" y2="1.07" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#b22b2b" stop-opacity=".718"/>
+            <stop offset=".315" stop-color="#b22b2b" stop-opacity=".263"/>
+            <stop offset=".665" stop-color="#b22b2b" stop-opacity=".204"/>
+            <stop offset="1" stop-color="#b22b2b" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g id="Group_5338" data-name="Group 5338" transform="translate(-77.11 -597.389)">
+        <text id="Request_Processed" class="cls-2" data-name="Request Processed" transform="translate(91.11 650.389)">
+            <tspan x="0" y="0">Request Processed</tspan>
+        </text>
+        <text id="_32K" class="cls-3" data-name="32K" transform="translate(91.11 634.389)">
+            <tspan x="0" y="0">32</tspan><tspan y="0" class="cls-4">K</tspan>
+        </text>
+        <g id="Group_5298" data-name="Group 5298" transform="translate(5)">
+            <text id="_30_" class="cls-5" data-name="30%" transform="translate(111.11 669.389)">
+                <tspan x="-11.7" y="0">30%</tspan>
+            </text>
+            <path id="Polygon_16" d="M4.5 0L9 8H0z" class="cls-6" data-name="Polygon 16" transform="rotate(180 47.555 334.195)"/>
+        </g>
+        <g id="Mask_Group_13" class="cls-7" data-name="Mask Group 13" transform="translate(-13202.89 -15888.611)">
+            <g id="Group_5297" data-name="Group 5297" transform="translate(13266.816 16573.412)">
+                <path id="Path_13294" d="M12727.609 17075.018l11.786-18.045 12.813 18.158 14.783-23.355 12.444 20.229 27.586-30.48 22.259 22.514 14.6-13.641 18.5 18.762 8.065-9.672 8.436 12.561" class="cls-8" data-name="Path 13294" transform="translate(-12727.609 -17041.523)"/>
+                <path id="Path_13295" d="M12879.168 17072.408l-8.859-12.516-8.056 9.672-18.485-18.762-14.586 13.641-22.095-22.3-27.7 30.264-12.432-20.227-15.05 23.24-12.52-18.043-11.775 18.043v23.621h151.559z" class="cls-9" data-name="Path 13295" transform="translate(-12727.609 -17041.93)"/>
+            </g>
+        </g>
+        <text id="Last_Month" class="cls-10" data-name="Last Month" transform="translate(134.11 670.389)">
+            <tspan x="0" y="0">Last Month</tspan>
+        </text>
+    </g>
+</svg>

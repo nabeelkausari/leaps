@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+    <defs>
+        <style>
+            .cls-1{fill:#efefef}.cls-2{fill:none}.cls-3{fill:#ec5900}
+        </style>
+    </defs>
+    <g id="Group_3347" data-name="Group 3347" transform="translate(-1092 -155)">
+        <circle id="Ellipse_46" cx="35" cy="35" r="35" class="cls-1" data-name="Ellipse 46" transform="translate(1092 155)"/>
+        <g id="_3d" data-name="3d" transform="translate(1111 174)">
+            <path id="Rectangle_2073" d="M0 0h32v32H0z" class="cls-2" data-name="Rectangle 2073"/>
+            <path id="_3d-2" d="M13.776 0L0 7.5v15L13.776 30l13.776-7.5v-15zm10.968 8.007l-10.968 5.971L2.808 8.007l10.968-5.971zM1.869 9.532l10.972 5.973v11.95L1.869 21.482zm12.842 17.924V15.505l10.972-5.973v11.95zm0 0" class="cls-3" data-name="3d" transform="translate(2 1)"/>
+        </g>
+    </g>
+</svg>

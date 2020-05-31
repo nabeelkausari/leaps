@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51.415" height="51.426" viewBox="0 0 51.415 51.426">
+  <g id="icon-pin-active" transform="translate(0.457)">
+    <line id="Line_1" data-name="Line 1" x1="14.277" y2="14.278" transform="translate(0.957 35.734)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_4" data-name="Path 4" d="M15.968,36.463,30.516,51.012c3.585-9-.535-18.15-.535-18.15l13.46-15.823s4.386.7,7.522-1.785L35.708,0A10.242,10.242,0,0,0,33.94,7.607L18.155,21.037A23.518,23.518,0,0,0,.005,20.5Z" transform="translate(-0.005)" fill="#fa9d2a"/>
+    <path id="Path_5" data-name="Path 5" d="M19.653,32.861s.036.084.086.205L7.6,20.93c.133.062.225.107.225.107L23.561,7.651l9.476,9.476Z" transform="translate(10.323 0)" fill="#ffc783"/>
+  </g>
+</svg>

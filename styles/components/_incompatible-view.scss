@@ -1,0 +1,39 @@
+.incompatible-view {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  font-size: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15rem;
+  text-align: center;
+  overflow: hidden;
+
+  .info {
+    color: #888888;
+    margin-top: 10rem;
+    font-size: 7rem;
+  }
+
+  svg {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10rem;
+  }
+
+  &.disabled {
+    display: none;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .incompatible-view  {
+    display: none;
+  }
+}

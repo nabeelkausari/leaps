@@ -2,12 +2,14 @@
   "name": "with-redux-thunk",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "NEXT_PUBLIC_API_GATEWAY_URL=https://devapi.analyttica.com next",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
     "@sentry/browser": "^5.15.5",
+    "axios": "^0.19.2",
     "base-64": "^0.1.0",
     "bluebird": "^3.7.2",
     "bootstrap": "^4.5.0",
@@ -17,19 +19,23 @@
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "query-string": "^6.12.1",
+    "ramda": "^0.27.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.9.0",
     "react-modal": "^3.11.2",
     "react-onclickoutside": "^6.9.0",
     "react-redux": "^7.1.0",
+    "react-spinners": "^0.8.3",
     "react-toastify": "^6.0.5",
     "react-youtube": "^7.11.2",
     "redux": "^4.0.4",
+    "redux-concatenate-reducers": "^1.0.0",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.7",
-    "styled-jsx-plugin-sass": "^1.0.0"
+    "styled-jsx-plugin-sass": "^1.0.0",
+    "swr": "^0.2.2"
   },
   "license": "ISC"
 }

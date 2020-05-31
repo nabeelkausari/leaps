@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10.862" height="6.265" viewBox="0 0 10.862 6.265">
+    <defs>
+        <style>
+            .double-tick-cls-1{fill:#ff9f00}
+        </style>
+    </defs>
+    <path id="ic_done_all_24px" d="M8.627 6.249l-.658-.659-2.962 2.962.659.659zm1.981-.659l-4.942 4.943-1.953-1.948-.659.659 2.611 2.611 5.606-5.606zM.41 9.243l2.611 2.611.659-.654-2.607-2.615z" class="double-tick-cls-1" transform="translate(-.41 -5.59)"/>
+</svg>

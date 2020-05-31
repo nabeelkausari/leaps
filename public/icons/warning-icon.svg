@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53.041" height="53.041" viewBox="0 0 53.041 53.041">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#fba202}
+        </style>
+    </defs>
+    <g id="Group_5100" data-name="Group 5100" transform="translate(-38 -153)">
+        <path id="Rectangle_1799" d="M0 0h53.041v53.041H0z" class="cls-1" data-name="Rectangle 1799" transform="translate(38 153)"/>
+        <path id="ic_error_24px" d="M15.717 2a13.717 13.717 0 1 0 13.717 13.717A13.722 13.722 0 0 0 15.717 2zm1.372 20.575h-2.744v-2.743h2.743zm0-5.487h-2.744v-8.23h2.743z" class="cls-2" transform="translate(49 164)"/>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="close" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .color-class{fill:#f0f0f0}
+        </style>
+    </defs>
+    <g id="Group_5056" data-name="Group 5056">
+        <g id="Group_5055" data-name="Group 5055">
+            <path id="Path_13081" d="M17.787.213a.727.727 0 0 0-1.028 0L.213 16.759a.727.727 0 1 0 1.028 1.028L17.787 1.241a.727.727 0 0 0 0-1.028z" class="color-class" data-name="Path 13081"/>
+        </g>
+    </g>
+    <g id="Group_5058" data-name="Group 5058">
+        <g id="Group_5057" data-name="Group 5057">
+            <path id="Path_13082" d="M17.787 16.76L1.241.214A.727.727 0 0 0 .213 1.242l16.546 16.546a.727.727 0 1 0 1.028-1.028z" class="color-class" data-name="Path 13082" transform="translate(0 -.001)"/>
+        </g>
+    </g>
+</svg>

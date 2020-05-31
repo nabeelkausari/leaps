@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="17" viewBox="0 0 38 17">
+  <defs>
+    <clipPath id="clip-ATH_disable">
+      <rect width="38" height="17"/>
+    </clipPath>
+  </defs>
+  <g id="ATH_disable" data-name="ATH disable" clip-path="url(#clip-ATH_disable)">
+    <g id="Group_6194" data-name="Group 6194" transform="translate(13007 -8681)">
+      <path id="Path_13475" data-name="Path 13475" d="M3973.817,1594.409l3.061-5.091h.043l.64,4.212a19.189,19.189,0,0,1,2.844-.369l-1.151-6.968h-3.462l-6.317,10.659A17.287,17.287,0,0,1,3973.817,1594.409Z" transform="translate(-16972.68 7095.897)" fill="#fff"/>
+      <path id="Path_13479" data-name="Path 13479" d="M3964.568,1608.845h3.409s1.28-5.438,7.847-5.438l.9,5.438h2.909l-.944-5.677C3978.678,1603.168,3967.574,1600.531,3964.568,1608.845Z" transform="translate(-16970.508 7088.56)" fill="#fff"/>
+      <path id="Path_13476" data-name="Path 13476" d="M3965.7,1603.384c6.263-5.08,14.208-3.452,14.208-3.452l.673-1.1.847-1.292c.011.011-9.638-.792-15.728,5.84" transform="translate(-16971.008 7090.885)" fill="#a4a4a4"/>
+      <path id="Path_13478" data-name="Path 13478" d="M4018.041,1604v-4.874h-4.115V1604h-2.684v-11.943h2.684v4.548h4.115v-4.548h2.48V1604Z" transform="translate(-16991.803 7093.302)" fill="#fff"/>
+      <path id="Path_13477" data-name="Path 13477" d="M3996.781,1604v-9.682h-2.932v-2.261h8.638v2.261h-3.058V1604Z" transform="translate(-16983.857 7093.302)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

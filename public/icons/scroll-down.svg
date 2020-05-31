@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="53.059" viewBox="0 0 20 53.059">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path d="M0 0H12.729V7.233H0z" class="prefix__cls-1"/>
+        </clipPath>
+        <style>
+            .prefix__cls-1,.prefix__cls-2{fill:none}.prefix__cls-2{stroke:#fff}.prefix__cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="prefix__Group_10340" data-name="Group 10340" transform="translate(-649 -687)">
+        <g id="prefix__Rectangle_2537" class="prefix__cls-2" data-name="Rectangle 2537" transform="translate(649 687)">
+            <rect width="20" height="36" class="prefix__cls-5" rx="10"/>
+            <rect width="19" height="35" x=".5" y=".5" class="prefix__cls-1" rx="9.5"/>
+        </g>
+        <g id="prefix__Rectangle_2538" class="prefix__cls-2" data-name="Rectangle 2538" transform="translate(657 694)">
+            <rect width="4" height="7" class="prefix__cls-5" rx="2"/>
+            <rect width="3" height="6" x=".5" y=".5" class="prefix__cls-1" rx="1.5"/>
+        </g>
+        <g id="prefix__icon_icon_arrow" data-name="icon/ icon_arrow" transform="translate(652.394 732.826)">
+            <path id="prefix__Path" d="M5.759 6.977a.871.871 0 0 0 .609.256.844.844 0 0 0 .609-.256l5.5-5.5A.865.865 0 0 0 11.251.255L7.233 4.279s-.647.567-.871.567-.862-.567-.862-.567L1.479.255A.865.865 0 0 0 .255 1.479z" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

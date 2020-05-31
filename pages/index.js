@@ -1,0 +1,199 @@
+import React, { Component } from "react";
+import axios from "axios";
+import UpSkill from "../modules/home/components/UpSkill"
+import HowItWorks from "../modules/home/components/HowItWorks"
+import CourseListing from "../modules/home/components/CourseListing";
+// import ApplySkills from "./ApplySkills";
+// import Hackathon from "./Hackathon";
+// import Blogs from "./Blogs";
+// import Webinar from "./Webinar";
+// import Podcast from "./Podcast";
+import Header from "../modules/header/components/Header";
+import MobileHeader from "../modules/header/components/MobileHeader";
+// import CustomerReview from "./CustomerReview";
+import ReactModal from "react-modal";
+import YouTube from "react-youtube";
+import HomeContainer from "../modules/home/containers/home";
+import getStore from "../example/redux/store"
+import {serverRenderClock} from "../example/redux/actions"
+import {getMarketPlaceCourses} from "../modules/courses/redux/actions"
+import {API_GATEWAY_URI, APP_URL} from "../common/api/constants"
+import * as types from "../modules/courses/redux/types"
+import {MARKETPLACE_COURSE_COLLECTION} from "../common/api/media-types"
+
+// import "video-react/styles/scss/video-react.scss";
+
+// import { CloseIcon } from "../../../../common/images";
+// import Footer from "./Footer";
+
+const navigateToHash = () => {
+  const { hash } = window.location;
+  if (hash) {
+    const id = hash.replace("#", "");
+    const element = document.getElementById(id);
+    if (element) element.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+};
+
+class Home extends Component {
+  state = {
+    mobile_display: false,
+    show_video_modal: false
+  };
+
+  componentDidMount() {
+    console.log(this.props)
+    // this.props.getMarketPlaceCourses();
+    // this.props.fetchWebinars();
+    if (window.innerWidth <= 900) {
+      this.setState({ mobile_display: true });
+      this.setGlobalFont();
+      this.disableIncompatibleView();
+    }
+
+    window.showTawk && window.showTawk();
+
+    // navigateToHash();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    const { is_logged_in, profile_loaded, webinars_succeeded } = this.props;
+    // if (
+    //   is_logged_in &&
+    //   profile_loaded &&
+    //   profile_loaded !== prevProps.profile_loaded
+    // ) {
+    //   this.props.getMarketPlaceCourses();
+    //   this.props.fetchWebinars();
+    // }
+
+    // if (
+    //   webinars_succeeded &&
+    //   webinars_succeeded !== prevProps.webinars_succeeded
+    // ) {
+    //   navigateToHash();
+    // }
+  }
+
+  componentWillUnmount() {
+    window.hideTawk && window.hideTawk();
+
+    if (window.innerWidth <= 900) {
+      this.unsetGlobalFont(".695vw");
+      this.enableIncompatibleView();
+    }
+  }
+
+  setGlobalFont = () => {
+    let html_element = document.getElementsByTagName("html")[0];
+    html_element.style.fontSize = "2.5vw";
+    html_element.style.overflow = "hidden";
+  };
+
+  unsetGlobalFont = () => {
+    let html_element = document.getElementsByTagName("html")[0];
+    html_element.style.fontSize = null;
+    html_element.style.overflow = null;
+  };
+
+  disableIncompatibleView = () => {
+    document
+      .getElementsByClassName("incompatible-view")[0]
+      .setAttribute("class", "incompatible-view disabled");
+  };
+
+  enableIncompatibleView = () => {
+    document
+      .getElementsByClassName("incompatible-view")[0]
+      .setAttribute("class", "incompatible-view");
+  };
+
+  handleCloseModal = () => {
+    this.setState({ show_video_modal: false });
+  };
+
+  handleOpenModal = () => {
+    this.setState({ show_video_modal: true });
+  };
+
+  render() {
+    const { courses, courses_loading } = this.props;
+    const { mobile_display } = this.state;
+    return (
+      <div
+        className={`body--scholar shl-home ${mobile_display ? "shl-home--mobile" : ""}`}
+      >
+        {mobile_display ? (
+          <MobileHeader />
+        ) : (
+          <Header />
+        )}
+        <UpSkill
+          mobile_display={mobile_display}
+          handleOpenModal={this.handleOpenModal}
+        />
+        <HowItWorks mobile_display={mobile_display} />
+        <CourseListing
+          {...this.props}
+          course_list={courses}
+          loading={courses_loading}
+          mobile_display={mobile_display}
+        />
+        {/*<ApplySkills mobile_display={mobile_display} />*/}
+        {/*<Hackathon mobile_display={mobile_display} />*/}
+        {/*<Webinar {...this.props} mobile_display={mobile_display} />*/}
+        {/*<Blogs mobile_display={mobile_display} />*/}
+        {/*<Podcast mobile_display={mobile_display} />*/}
+        {/*<CustomerReview mobile_display={mobile_display} />*/}
+        {/*<Footer mobile_display={mobile_display} />*/}
+
+        <ReactModal
+          isOpen={this.state.show_video_modal}
+          onRequestClose={this.handleCloseModal}
+        >
+          <YouTube
+            videoId="OfSNX18Pnew"
+            opts={{
+              height: "100%",
+              width: "100%",
+              playerVars: {
+                autoplay: 1
+              }
+            }}
+          />
+          <button
+            className="no-btn modal-close"
+            onClick={this.handleCloseModal}
+          >
+            <img alt="Close" src="/icons/close.svg"/>
+          </button>
+        </ReactModal>
+      </div>
+    );
+  }
+}
+
+export async function getStaticProps() {
+  const store = getStore();
+  const get_marketplace_courses_default = {
+    href: "/marketplace-courses",
+    accept: MARKETPLACE_COURSE_COLLECTION
+  };
+  const url = "https://devapi.analyttica.com/marketplace-courses";
+  const dummy_url = "https://5ed3c101fffad1001605681f.mockapi.io/marketplace-courses";
+  const res = await fetch(dummy_url)
+  const courses = await res.json()
+  store.dispatch({
+    type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
+    payload: { courses, is_individual_course: false }
+  });
+  console.log("DONE WITH STATIC_PROPS", courses)
+
+  return {
+    props: {
+      courses
+    },
+  }
+}
+
+export default HomeContainer(Home);

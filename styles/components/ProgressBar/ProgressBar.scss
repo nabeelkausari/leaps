@@ -1,0 +1,22 @@
+.ath-progress-bar{
+
+  &__text{
+    margin: .3rem 0 .3rem .3rem;
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+
+  &__wrapper{
+    border-radius: 2rem;
+    background-color: var(--highlight-primary);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  &__active-area{
+    background-color: var(--bg-2);
+    opacity: .9;
+  }
+}

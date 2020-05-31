@@ -1,0 +1,118 @@
+.content-card {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-left: 0.3rem solid transparent;
+  background-color: var(--bg-4);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--bg-3);
+    .content-card__incomplete {
+      background-color: var(--bg-1);
+    }
+  }
+
+  &--1 {
+    padding-left: 2.5rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+
+    &--material {
+      circle,
+      line {
+        stroke: var(--text-primary);
+      }
+    }
+    &--pdf,
+    &--quiz {
+      fill: transparent;
+      path {
+        stroke: var(--text-primary);
+      }
+    }
+    &--apply,
+    &--solve {
+      path {
+        fill: var(--text-primary);
+      }
+    }
+
+    &--video {
+      path {
+        fill: var(--text-primary);
+      }
+      #Path_6 {
+        fill: var(--text-primary);
+      }
+      #Path_8 {
+        fill: var(--text-primary);
+      }
+    }
+
+    &--webinar {
+      rect,
+      line {
+        stroke: var(--text-primary);
+      }
+    }
+  }
+
+  &__title-wrapper {
+    width: 25rem;
+
+    &--locked {
+      width: 22rem;
+    }
+  }
+
+  &__lock-icon {
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__active {
+    border-left: 0.3rem solid var(--highlight-primary);
+    background: var(--bg-1);
+  }
+
+  &__title {
+    font-size: 4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__completion-indicator {
+    margin-right: 3rem;
+    margin-left: 1rem;
+  }
+
+  &__incomplete {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--bg-4);
+  }
+
+  &__complete {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    #prefix__Path_13876 {
+      fill: var(--highlight-primary) !important;
+    }
+  }
+}

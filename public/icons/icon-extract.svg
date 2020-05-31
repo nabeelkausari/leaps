@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.152" height="9.712" viewBox="0 0 9.152 9.712">
+    <defs>
+        <style>
+            .deploy-icon-cls{fill:#f0f0f0}
+        </style>
+    </defs>
+    <g id="zip" transform="translate(-14.769)">
+        <g id="Group_6285" data-name="Group 6285" transform="translate(14.769)">
+            <g id="Group_6284" data-name="Group 6284">
+                <path id="Path_13502" d="M23.869 2.628L21.395.057A.187.187 0 0 0 21.26 0h-3.688a.749.749 0 0 0-.749.748v2.614h-1.494a.561.561 0 0 0-.56.56v2.8a.561.561 0 0 0 .56.56h1.495v1.684a.749.749 0 0 0 .749.747h5.6a.748.748 0 0 0 .749-.746V2.758a.187.187 0 0 0-.053-.13zM21.306.5l2.031 2.111h-2.031zm-5.977 6.411a.187.187 0 0 1-.186-.186v-2.8a.187.187 0 0 1 .186-.186h5.044a.187.187 0 0 1 .186.186v2.8a.187.187 0 0 1-.186.186zm8.219 2.055a.374.374 0 0 1-.375.373h-5.6a.375.375 0 0 1-.375-.373V7.284h3.176a.561.561 0 0 0 .56-.56v-2.8a.561.561 0 0 0-.56-.56H17.2V.748a.375.375 0 0 1 .375-.375h3.361V2.8a.187.187 0 0 0 .187.187h2.428v5.979z" class="deploy-icon-cls" data-name="Path 13502" transform="translate(-14.769)"/>
+            </g>
+        </g>
+        <g id="Group_6287" data-name="Group 6287" transform="translate(17.785 4.559)">
+            <g id="Group_6286" data-name="Group 6286">
+                <path id="Rectangle_2339" d="M0 0h.324v1.604H0z" class="deploy-icon-cls" data-name="Rectangle 2339"/>
+            </g>
+        </g>
+        <g id="Group_6289" data-name="Group 6289" transform="translate(16.287 4.559)">
+            <g id="Group_6288" data-name="Group 6288">
+                <path id="Path_13503" d="M95.2 241.681l.879-1.082v-.252H94.9v.271h.747l-.843 1.041v.292h1.3v-.27z" class="deploy-icon-cls" data-name="Path 13503" transform="translate(-94.809 -240.347)"/>
+            </g>
+        </g>
+        <g id="Group_6291" data-name="Group 6291" transform="translate(18.418 4.559)">
+            <g id="Group_6290" data-name="Group 6290">
+                <path id="Path_13504" d="M208.268 240.528a.421.421 0 0 0-.231-.157 1.886 1.886 0 0 0-.385-.024h-.52v1.6h.324v-.605h.211a1.851 1.851 0 0 0 .336-.023.47.47 0 0 0 .168-.076.439.439 0 0 0 .136-.158.523.523 0 0 0 .054-.248.5.5 0 0 0-.093-.309zm-.277.442a.213.213 0 0 1-.1.079.839.839 0 0 1-.256.025h-.177v-.455h.156a1.561 1.561 0 0 1 .233.011.224.224 0 0 1 .13.071.207.207 0 0 1 .051.144.216.216 0 0 1-.037.125z" class="deploy-icon-cls" data-name="Path 13504" transform="translate(-207.132 -240.347)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3" height="13" viewBox="0 0 3 13">
+    <defs>
+        <style>
+            .dot-icon-cls-1{fill:#a2a2a2}
+        </style>
+    </defs>
+    <g id="Group_6248" data-name="Group 6248" transform="translate(-295 -17)">
+        <circle id="Ellipse_492" cx="1.5" cy="1.5" r="1.5" class="dot-icon-cls-1" data-name="Ellipse 492" transform="translate(295 17)"/>
+        <circle id="Ellipse_493" cx="1.5" cy="1.5" r="1.5" class="dot-icon-cls-1" data-name="Ellipse 493" transform="translate(295 22)"/>
+        <circle id="Ellipse_494" cx="1.5" cy="1.5" r="1.5" class="dot-icon-cls-1" data-name="Ellipse 494" transform="translate(295 27)"/>
+    </g>
+</svg>

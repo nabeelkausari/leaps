@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10.188" height="12" viewBox="0 0 10.188 12">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__paper" transform="translate(-19.549 -11.912)">
+        <path id="prefix__Path_24482" d="M27.375 33.743h-6.946a.881.881 0 0 1-.88-.88v-8.917a.881.881 0 0 1 .88-.88h6.946a.881.881 0 0 1 .88.88v8.917a.881.881 0 0 1-.88.88zm-6.946-10.2a.406.406 0 0 0-.405.405v8.917a.406.406 0 0 0 .405.405h6.946a.406.406 0 0 0 .405-.405v-8.919a.406.406 0 0 0-.405-.405z" class="prefix__cls-1" data-name="Path 24482" transform="translate(0 -9.831)"/>
+        <path id="prefix__Path_24483" d="M47.293 21.709h-.474v-8.917a.406.406 0 0 0-.405-.405h-6.947v-.474h6.946a.881.881 0 0 1 .88.88z" class="prefix__cls-1" data-name="Path 24483" transform="translate(-17.556)"/>
+        <path id="prefix__Path_24484" d="M47.293 21.709h-.474v-8.917a.406.406 0 0 0-.405-.405h-6.947v-.474h6.946a.881.881 0 0 1 .88.88z" class="prefix__cls-1" data-name="Path 24484" transform="translate(-17.556)"/>
+    </g>
+</svg>

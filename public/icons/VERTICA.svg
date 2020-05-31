@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.629" height="29.144" viewBox="0 0 25.629 29.144">
+    <defs>
+        <style>
+            .cls-1,.cls-2090{fill:none;stroke:#fff;stroke-linecap:round}.cls-2{stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="VERTICA" transform="translate(-15534.494 -9745)">
+        <path id="Line_1971" d="M0 12.062V0" class="cls-1" data-name="Line 1971" transform="translate(15543.54 9745.5)"/>
+        <path id="Line_1975" d="M8.041 16.082L0 0" class="cls-2090" data-name="Line 1975" transform="translate(15535.5 9753.54)"/>
+        <path id="Line_1976" d="M0 16.082L8.041 0" class="cls-2090" data-name="Line 1976" transform="translate(15543.54 9753.54)"/>
+        <path id="Line_1974" d="M0 0v12.062" class="cls-1" data-name="Line 1974" transform="translate(15559.623 9761.582)"/>
+        <path id="Line_1972" d="M16.082 0H0" class="cls-1" data-name="Line 1972" transform="translate(15543.54 9745.5)"/>
+        <path id="Line_1973" d="M0 0h16.082" class="cls-1" data-name="Line 1973" transform="translate(15543.54 9773.644)"/>
+    </g>
+</svg>

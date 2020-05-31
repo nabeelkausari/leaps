@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.284" height="15.551" viewBox="0 0 20.284 15.551">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__email_3_" data-name="email (3)" transform="translate(0 -59.733)">
+        <g id="prefix__Group_13973" data-name="Group 13973" transform="translate(0 59.733)">
+            <g id="prefix__Group_13972" data-name="Group 13972">
+                <path id="prefix__Path_26980" d="M19.27 59.733H1.014A1.014 1.014 0 0 0 0 60.747V74.27a1.014 1.014 0 0 0 1.014 1.014H19.27a1.014 1.014 0 0 0 1.014-1.014V60.747a1.014 1.014 0 0 0-1.014-1.014zm.338 14.537a.338.338 0 0 1-.338.338H1.014a.338.338 0 0 1-.338-.338V60.747a.338.338 0 0 1 .338-.338H19.27a.338.338 0 0 1 .338.338V74.27z" class="prefix__cls-1" data-name="Path 26980" transform="translate(0 -59.733)"/>
+                <path id="prefix__Path_26981" d="M51.4 93.866a.338.338 0 0 0-.247.078l-7.8 6.552a.676.676 0 0 1-.87 0l-7.8-6.552a.338.338 0 0 0-.435.518l7.8 6.551a1.351 1.351 0 0 0 1.74 0l7.8-6.551a.338.338 0 0 0-.188-.6z" class="prefix__cls-1" data-name="Path 26981" transform="translate(-32.781 -92.513)"/>
+                <path id="prefix__Path_26982" d="M39.155 272.933a.338.338 0 0 0-.326.1l-4.729 5.076a.338.338 0 1 0 .494.461l4.733-5.071a.338.338 0 0 0-.168-.566z" class="prefix__cls-1" data-name="Path 26982" transform="translate(-32.653 -264.479)"/>
+                <path id="prefix__Path_26983" d="M341.792 273.038a.338.338 0 1 0-.494.461l4.733 5.071a.338.338 0 0 0 .494-.461z" class="prefix__cls-1" data-name="Path 26983" transform="translate(-327.684 -264.479)"/>
+            </g>
+        </g>
+    </g>
+</svg>

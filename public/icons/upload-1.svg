@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.045" height="12.09" viewBox="0 0 13.045 12.09">
+    <defs>
+        <style>
+            .cls-1{fill:#f0f0f0}
+        </style>
+    </defs>
+    <g id="upload_1_" data-name="upload (1)" transform="translate(0 -17.25)">
+        <g id="Group_3463" data-name="Group 3463" transform="translate(0 17.25)">
+            <path id="Path_830" d="M12.671 228.205a.372.372 0 0 0-.374.374v3.4a1.677 1.677 0 0 1-1.675 1.675h-8.2a1.677 1.677 0 0 1-1.675-1.675v-3.455a.374.374 0 1 0-.747 0v3.455a2.425 2.425 0 0 0 2.422 2.421h8.2a2.425 2.425 0 0 0 2.422-2.422v-3.4a.374.374 0 0 0-.373-.373z" class="cls-1" data-name="Path 830" transform="translate(0 -222.311)"/>
+            <path id="Path_831" d="M136.961 20.265l1.739-1.739v7.583a.374.374 0 1 0 .747 0v-7.583l1.739 1.739a.376.376 0 0 0 .263.111.36.36 0 0 0 .263-.111.373.373 0 0 0 0-.529l-2.375-2.375a.378.378 0 0 0-.263-.111.362.362 0 0 0-.263.111l-2.375 2.375a.373.373 0 1 0 .526.529z" class="cls-1" data-name="Path 831" transform="translate(-132.551 -17.25)"/>
+        </g>
+    </g>
+</svg>

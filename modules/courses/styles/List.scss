@@ -1,0 +1,227 @@
+//Course List Page
+
+.list-container {
+  height: 100%;
+  position: relative;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+
+  &__search-wrapper {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search-wrapper--1 {
+    align-self: flex-end;
+  }
+  &__create {
+    &--icon {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__search {
+    width: 30rem;
+    margin-right: 1rem;
+  }
+}
+
+.list-body {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  overflow-x: hidden;
+  padding-right: 1rem;
+
+  &:after {
+    width: 30rem;
+    height: 0;
+    content: "";
+  }
+}
+
+//Course Card
+.course-card {
+  width: 30rem;
+  height: 20rem;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  transition: .5s;
+  background-position: center;
+  box-shadow: 0 0 1rem rgba(var(--shadow), 0.2);
+
+  &:hover {
+    box-shadow: 0 0 2rem rgba(var(--shadow), 0.5);
+    transform: scaleY(1.02);
+
+    .course-card__upper {
+      height: 4rem;
+    }
+
+    .course-card__lower {
+      background-color: rgba(var(--bg-1-rgb), .8);
+      color: var(--text-primary);
+      height: 16rem;
+      -webkit-backdrop-filter: blur(1rem);
+      backdrop-filter: blur(.5rem);
+    }
+
+    .course-card__status {
+      bottom: 0;
+    }
+
+    .simple-progress-wrapper,
+    .simple-progress-wrapper:after {
+      height: 0;
+    }
+  }
+
+  &__upper {
+    height: 13rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    transition: .3s;
+
+    &--buttons {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 4rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin: 0 1rem;
+    }
+  }
+
+  &__edit {
+    position: absolute;
+    top: 0.8rem;
+    right: 2rem;
+    background: var(--bg-1);
+    color: var(--text-primary);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0;
+    min-width: 5rem;
+    text-align: center;
+    &--icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  &__status {
+    bottom: 1.5rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 0;
+    padding: 0.2rem 0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: .3s;
+    color: var(--bg-1);
+
+    &--inactive {
+      background-color: #ffb743;
+    }
+
+    &--active {
+      background-color: #60dd8c;
+    }
+
+    &--coming-soon {
+      background-color: #d95454;
+    }
+  }
+
+  &__lower {
+    height: 10rem;
+    width: 30rem;
+    color: var(--text-primary);
+    background-color: var(--bg-2);
+    flex: 1;
+    transition: .3s;
+    position: relative;
+  }
+
+  &__title {
+    overflow: hidden;
+    height: 6.5rem;
+    padding: 1rem 2rem;
+    &--text {
+      font-size: 1.6rem;
+      line-height: 1.4;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-weight: 400;
+      overflow: hidden;
+    }
+  }
+
+  &__description p {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: .2rem;
+  }
+}
+
+//Course Create Card
+.course-card-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.5rem 0.8rem 0.5rem !important;
+
+  &:hover &__icon {
+    path {
+      fill: var(--text-tertiary);
+    }
+  }
+
+  &:hover {
+    background-color: var(--highlight-primary);
+  }
+
+  &:hover &__text {
+    color: var(--text-secondary);
+  }
+
+  &__icon {
+    height: 2rem;
+    margin-right: 0.5rem;
+    path {
+      fill: var(--highlight-primary);
+    }
+  }
+
+  &__text {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: var(--highlight-primary);
+  }
+}
