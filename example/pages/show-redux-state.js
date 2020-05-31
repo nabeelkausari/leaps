@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import Link from 'next/link'
+import React from "react"
 
 const codeStyle = {
   background: '#ebebeb',

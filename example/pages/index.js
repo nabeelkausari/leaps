@@ -1,8 +1,8 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import Link from 'next/link'
-import getStore from '../store'
-import { startClock, serverRenderClock } from '../actions'
+import getStore from '../redux/store'
+import { startClock, serverRenderClock } from '../redux/actions'
 import Examples from '../components/examples'
 
 const Index = () => {

@@ -7,13 +7,29 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sentry/browser": "^5.15.5",
+    "base-64": "^0.1.0",
+    "bluebird": "^3.7.2",
+    "bootstrap": "^4.5.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
     "next": "latest",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.12.1",
     "react": "^16.9.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.9.0",
+    "react-modal": "^3.11.2",
+    "react-onclickoutside": "^6.9.0",
     "react-redux": "^7.1.0",
+    "react-toastify": "^6.0.5",
+    "react-youtube": "^7.11.2",
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.26.7",
+    "styled-jsx-plugin-sass": "^1.0.0"
   },
   "license": "ISC"
 }

@@ -1,5 +1,5 @@
-import { Component } from 'react'
-import initializeStore from '../store'
+import React, { Component } from 'react'
+import initializeStore from './store'
 
 const __NEXT_REDUX_STORE__ = '__NEXT_REDUX_STORE__'
 
