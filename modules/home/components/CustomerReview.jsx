@@ -1,16 +1,6 @@
 import React, { Component } from "react";
 import CustomerImagesItem from "./CustomerImagesItem";
 
-import {
-  scholar_left_arrow,
-  scholar_right_arrow,
-  shl_person_1,
-  shl_person_2,
-  shl_person_3,
-  shl_person_4,
-  shl_person_5,
-  shl_person_6
-} from "../../../../common/images";
 import CustomerTextItem from "./CustomerTextItem";
 
 class CustomerReview extends Component {
@@ -20,7 +10,7 @@ class CustomerReview extends Component {
 
   items = [
     {
-      image: shl_person_1,
+      image: "/images/shl-person-1.png",
       title:
         "Data Scientist/ Kaggle Master- Working for Financial Services Corporation",
       text:
@@ -30,7 +20,7 @@ class CustomerReview extends Component {
         "India.”"
     },
     {
-      image: shl_person_2,
+      image: "/images/shl-person-2.png",
       title: "Director Analytics- Largest EHR Solution Provider",
       text:
         "“We have been engaged with Analyttica for almost a year and using their experiential analytics\n" +
@@ -43,14 +33,14 @@ class CustomerReview extends Component {
         "realizing business impact faster and better.”"
     },
     {
-      image: shl_person_3,
+      image: "/images/shl-person-3.png",
       title: "Regional Analytics Head- Global Insurance Firm",
       text:
         "“I have test driven ATH myself and would recommend to any entry level or experienced analytical\n" +
         "professional. Congrats to the Analyttica team!”"
     },
     {
-      image: shl_person_4,
+      image: "/images/shl-person-4.png",
       title: "Student - Premier Commerce College",
       text:
         "“It was truly a great learning experience and it helped me a lot to understand how data analytics\n" +
@@ -58,7 +48,7 @@ class CustomerReview extends Component {
         "Thank you once again”"
     },
     {
-      image: shl_person_5,
+      image: "/images/shl-person-5.png",
       title: "Senior Manager- Largest Automobile Manufacturer",
       text:
         "“It was a wonderful mix of theory and practical application of data analytics using case study. I\n " +
@@ -66,7 +56,7 @@ class CustomerReview extends Component {
         "for more courses from Analyttica”"
     },
     {
-      image: shl_person_6,
+      image: "/images/shl-person-6.png",
       title: "Chief Risk Officer- New age financial company",
       text:
         "“My team had a very good experience working with Analyttica. The team was quick to understand\n " +
@@ -135,7 +125,7 @@ class CustomerReview extends Component {
           <div className="shl-home__section-actions-wrapper shl-home__section-actions-wrapper--1 shl-home--justify-centre">
             <span className="shl-home__section-actions-wrapper--sub-1">
               <img
-                src={scholar_left_arrow}
+                src="/icons/scholar-left-arrow.svg"
                 alt="left arrow"
                 className={`shl-home__arrow-icon${
                   mobile_display ? "--mobile shl-home__arrow-icon" : ""
@@ -143,7 +133,7 @@ class CustomerReview extends Component {
                 onClick={() => this.onArrowClick("-")}
               />
               <img
-                src={scholar_right_arrow}
+                src="/icons/scholar-right-arrow.svg"
                 alt="right arrow"
                 className={`shl-home__arrow-icon${
                   mobile_display ? "--mobile shl-home__arrow-icon" : ""

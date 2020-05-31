@@ -135,13 +135,12 @@ class CourseListing extends Component {
 
               <Link
                 href="/courses/all"
-                className={`shl-home--pointer shl-home__section-actions-wrapper--text${
+              >
+                <a className={`shl-home--pointer shl-home__section-actions-wrapper--text${
                   mobile_display
                     ? "--mobile shl-home__section-actions-wrapper--text"
                     : ""
-                }`}
-              >
-                View All
+                }`}>View All</a>
               </Link>
             </div>
           </div>

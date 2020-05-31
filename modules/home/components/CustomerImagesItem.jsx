@@ -63,7 +63,7 @@ class CustomerImagesItem extends Component {
     let display_items = this.getDisplayList(items, active_index);
     return (
       <div className="shl-home__customer-review--images-wrapper">
-        {display_items.map(item => {
+        {display_items.map((item,i) => {
           let image_classname = `shl-home__customer-review--image ${
             mobile_display
               ? "shl-home__customer-review--image--mobile--" + item.size
@@ -71,7 +71,7 @@ class CustomerImagesItem extends Component {
           }`;
 
           return (
-            <img src={item.image} alt="customer" className={image_classname} />
+            <img key={i} src={item.image} alt="customer" className={image_classname} />
           );
         })}
       </div>

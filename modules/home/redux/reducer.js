@@ -24,6 +24,7 @@ export default (state = initialState, { type, payload }) => {
         webinars_succeeded: null
       };
     case types.FETCH_WEBINARS_SUCCEEDED:
+      console.log("FETCH_WEBINARS_SUCCEEDED Called")
       return {
         ...state,
         webinars_loading: false,

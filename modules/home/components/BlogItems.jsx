@@ -1,5 +1,5 @@
 import React from "react";
-import { scholar_right_arrow } from "../../../../common/images/index";
+// import { scholar_right_arrow } from "../../../../common/images/index";
 
 export const MainBlog = props => {
   return (
@@ -27,7 +27,7 @@ export const MainBlog = props => {
           Read More
           <img
             className="shl-home__blog-item--arrow"
-            src={scholar_right_arrow}
+            src="/icons/scholar-right-arrow.svg"
             alt="read more"
           />
         </span>
@@ -61,7 +61,7 @@ export const Blog = props => {
         Read More
         <img
           className="shl-home__blog-item--arrow--1"
-          src={scholar_right_arrow}
+          src="/icons/scholar-right-arrow.svg"
           alt="read more"
         />
       </span>

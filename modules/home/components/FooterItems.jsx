@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
+import Link from "next/link"
 
 export const TabItem = props => {
   return (
@@ -18,9 +18,9 @@ export const TabItem = props => {
 export const HashItem = props => {
   return (
     <div className={`shl-home__footer--tab--${props.type}`}>
-      <HashLink smooth to={props.link} className="shl-home__footer--tab--link">
-        {props.text}
-      </HashLink>
+      <Link href={props.link} >
+        <a className="shl-home__footer--tab--link">{props.text}</a>
+      </Link>
     </div>
   );
 };
@@ -33,7 +33,8 @@ export const FollowItem = props => {
         className="shl-home__footer--sub--link"
         target="_blank"
       >
-        <props.Svg
+        <img
+          src={props.svg}
           className={`shl-home__footer--sub--icon shl-home__footer--sub--icon--${props.type}`}
         />
       </a>

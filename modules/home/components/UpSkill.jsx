@@ -3,7 +3,8 @@ import React, { Component } from "react";
 
 // import { scholar_up_skill } from "../../../../common/images";
 import { Button } from "../../../components/Buttons/Button";
-// import AuthModal from "../../auth/components/shared/AuthModal";
+import AuthModal from "../../auth/components/shared/AuthModal";
+import Link from "next/link"
 // import { ScrollDown } from "../../../../common/images";
 
 class UpSkill extends Component {
@@ -65,57 +66,57 @@ class UpSkill extends Component {
               winning platform ATH Precision
             </p>
             <div className="shl-home__section-actions-wrapper">
-              {/*<div className="shl-home__section-actions-wrapper--1">*/}
-              {/*  <AuthModal*/}
-              {/*    showRegister*/}
-              {/*    Trigger={({ handleClick }) => (*/}
-              {/*      <Button*/}
-              {/*        className={*/}
-              {/*          mobile_display*/}
-              {/*            ? "u-margin-right-small"*/}
-              {/*            : "u-margin-right-medium"*/}
-              {/*        }*/}
-              {/*        onClick={handleClick}*/}
-              {/*        variant="primary"*/}
-              {/*        size={mobile_display ? "lg" : "xl"}*/}
-              {/*      >*/}
-              {/*        Join for Free*/}
-              {/*      </Button>*/}
-              {/*    )}*/}
-              {/*  />*/}
+              <div className="shl-home__section-actions-wrapper--1">
+                <AuthModal
+                  showRegister
+                  Trigger={({ handleClick }) => (
+                    <Button
+                      className={
+                        mobile_display
+                          ? "u-margin-right-small"
+                          : "u-margin-right-medium"
+                      }
+                      onClick={handleClick}
+                      variant="primary"
+                      size={mobile_display ? "lg" : "xl"}
+                    >
+                      Join for Free
+                    </Button>
+                  )}
+                />
 
-              {/*  <p*/}
-              {/*    className={`shl-home__section-action-text ${*/}
-              {/*      mobile_display*/}
-              {/*        ? "u-margin-right-small"*/}
-              {/*        : "u-margin-right-medium"*/}
-              {/*    } `}*/}
-              {/*  >*/}
-              {/*    Product Intro*/}
-              {/*  </p>*/}
+                <p
+                  className={`shl-home__section-action-text ${
+                    mobile_display
+                      ? "u-margin-right-small"
+                      : "u-margin-right-medium"
+                  } `}
+                >
+                  Product Intro
+                </p>
 
-              {/*  <div className="shl-home__play-btn" onClick={handleOpenModal}>*/}
-              {/*    <i*/}
-              {/*      className={`fa fa-play ${*/}
-              {/*        mobile_display*/}
-              {/*          ? "shl-home__play-btn--icon--mobile"*/}
-              {/*          : "shl-home__play-btn--icon"*/}
-              {/*      }`}*/}
-              {/*    />*/}
-              {/*  </div>*/}
-              {/*</div>*/}
-              {/*<AuthModal*/}
-              {/*  Trigger={({ handleClick }) => (*/}
-              {/*    <div className="shl-home__section-actions-wrapper--2">*/}
-              {/*      <p className="shl-home__section-action-text ">*/}
-              {/*        Already registered ?{"  "}*/}
-              {/*        <button className="btn btn-link" onClick={handleClick}>*/}
-              {/*          Sign in*/}
-              {/*        </button>*/}
-              {/*      </p>*/}
-              {/*    </div>*/}
-              {/*  )}*/}
-              {/*/>*/}
+                <div className="shl-home__play-btn" onClick={handleOpenModal}>
+                  <i
+                    className={`fa fa-play ${
+                      mobile_display
+                        ? "shl-home__play-btn--icon--mobile"
+                        : "shl-home__play-btn--icon"
+                    }`}
+                  />
+                </div>
+              </div>
+              <AuthModal
+                Trigger={({ handleClick }) => (
+                  <div className="shl-home__section-actions-wrapper--2">
+                    <p className="shl-home__section-action-text ">
+                      Already registered ?{"  "}
+                      <button className="btn btn-link" onClick={handleClick}>
+                        Sign in
+                      </button>
+                    </p>
+                  </div>
+                )}
+              />
             </div>
           </div>
         </div>
@@ -128,14 +129,11 @@ class UpSkill extends Component {
           />
         </div>
         {!mobile_display && (
-          <div
-            className="shl-home__scroll-down"
-            // smooth
-            // to="/home#scroll-down"
+          <Link
+            href="/#scroll-down"
           >
-            <img src="/icons/scroll-down.svg" className="shl-home__scroll-down--icon"/>
-            {/*<ScrollDown className="shl-home__scroll-down--icon"/>*/}
-          </div>
+            <a className="shl-home__scroll-down"><img src="/icons/scroll-down.svg" className="shl-home__scroll-down--icon"/></a>
+          </Link>
         )}
       </div>
     );

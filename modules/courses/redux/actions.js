@@ -16,14 +16,12 @@ const get_marketplace_courses_default = {
 };
 
 export const getMarketPlaceCourses = () => (dispatch, getState) => {
-  console.log("getMarketPlaceCourses: ENTERED")
 
   const marketplace_course_link = get_marketplace_courses_default;
   removeCourseRef();
   dispatch({ type: types.FETCH_MARKETPLACE_COURSES_REQUESTED });
   fetchLinkAs(marketplace_course_link)
     .then(courses => {
-      console.log("getMarketPlaceCourses: SUCCEEDED")
       dispatch({
         type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
         payload: { courses, is_individual_course: false }

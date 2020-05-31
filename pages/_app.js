@@ -3,6 +3,8 @@ import { Provider } from 'react-redux'
 import App from 'next/app'
 import withReduxStore from "../redux-config/with-redux-store";
 
+import "font-awesome/css/font-awesome.min.css";
+import "video-react/styles/scss/video-react.scss";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../modules/home/styles/home.scss";
 import "../modules/header/styles/header.scss"

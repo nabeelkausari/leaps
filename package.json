@@ -14,7 +14,10 @@
     "bluebird": "^3.7.2",
     "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
+    "font-awesome": "^4.7.0",
     "lodash": "^4.17.15",
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
     "next": "latest",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
@@ -35,7 +38,8 @@
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.7",
     "styled-jsx-plugin-sass": "^1.0.0",
-    "swr": "^0.2.2"
+    "swr": "^0.2.2",
+    "video-react": "^0.14.1"
   },
   "license": "ISC"
 }

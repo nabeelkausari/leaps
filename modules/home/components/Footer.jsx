@@ -1,12 +1,5 @@
 import React, { Component } from "react";
 import { FollowItem, HashItem, TabItem } from "./FooterItems";
-import {
-  Follow_Google,
-  Follow_linkedIn,
-  Follow_Gmail,
-  Follow_FB,
-  Follow_Twitter
-} from "../../../../common/images";
 
 import cx from "classnames";
 
@@ -119,19 +112,19 @@ class Footer extends Component {
           <p className="shl-home__footer--sub--text">Follow Us On</p>
           <div className="shl-home__footer--sub--icons-wrapper">
             <FollowItem
-              Svg={Follow_FB}
+              svg="/icons/follow-fb.svg"
               text="FaceBook"
               type="1"
               link="https://www.facebook.com/AnalytticaTH/"
             />
             <FollowItem
-              Svg={Follow_Twitter}
+              svg="/icons/follow-twitter.svg"
               text="Twitter"
               type="1"
               link="https://twitter.com/Analyttica"
             />
             <FollowItem
-              Svg={Follow_linkedIn}
+              svg="/icons/follow-linkedin.svg"
               text="Linked In"
               type="2"
               link="https://www.linkedin.com/company/analyttica-datalab-pvt-ltd-/"

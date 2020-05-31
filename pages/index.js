@@ -3,14 +3,14 @@ import axios from "axios";
 import UpSkill from "../modules/home/components/UpSkill"
 import HowItWorks from "../modules/home/components/HowItWorks"
 import CourseListing from "../modules/home/components/CourseListing";
-// import ApplySkills from "./ApplySkills";
-// import Hackathon from "./Hackathon";
-// import Blogs from "./Blogs";
-// import Webinar from "./Webinar";
-// import Podcast from "./Podcast";
+import ApplySkills from "../modules/home/components/ApplySkills";
+import Hackathon from "../modules/home/components/Hackathon";
+import Blogs from "../modules/home/components/Blogs";
+import Webinar from "../modules/home/components/Webinar";
+import Podcast from "../modules/home/components/Podcast";
 import Header from "../modules/header/components/Header";
 import MobileHeader from "../modules/header/components/MobileHeader";
-// import CustomerReview from "./CustomerReview";
+import CustomerReview from "../modules/home/components/CustomerReview";
 import ReactModal from "react-modal";
 import YouTube from "react-youtube";
 import HomeContainer from "../modules/home/containers/home";
@@ -21,10 +21,9 @@ import {API_GATEWAY_URI, APP_URL} from "../common/api/constants"
 import * as types from "../modules/courses/redux/types"
 import {MARKETPLACE_COURSE_COLLECTION} from "../common/api/media-types"
 
-// import "video-react/styles/scss/video-react.scss";
-
 // import { CloseIcon } from "../../../../common/images";
-// import Footer from "./Footer";
+import Footer from "../modules/home/components/Footer";
+import {FETCH_WEBINARS_SUCCEEDED} from "../modules/home/redux/types"
 
 const navigateToHash = () => {
   const { hash } = window.location;
@@ -42,7 +41,6 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    console.log(this.props)
     // this.props.getMarketPlaceCourses();
     // this.props.fetchWebinars();
     if (window.innerWidth <= 900) {
@@ -52,6 +50,9 @@ class Home extends Component {
     }
 
     window.showTawk && window.showTawk();
+
+
+
 
     // navigateToHash();
   }
@@ -117,7 +118,7 @@ class Home extends Component {
   };
 
   render() {
-    const { courses, courses_loading } = this.props;
+    const { course_list, courses_loading } = this.props;
     const { mobile_display } = this.state;
     return (
       <div
@@ -135,17 +136,17 @@ class Home extends Component {
         <HowItWorks mobile_display={mobile_display} />
         <CourseListing
           {...this.props}
-          course_list={courses}
+          course_list={course_list}
           loading={courses_loading}
           mobile_display={mobile_display}
         />
-        {/*<ApplySkills mobile_display={mobile_display} />*/}
-        {/*<Hackathon mobile_display={mobile_display} />*/}
-        {/*<Webinar {...this.props} mobile_display={mobile_display} />*/}
-        {/*<Blogs mobile_display={mobile_display} />*/}
-        {/*<Podcast mobile_display={mobile_display} />*/}
-        {/*<CustomerReview mobile_display={mobile_display} />*/}
-        {/*<Footer mobile_display={mobile_display} />*/}
+        <ApplySkills mobile_display={mobile_display} />
+        <Hackathon mobile_display={mobile_display} />
+        <Webinar {...this.props} mobile_display={mobile_display} />
+        <Blogs mobile_display={mobile_display} />
+        <Podcast mobile_display={mobile_display} />
+        <CustomerReview mobile_display={mobile_display} />
+        <Footer mobile_display={mobile_display} />
 
         <ReactModal
           isOpen={this.state.show_video_modal}
@@ -180,20 +181,34 @@ export async function getStaticProps() {
     accept: MARKETPLACE_COURSE_COLLECTION
   };
   const url = "https://devapi.analyttica.com/marketplace-courses";
-  const dummy_url = "https://5ed3c101fffad1001605681f.mockapi.io/marketplace-courses";
-  const res = await fetch(dummy_url)
-  const courses = await res.json()
-  store.dispatch({
-    type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
-    payload: { courses, is_individual_course: false }
-  });
-  console.log("DONE WITH STATIC_PROPS", courses)
+  const dummy_url = "http://www.mocky.io/v2/5ed3e0cd340000650001f518";
+  const courses = await fetch(dummy_url).then(res => res.json())
+
+  const webinars_url = "https://leapsapi.analyttica.com/webinar/user/tenant/webinar";
+  const webinars_url_dummy = "http://www.mocky.io/v2/5ed3dfae340000580001f515";
+  const webinars = await fetch(webinars_url_dummy).then(res => res.json())
+
+
+  store.dispatch(() => dispatch =>
+    dispatch({
+      type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
+      payload: { courses, is_individual_course: false }
+    })())
+
+  store.dispatch(() => dispatch =>
+    dispatch({
+      type: FETCH_WEBINARS_SUCCEEDED,
+      payload: webinars
+    })())
+
 
   return {
     props: {
-      courses
+      course_list: courses,
+      webinars
     },
   }
 }
 
-export default HomeContainer(Home);
+
+export default Home;

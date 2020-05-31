@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Point } from "./Point";
 import { Button } from "../../../components/Buttons/Button";
-import {
-  apply_skills_1,
-  apply_skills_1_mobile,
-  apply_skills_2,
-  apply_skills_2_mobile,
-  apply_skills_3,
-  apply_skills_3_mobile
-} from "../../../../common/images";
+// import {
+//   apply_skills_1,
+//   apply_skills_1_mobile,
+//   apply_skills_2,
+//   apply_skills_2_mobile,
+//   apply_skills_3,
+//   apply_skills_3_mobile
+// } from "../../../../common/images";
 
 let points = [
   {
@@ -37,9 +37,9 @@ class ApplySkills extends Component {
   componentDidMount() {
     setTimeout(() => {
       if (this.props.mobile_display) {
-        this.setState({ current_img: apply_skills_1_mobile });
+        this.setState({ current_img: "/images/scholar-apply-skills-mobile-image.png" });
       } else {
-        this.setState({ current_img: apply_skills_1 });
+        this.setState({ current_img: "/images/scholar-apply-skills-image.png" });
       }
     }, 1000);
   }
@@ -75,11 +75,11 @@ class ApplySkills extends Component {
     const { mobile_display } = this.props;
     switch (id) {
       case 0:
-        return mobile_display ? apply_skills_1_mobile : apply_skills_1;
+        return mobile_display ? "/images/scholar-apply-skills-mobile-image.png" : "/images/scholar-apply-skills-image.png";
       case 1:
-        return mobile_display ? apply_skills_2_mobile : apply_skills_2;
+        return mobile_display ? "/images/apply-skills-2-mobile.png" : "/images/apply-skills-2.png";
       case 2:
-        return mobile_display ? apply_skills_3_mobile : apply_skills_3;
+        return mobile_display ? "/images/apply-skills-3-mobile.png" : "/images/apply-skills-3.png";
     }
   };
 
@@ -131,6 +131,7 @@ class ApplySkills extends Component {
               <Point
                 item={this.getPoint(point, i)}
                 index={i + 1}
+                key={i}
                 apply_skill
                 margin_xl={i === active_index}
                 onClick={this.handleClick}

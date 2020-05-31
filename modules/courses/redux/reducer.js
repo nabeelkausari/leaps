@@ -33,6 +33,7 @@ const CourseReducer = (state = initialState, { type, payload }) => {
         fetch_marketplace_courses_failed: null
       };
     case types.FETCH_MARKETPLACE_COURSES_SUCCEEDED:
+      console.log("FETCH_MARKETPLACE_COURSES_SUCCEEDED CALLED")
       return {
         ...state,
         marketplace_courses_loading: false,

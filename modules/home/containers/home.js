@@ -8,6 +8,7 @@ import { logout } from "../../auth/redux/actions";
 import { enrolWebinar, fetchWebinars, unenrolWebinar } from "../redux/actions";
 
 const mapStateToProps = (state, props) => {
+  console.log("AVAILABLE_STATE: ", state)
   const {
     courses: { list, marketplace_courses_loading },
     auth: { is_logged_in },

@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import {
-  main_blog_image,
-  blog_1,
-  blog_2,
-  blog_3,
-  blog_4,
-  scholar_left_arrow,
-  scholar_right_arrow
-} from "../../../../common/images/index";
+// import {
+//   main_blog_image,
+//   blog_1,
+//   blog_2,
+//   blog_3,
+//   blog_4,
+//   scholar_left_arrow,
+//   scholar_right_arrow
+// } from "../../../../common/images/index";
 import { Blog, MainBlog } from "./BlogItems";
 
 let blogs = [
   {
-    bg_image: main_blog_image,
+    bg_image: "/images/main-blog-image.jpg",
     category: "DATA ANALYTICS",
     title:
       "The Art of Communication in Data Science – through the lens of experience",
@@ -21,21 +21,21 @@ let blogs = [
       "https://www.analyttica.com/the-art-of-communication-in-data-science-through-the-lens-of-experience"
   },
   {
-    bg_image: blog_1,
+    bg_image: "/images/blog-1.png",
     title: "My journey with Text Analytics – From R to ATH",
     author: "Saurabh Singh | Analyst, Client Solutions | Analyttica Datalab",
     link:
       "https://www.analyttica.com/my-journey-with-text-analyttics-from-r-to-ath"
   },
   {
-    bg_image: blog_2,
+    bg_image: "/images/blog-2.png",
     title: "Data Science – Myth Vs Reality",
     author:
       "Nikhil Nene | Principal Analyst, Client Solutions | Analyttica Datalab",
     link: "https://www.analyttica.com/data-science-myth-vs-reality"
   },
   {
-    bg_image: blog_3,
+    bg_image: "/images/blog-3.png",
     title:
       "Gearing up for a career in Data Science? Don’t forget the Intangibles",
     author: "Analyttica Datalab",
@@ -43,7 +43,7 @@ let blogs = [
       "https://www.analyttica.com/gearing-up-for-a-career-in-data-science-dont-forget-the-intangibles/"
   },
   {
-    bg_image: blog_4,
+    bg_image: "/images/blog-4.png",
     title: "Scope and Future of Business Analytics in India",
     author: "Analyttica Datalab",
     link:
@@ -151,7 +151,7 @@ class Blogs extends Component {
             {!mobile_display &&
               blogs
                 .slice(1)
-                .map(blog => <Blog blog={blog} onClick={this.onBlogClick} />)}
+                .map((blog, i) => <Blog key={i} blog={blog} onClick={this.onBlogClick} />)}
 
             {mobile_display &&
               blogs.map(blog => (
@@ -163,7 +163,7 @@ class Blogs extends Component {
             <div className="shl-home__section-actions-wrapper shl-home__section-actions-wrapper--1 shl-home--space-between">
               <span className="shl-home__section-actions-wrapper--sub">
                 <img
-                  src={scholar_left_arrow}
+                  src="/icons/scholar-left-arrow.svg"
                   alt="left arrow"
                   className={`shl-home__arrow-icon${
                     mobile_display ? "--mobile shl-home__arrow-icon" : ""
@@ -171,7 +171,7 @@ class Blogs extends Component {
                   onClick={() => this.onArrowClick("-")}
                 />
                 <img
-                  src={scholar_right_arrow}
+                  src="/icons/scholar-right-arrow.svg"
                   alt="right arrow"
                   className={`shl-home__arrow-icon${
                     mobile_display ? "--mobile shl-home__arrow-icon" : ""

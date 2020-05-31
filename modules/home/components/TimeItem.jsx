@@ -1,5 +1,5 @@
 import cx from "classnames";
-import { TickIcon } from "../../../../common/images";
+// import { TickIcon } from "../../../../common/images";
 import moment from "moment-timezone";
 import React from "react";
 import { CountDown } from "./CountDown";
@@ -31,7 +31,7 @@ export const TimeItem = ({ mobile_display, session, selection, onClick }) => {
             "shl-home__webinar-item--radio--active": enrolled
           })}
         >
-          <TickIcon className="shl-home__webinar-item--tick" />
+          <img alt="tick" src="/icons/icon-tick.svg" className="shl-home__webinar-item--tick" />
         </span>
       ) : (
         <span className="shl-home__webinar-item--radio">&nbsp;</span>

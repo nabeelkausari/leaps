@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Chatbox, ConcentricCircle } from "./PodcastItems";
-import {
-  podcast_cc_1,
-  podcast_cc_2,
-  icon_microphone,
-  podcast_coming_soon
-} from "../../../../common/images";
+// import {
+//   podcast_cc_2,
+//   icon_microphone,
+//   podcast_coming_soon
+// } from "../../../../common/images";
 
 class Podcast extends Component {
   render() {
@@ -35,7 +34,7 @@ class Podcast extends Component {
           </p>
         </div>
         {coming_soon ? (
-          <img alt="Podcasts coming soon" src={podcast_coming_soon} />
+          <img alt="Podcasts coming soon" src="/images/podcasts.svg" />
         ) : (
           <div
             className={`shl-home__podcast${
@@ -44,21 +43,21 @@ class Podcast extends Component {
           >
             <ConcentricCircle
               size={mobile_display ? "large--mobile" : "large"}
-              image={podcast_cc_1}
+              image="/images/podcast-cc-1.png"
               top={mobile_display ? "51%" : "30%"}
               left={mobile_display ? "-21%" : "-10%"}
             />
 
             <ConcentricCircle
               size={mobile_display ? "small--mobile" : "small"}
-              image={icon_microphone}
+              image="/icons/microphone-icon.svg"
               center
               {...this.props}
             />
 
             <ConcentricCircle
               size={mobile_display ? "large--mobile" : "large"}
-              image={podcast_cc_2}
+              image="/images/podcast-cc-2.png"
               top={mobile_display ? "0" : "5%"}
               left={mobile_display ? "72%" : "75%"}
             />
