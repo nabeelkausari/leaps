@@ -6,7 +6,7 @@ import Pluralize from "react-pluralize";
 import CourseTimelineView from "../../modules/courses/components/Details/CourseTimelineView"
 import Loader from "../../components/Loader";
 import { Button } from "../../components/Buttons/Button";
-// import Material from "../modules/material/components/Material";
+import Material from "../../modules/material/components/Material";
 import ProgressBar from "../../components/ProgressBar";
 import AuthModal from "../../modules/auth/components/shared/AuthModal"
 import {useRouter} from "next/router"
@@ -172,12 +172,10 @@ const CourseDetails = props => {
 
           {activeView === 1 ? (
             <div className="course-overview__material">
-              {/*{course && (*/}
-              {/*  <Material*/}
-              {/*    material_link={course._links.material}*/}
-              {/*    course_content*/}
-              {/*  />*/}
-              {/*)}*/}
+              <Material
+                material_link={course._links.material}
+                course_content
+              />
             </div>
           ) : (
             <CourseTimelineView

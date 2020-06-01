@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Button } from "../../../components/Buttons/Button";
-import Editor from "../../../components/Editor/Editor";
 import EditorView from "../../../components/Editor/EditorView";
 
 import MaterialContainer from "../containers/Material";
@@ -96,7 +95,6 @@ class Material extends Component {
 
     const update_link = get(by_uri[material_link.href], "_links.update");
     const show_edit_button = !editing && update_link;
-
     return (
       <div
         className={cx("course-material", {
@@ -144,11 +142,7 @@ class Material extends Component {
             "editor-features-controlled": controlled
           })}
         >
-          {editing ? (
-            <Editor content={content} handleContentChange={this.handleChange} />
-          ) : (
-            <EditorView content={content} />
-          )}
+          <EditorView content={content} />
         </div>
       </div>
     );

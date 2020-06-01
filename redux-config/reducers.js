@@ -12,7 +12,7 @@ import coursesReducer from "../modules/courses/redux/reducer";
 // import solutionsReducer from "../../app/modules/solutions/redux/solutions/reducer";
 // import solutionCreatorReducer from "../../app/modules/solutions/redux/creator/reducer";
 // import solveReducer from "../../app/modules/solve/solve/containers/solve.reducer";
-// import materialReducer from "../../app/modules/material/redux/reducer";
+import materialReducer from "../modules/material/redux/reducer";
 // import notificationReducer from "../../app/modules/notification/redux/reducer";
 import homeReducer from "../modules/home/redux/reducer";
 // import hackathonReducer from "../../app/modules/hackathons/redux/reducer";
@@ -27,7 +27,7 @@ const appReducer = combineReducers({
   // quiz: quizReducer,
   // profile: profileReducer,
   // largeLoan: llaReducer,
-  // material: materialReducer,
+  material: materialReducer,
   // collaborators: collaboratorsReducer,
   // solutions: solutionsReducer,
   // solution_creator: solutionCreatorReducer,
