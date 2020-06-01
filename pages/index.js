@@ -174,7 +174,7 @@ class Home extends Component {
   }
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const store = getStore();
   const get_marketplace_courses_default = {
     href: "/marketplace-courses",
