@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FormControl, InputGroup } from "react-bootstrap";
-import { SearchIcon } from "../../../../common/images";
+// import { SearchIcon } from "../../../../common/images";
 
 export const FormInput = props => {
   const { placeholder, name, onChange, value, type, disabled, ...rest } = props;
@@ -23,7 +23,7 @@ export const SearchInput = props => {
   const { placeholder, name, onChange, value, type, disabled, ...rest } = props;
   return (
     <InputGroup className="search-wrapper">
-      <SearchIcon className="search-wrapper__icon" />
+      {/*<SearchIcon className="search-wrapper__icon" />*/}
       <FormControl
         type={type}
         placeholder={placeholder}

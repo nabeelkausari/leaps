@@ -8,16 +8,10 @@ import Hackathon from "../modules/home/components/Hackathon";
 import Blogs from "../modules/home/components/Blogs";
 import Webinar from "../modules/home/components/Webinar";
 import Podcast from "../modules/home/components/Podcast";
-import Header from "../modules/header/components/Header";
-import MobileHeader from "../modules/header/components/MobileHeader";
 import CustomerReview from "../modules/home/components/CustomerReview";
 import ReactModal from "react-modal";
 import YouTube from "react-youtube";
-import HomeContainer from "../modules/home/containers/home";
 import getStore from "../example/redux/store"
-import {serverRenderClock} from "../example/redux/actions"
-import {getMarketPlaceCourses} from "../modules/courses/redux/actions"
-import {API_GATEWAY_URI, APP_URL} from "../common/api/constants"
 import * as types from "../modules/courses/redux/types"
 import {MARKETPLACE_COURSE_COLLECTION} from "../common/api/media-types"
 
@@ -26,14 +20,6 @@ import Footer from "../modules/home/components/Footer";
 import {FETCH_WEBINARS_SUCCEEDED} from "../modules/home/redux/types"
 import Layout from "../components/Layout"
 
-const navigateToHash = () => {
-  const { hash } = window.location;
-  if (hash) {
-    const id = hash.replace("#", "");
-    const element = document.getElementById(id);
-    if (element) element.scrollIntoView({ block: "start", behavior: "smooth" });
-  }
-};
 
 class Home extends Component {
   state = {
@@ -42,8 +28,6 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    // this.props.getMarketPlaceCourses();
-    // this.props.fetchWebinars();
     if (window.innerWidth <= 900) {
       this.setState({ mobile_display: true });
       this.setGlobalFont();
@@ -178,11 +162,11 @@ export async function getServerSideProps() {
   };
   const url = "https://devapi.analyttica.com/marketplace-courses";
   const dummy_url = "http://www.mocky.io/v2/5ed3e0cd340000650001f518";
-  const courses = await fetch(url).then(res => res.json())
+  const courses = await fetch(dummy_url).then(res => res.json())
 
   const webinars_url = "https://devapi.analyttica.com/webinar/user/tenant/webinar";
   const webinars_url_dummy = "http://www.mocky.io/v2/5ed3dfae340000580001f515";
-  const webinars = await fetch(webinars_url).then(res => res.json())
+  const webinars = await fetch(webinars_url_dummy).then(res => res.json())
 
 
   store.dispatch(() => dispatch =>

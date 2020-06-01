@@ -20,7 +20,7 @@ class Header extends Component {
             <Link href={"/"}>
               <img
                 src="/logos/leaps.svg"
-                style={{ height: "3rem" }}
+                style={{ height: "2.5rem", cursor: "pointer" }}
                 className="ath-logo"
                 alt="logo"
               />

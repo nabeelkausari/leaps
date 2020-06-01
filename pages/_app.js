@@ -11,8 +11,8 @@ import "../modules/header/styles/header.scss"
 import "../modules/courses/styles/List.scss"
 import "../modules/cases/styles/List.scss"
 import "../modules/cases/styles/Layout.scss"
-import "../styles/main.scss";
 import "../styles/branding.scss";
+import "../styles/main.scss";
 
 class MyApp extends App {
   render() {
