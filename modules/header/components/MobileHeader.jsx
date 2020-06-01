@@ -37,8 +37,8 @@ class MobileHeader extends Component {
 
     return (
       <div className="mobile-header">
-        <Link exact href={"/"}>
-          <img src="/images/logos/leaps.svg" className="ath-logo" alt="logo" />
+        <Link href={"/"}>
+          <img src="/logos/leaps.svg" className="ath-logo" alt="logo" />
         </Link>
 
         <i
@@ -65,32 +65,26 @@ class MobileHeader extends Component {
               })}
             >
               <Link
-                exact
                 href={"/courses"}
-                className="mobile-header__menu-link"
               >
-                Learn
+                <a className="mobile-header__menu-link">Learn</a>
               </Link>
               <Link
-                exact
                 href={"/sample_cases?type=all"}
-                className="mobile-header__menu-link"
               >
-                Apply
+                <a className="mobile-header__menu-link">Apply</a>
               </Link>
               <Link
-                exact
                 href={"/hackathons"}
-                className="mobile-header__menu-link"
+
               >
-                Solve
+                <a className="mobile-header__menu-link">Solve</a>
               </Link>
 
               <Link
                 href={"/covid-analysis"}
-                className="mobile-header__menu-link"
               >
-                Covid Analysis
+                <a className="mobile-header__menu-link">Covid Analysis</a>
               </Link>
 
               <AuthModal

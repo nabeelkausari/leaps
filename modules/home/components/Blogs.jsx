@@ -154,8 +154,8 @@ class Blogs extends Component {
                 .map((blog, i) => <Blog key={i} blog={blog} onClick={this.onBlogClick} />)}
 
             {mobile_display &&
-              blogs.map(blog => (
-                <Blog blog={blog} {...this.props} onClick={this.onBlogClick} />
+              blogs.map((blog, i) => (
+                <Blog key={i} blog={blog} {...this.props} onClick={this.onBlogClick} />
               ))}
           </div>
 

@@ -157,9 +157,9 @@ class CourseListing extends Component {
             >
               {!loading ? (
                 course_list.length > 0 &&
-                course_list.map(item => (
+                course_list.map((item, i) => (
                   <CourseCard
-                    key={item.url_code}
+                    key={i}
                     course={item}
                     available={IsAvailableCourse(item)}
                     inactive={IsInActiveCourse(item)}

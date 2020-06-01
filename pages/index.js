@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import fetch from "node-fetch";
 import UpSkill from "../modules/home/components/UpSkill"
 import HowItWorks from "../modules/home/components/HowItWorks"
@@ -12,6 +12,7 @@ import CustomerReview from "../modules/home/components/CustomerReview";
 import ReactModal from "react-modal";
 import YouTube from "react-youtube";
 import * as types from "../modules/courses/redux/types"
+import { setGlobalFont, disableIncompatibleView, enableIncompatibleView, unsetGlobalFont } from "../common/utils/home.utils"
 
 // import { CloseIcon } from "../../../../common/images";
 import Footer from "../modules/home/components/Footer";
@@ -19,116 +20,84 @@ import {FETCH_WEBINARS_SUCCEEDED} from "../modules/home/redux/types"
 import Layout from "../components/Layout"
 import {initializeStore} from "../redux-config/store"
 import {API_GATEWAY_URI} from "../common/api/constants"
+import {useSelector} from "react-redux"
 
+const Home = () => {
+  const [mobileDisplay, setMobileDisplay] = useState(null);
+  const [showVideoModal, setShowVideoModal] = useState(false);
+  const { list: course_list, courses_loading, ...course_props } = useSelector(state => state.courses);
+  const { webinars } = useSelector(state => state.home);
 
-class Home extends Component {
-  state = {
-    mobile_display: false,
-    show_video_modal: false
+  const handleCloseModal = () => {
+    setShowVideoModal(false);
   };
 
-  componentDidMount() {
-    if (window.innerWidth <= 900) {
-      this.setState({ mobile_display: true });
-      this.setGlobalFont();
-      this.disableIncompatibleView();
-    }
+  const handleOpenModal = () => {
+    setShowVideoModal(true);
+  };
 
-    window.showTawk && window.showTawk();
+  if (typeof window !== "undefined") {
+    useEffect(() => {
+      if (window.innerWidth <= 900) {
+        setMobileDisplay(true);
+        setGlobalFont();
+        disableIncompatibleView();
+      }
+      return () => {
+        if (window.innerWidth <= 900) {
+          unsetGlobalFont(".695vw");
+          enableIncompatibleView();
+        }
+      }
+    }, [window.innerWidth])
   }
 
+  return (
+    <Layout
+      className={`shl-home ${mobileDisplay ? "shl-home--mobile" : ""}`}
+    >
+      <UpSkill
+        mobile_display={mobileDisplay}
+        handleOpenModal={handleOpenModal}
+      />
+      <HowItWorks mobile_display={mobileDisplay} />
+      <CourseListing
+        {...course_props}
+        course_list={course_list}
+        loading={courses_loading}
+        mobile_display={mobileDisplay}
+      />
+      <ApplySkills mobile_display={mobileDisplay} />
+      <Hackathon mobile_display={mobileDisplay} />
+      <Webinar webinars={webinars} mobile_display={mobileDisplay} />
+      <Blogs mobile_display={mobileDisplay} />
+      <Podcast mobile_display={mobileDisplay} />
+      <CustomerReview mobile_display={mobileDisplay} />
+      <Footer mobile_display={mobileDisplay} />
 
-  componentWillUnmount() {
-    window.hideTawk && window.hideTawk();
-
-    if (window.innerWidth <= 900) {
-      this.unsetGlobalFont(".695vw");
-      this.enableIncompatibleView();
-    }
-  }
-
-  setGlobalFont = () => {
-    let html_element = document.getElementsByTagName("html")[0];
-    html_element.style.fontSize = "2.5vw";
-    html_element.style.overflow = "hidden";
-  };
-
-  unsetGlobalFont = () => {
-    let html_element = document.getElementsByTagName("html")[0];
-    html_element.style.fontSize = null;
-    html_element.style.overflow = null;
-  };
-
-  disableIncompatibleView = () => {
-    document
-      .getElementsByClassName("incompatible-view")[0]
-      .setAttribute("class", "incompatible-view disabled");
-  };
-
-  enableIncompatibleView = () => {
-    document
-      .getElementsByClassName("incompatible-view")[0]
-      .setAttribute("class", "incompatible-view");
-  };
-
-  handleCloseModal = () => {
-    this.setState({ show_video_modal: false });
-  };
-
-  handleOpenModal = () => {
-    this.setState({ show_video_modal: true });
-  };
-
-  render() {
-    const { course_list, courses_loading } = this.props;
-    const { mobile_display } = this.state;
-    return (
-      <Layout
-        className={`shl-home ${mobile_display ? "shl-home--mobile" : ""}`}
+      <ReactModal
+        isOpen={showVideoModal}
+        onRequestClose={handleCloseModal}
       >
-        <UpSkill
-          mobile_display={mobile_display}
-          handleOpenModal={this.handleOpenModal}
+        <YouTube
+          videoId="OfSNX18Pnew"
+          opts={{
+            height: "100%",
+            width: "100%",
+            playerVars: {
+              autoplay: 1
+            }
+          }}
         />
-        <HowItWorks mobile_display={mobile_display} />
-        <CourseListing
-          {...this.props}
-          course_list={course_list}
-          loading={courses_loading}
-          mobile_display={mobile_display}
-        />
-        <ApplySkills mobile_display={mobile_display} />
-        <Hackathon mobile_display={mobile_display} />
-        <Webinar {...this.props} mobile_display={mobile_display} />
-        <Blogs mobile_display={mobile_display} />
-        <Podcast mobile_display={mobile_display} />
-        <CustomerReview mobile_display={mobile_display} />
-        <Footer mobile_display={mobile_display} />
-
-        <ReactModal
-          isOpen={this.state.show_video_modal}
-          onRequestClose={this.handleCloseModal}
+        <button
+          className="no-btn modal-close"
+          onClick={handleCloseModal}
         >
-          <YouTube
-            videoId="OfSNX18Pnew"
-            opts={{
-              height: "100%",
-              width: "100%",
-              playerVars: {
-                autoplay: 1
-              }
-            }}
-          />
-          <button
-            className="no-btn modal-close"
-            onClick={this.handleCloseModal}
-          >
-            <img alt="Close" src="/icons/close.svg"/>
-          </button>
-        </ReactModal>
-      </Layout>
-    );
-  }
+          <img alt="Close" src="/icons/close.svg"/>
+        </button>
+      </ReactModal>
+    </Layout>
+  );
 }
 
 export async function getServerSideProps() {
