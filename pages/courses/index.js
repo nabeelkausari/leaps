@@ -1,17 +1,17 @@
 import React from "react";
-import nodeFetch from "node-fetch";
+import fetch from "node-fetch";
 import { useRouter } from "next/router"
-import Layout from "../components/Layout";
-import ListLayout from "../components/ListLayout";
-import CourseListView from "../modules/courses/components/List/CourseListView"
+import {useDispatch, useSelector} from "react-redux"
+import Layout from "../../components/Layout";
+import ListLayout from "../../components/ListLayout";
+import CourseListView from "../../modules/courses/components/List/CourseListView"
 import {
   IsAvailableCourse,
   IsComingSoonCourse
-} from "../modules/courses/components/Shared/logic";
-import getStore from "../example/redux/store"
-import {MARKETPLACE_COURSE_COLLECTION} from "../common/api/media-types"
-import * as types from "../modules/courses/redux/types"
-import {FETCH_WEBINARS_SUCCEEDED} from "../modules/home/redux/types"
+} from "../../modules/courses/components/Shared/logic";
+import * as types from "../../modules/courses/redux/types"
+import {initializeStore} from "../../redux-config/store"
+import {API_GATEWAY_URI} from "../../common/api/constants"
 
 const categories = [
   {
@@ -58,13 +58,12 @@ const getCoursesList = props => {
 
 const CourseList = props => {
   const router = useRouter();
-  const showCourseDetails = course_code => {
-    router.push(`/courses/overview/${course_code}`);
-    // this.props.selectMarketPlaceCourse(course_code);
+  const course_list = useSelector(state => state.courses);
+  const showCourseDetails = course => {
+    router.push(`/courses/[course]`, `/courses/${course}`);
   };
 
-  const courses = getCoursesList(props);
-
+  const courses = getCoursesList(course_list);
 
   return (
     <Layout>
@@ -79,28 +78,25 @@ const CourseList = props => {
 }
 
 export async function getServerSideProps() {
-  const store = getStore();
-  const get_marketplace_courses_default = {
-    href: "/marketplace-courses",
-    accept: MARKETPLACE_COURSE_COLLECTION
-  };
-  const url = "https://devapi.analyttica.com/marketplace-courses";
-  const dummy_url = "http://www.mocky.io/v2/5ed3e0cd340000650001f518";
-  const res = await nodeFetch(dummy_url);
-  const courses = await res.json();
+  const reduxStore = initializeStore()
+  const { dispatch } = reduxStore
 
-  const dispatchCourses = () => dispatch =>
-    dispatch({
-      type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
-      payload: { courses, is_individual_course: false }
-    });
 
-  store.dispatch(dispatchCourses())
+  const url = `${API_GATEWAY_URI}/marketplace-courses`;
+  const options = {
+    headers: {
+      'Connection': 'keep-alive',
+    }
+  }
+  const courses = await fetch(url, options).then(res => res.json())
+
+  dispatch({
+    type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
+    payload: { courses, is_individual_course: false }
+  });
 
   return {
-    props: {
-      list: courses,
-    },
+    props: { initialReduxState: reduxStore.getState() },
   }
 }
 

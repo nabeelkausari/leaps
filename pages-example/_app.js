@@ -1,8 +1,8 @@
 import React from "react"
 import { Provider } from 'react-redux'
 import App from 'next/app'
-import withReduxStore from '../../redux-config/with-redux-store'
-import "../components/clock.scss";
+import withReduxStore from '../redux-config/with-redux-store'
+import "../example/components/clock.scss";
 
 class MyApp extends App {
   render() {

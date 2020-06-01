@@ -1,0 +1,41 @@
+.course-material{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  //padding-bottom: 5rem;
+
+  &--course-content{
+    padding: 2rem;
+    .course-material__actions-wrapper{
+      padding: 0 !important;
+    }
+  }
+
+  &__actions-wrapper{
+    display: flex;
+    padding: 1rem 0 0 0;
+    margin-bottom: 2rem;
+  }
+
+  &__editor-wrapper{
+    height: 100%;
+    //padding: 1rem 0;
+    padding-bottom: 2rem;
+    overflow: auto;
+  }
+
+  &__btn{
+
+    &--edit{
+
+    }
+
+    &--save{
+      margin-left: auto;
+    }
+
+    &--cancel{
+
+    }
+  }
+}

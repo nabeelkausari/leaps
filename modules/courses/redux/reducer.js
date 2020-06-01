@@ -1,10 +1,9 @@
 import { groupBy, map } from "ramda";
-// import { combineReducers } from "redux";
+import { combineReducers } from "redux";
 import * as types from "./types";
 import { byUri } from "../../../common/utils/byUri";
-// import ModulesReducer from "../modules/courseModules/redux/reducer";
-// import CreateReducer from "../modules/create/redux/reducer";
-// import concatenateReducers from "redux-concatenate-reducers/src";
+import ModulesReducer from "../modules/courseModules/redux/reducer";
+import concatenateReducers from "redux-concatenate-reducers";
 
 const byCourseCode = courses =>
   map(
@@ -19,7 +18,8 @@ const initialState = {
   selected_course_reference: null,
   marketplace_courses_loading: null,
   fetch_marketplace_courses_succeeded: null,
-  individual_course_loaded: null
+  individual_course_loaded: null,
+  single_course: null
 };
 
 const CourseReducer = (state = initialState, { type, payload }) => {
@@ -33,7 +33,6 @@ const CourseReducer = (state = initialState, { type, payload }) => {
         fetch_marketplace_courses_failed: null
       };
     case types.FETCH_MARKETPLACE_COURSES_SUCCEEDED:
-      console.log("FETCH_MARKETPLACE_COURSES_SUCCEEDED CALLED")
       return {
         ...state,
         marketplace_courses_loading: false,
@@ -60,6 +59,12 @@ const CourseReducer = (state = initialState, { type, payload }) => {
         selected_course_reference: payload
       };
 
+    case types.FETCH_SINGLE_COURSE_SUCCEEDED:
+      return {
+        ...state,
+        single_course: payload
+      };
+
     case types.UPDATE_COURSE:
       const items = [...state.list]
         .filter(item => item.course_id !== payload.course_id)
@@ -76,4 +81,10 @@ const CourseReducer = (state = initialState, { type, payload }) => {
   }
 };
 
-export default CourseReducer;
+export default concatenateReducers([
+  CourseReducer,
+  combineReducers({
+    modules: ModulesReducer
+  })
+]);
+

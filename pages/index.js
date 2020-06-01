@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+import fetch from "node-fetch";
 import UpSkill from "../modules/home/components/UpSkill"
 import HowItWorks from "../modules/home/components/HowItWorks"
 import CourseListing from "../modules/home/components/CourseListing";
@@ -11,14 +11,14 @@ import Podcast from "../modules/home/components/Podcast";
 import CustomerReview from "../modules/home/components/CustomerReview";
 import ReactModal from "react-modal";
 import YouTube from "react-youtube";
-import getStore from "../example/redux/store"
 import * as types from "../modules/courses/redux/types"
-import {MARKETPLACE_COURSE_COLLECTION} from "../common/api/media-types"
 
 // import { CloseIcon } from "../../../../common/images";
 import Footer from "../modules/home/components/Footer";
 import {FETCH_WEBINARS_SUCCEEDED} from "../modules/home/redux/types"
 import Layout from "../components/Layout"
+import {initializeStore} from "../redux-config/store"
+import {API_GATEWAY_URI} from "../common/api/constants"
 
 
 class Home extends Component {
@@ -35,31 +35,8 @@ class Home extends Component {
     }
 
     window.showTawk && window.showTawk();
-
-
-
-
-    // navigateToHash();
   }
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    const { is_logged_in, profile_loaded, webinars_succeeded } = this.props;
-    // if (
-    //   is_logged_in &&
-    //   profile_loaded &&
-    //   profile_loaded !== prevProps.profile_loaded
-    // ) {
-    //   this.props.getMarketPlaceCourses();
-    //   this.props.fetchWebinars();
-    // }
-
-    // if (
-    //   webinars_succeeded &&
-    //   webinars_succeeded !== prevProps.webinars_succeeded
-    // ) {
-    //   navigateToHash();
-    // }
-  }
 
   componentWillUnmount() {
     window.hideTawk && window.hideTawk();
@@ -155,38 +132,31 @@ class Home extends Component {
 }
 
 export async function getServerSideProps() {
-  const store = getStore();
-  const get_marketplace_courses_default = {
-    href: "/marketplace-courses",
-    accept: MARKETPLACE_COURSE_COLLECTION
-  };
-  const url = "https://devapi.analyttica.com/marketplace-courses";
-  const dummy_url = "http://www.mocky.io/v2/5ed3e0cd340000650001f518";
-  const courses = await fetch(dummy_url).then(res => res.json())
+  const reduxStore = initializeStore()
+  const { dispatch } = reduxStore
 
-  const webinars_url = "https://devapi.analyttica.com/webinar/user/tenant/webinar";
-  const webinars_url_dummy = "http://www.mocky.io/v2/5ed3dfae340000580001f515";
-  const webinars = await fetch(webinars_url_dummy).then(res => res.json())
+  const courses_url = `${API_GATEWAY_URI}/marketplace-courses`;
+  const webinars_url = `${API_GATEWAY_URI}/webinar/user/tenant/webinar`;
+  const options = {
+    headers: {
+      'Connection': 'keep-alive',
+    }
+  }
+  const courses = await fetch(courses_url, options).then(res => res.json())
+  const webinars = await fetch(webinars_url, options).then(res => res.json())
 
+  dispatch({
+    type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
+    payload: { courses, is_individual_course: false }
+  });
 
-  store.dispatch(() => dispatch =>
-    dispatch({
-      type: types.FETCH_MARKETPLACE_COURSES_SUCCEEDED,
-      payload: { courses, is_individual_course: false }
-    })())
-
-  store.dispatch(() => dispatch =>
-    dispatch({
-      type: FETCH_WEBINARS_SUCCEEDED,
-      payload: webinars
-    })())
-
+  dispatch({
+    type: FETCH_WEBINARS_SUCCEEDED,
+    payload: webinars
+  });
 
   return {
-    props: {
-      course_list: courses,
-      webinars
-    },
+    props: { initialReduxState: reduxStore.getState() },
   }
 }
 

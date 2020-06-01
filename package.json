@@ -2,6 +2,7 @@
   "name": "with-redux-thunk",
   "version": "1.0.0",
   "scripts": {
+    "debug": "NODE_OPTIONS='--inspect' NEXT_PUBLIC_API_GATEWAY_URL=https://devapi.analyttica.com next",
     "dev": "NEXT_PUBLIC_API_GATEWAY_URL=https://devapi.analyttica.com next",
     "build": "next build",
     "start": "next start"
@@ -14,6 +15,7 @@
     "bluebird": "^3.7.2",
     "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.15",
     "moment": "^2.26.0",
@@ -29,9 +31,11 @@
     "react-dom": "^16.9.0",
     "react-modal": "^3.11.2",
     "react-onclickoutside": "^6.9.0",
+    "react-pluralize": "^1.6.3",
     "react-redux": "^7.1.0",
     "react-spinners": "^0.8.3",
     "react-toastify": "^6.0.5",
+    "react-vertical-timeline-component": "^3.0.0",
     "react-youtube": "^7.11.2",
     "redux": "^4.0.4",
     "redux-concatenate-reducers": "^1.0.0",
