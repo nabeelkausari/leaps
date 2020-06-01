@@ -4,7 +4,7 @@
   "scripts": {
     "debug": "NODE_OPTIONS='--inspect' NEXT_PUBLIC_API_GATEWAY_URL=https://devapi.analyttica.com next",
     "dev": "NEXT_PUBLIC_API_GATEWAY_URL=https://devapi.analyttica.com next",
-    "build": "next build",
+    "build": "NEXT_PUBLIC_API_GATEWAY_URL=https://leapsapi.analyttica.com next build",
     "start": "next start"
   },
   "dependencies": {
