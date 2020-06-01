@@ -71,7 +71,7 @@ const CourseList = () => {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const reduxStore = initializeStore()
   const { dispatch } = reduxStore
 
