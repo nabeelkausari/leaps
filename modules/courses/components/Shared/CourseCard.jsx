@@ -1,18 +1,22 @@
 import React from "react";
 import cx from "classnames";
+import {useRouter} from "next/router"
 
 const CourseCard = props => {
+  const router = useRouter();
+  const showCourseDetails = () => {
+    const { code } = props.course
+    router.push(`/courses/[course]`, `/courses/${code}`);
+  };
   const {
     course: {
       title,
       description,
-      url_code,
       background_image
     },
     coming_soon,
     active,
-    inactive,
-    onClick,
+    inactive
   } = props;
   const labels = {
     active: "Enrolled",
@@ -29,7 +33,7 @@ const CourseCard = props => {
         })`
       }}
       className="course-card"
-      onClick={() => onClick(url_code)}
+      onClick={showCourseDetails}
     >
       <div className="course-card__upper">
       </div>

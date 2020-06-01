@@ -10,14 +10,9 @@ import {
 } from "../Shared/logic";
 import { SearchInput } from "../../../../components/Forms/FormInput";
 
-const CourseListView = props => {
+const CourseListView = ({ items, loading}) => {
   const [search_query, setSearchQuery] = useState("")
 
-  const {
-    items,
-    loading,
-    showCourseDetails,
-  } = props;
   let final_search_query = search_query.toLowerCase();
   const course_list =
     final_search_query === ""
@@ -53,7 +48,6 @@ const CourseListView = props => {
             inactive={IsInActiveCourse(item)}
             active={IsActiveCourse(item)}
             coming_soon={IsComingSoonCourse(item)}
-            onClick={showCourseDetails}
           />
         ))}
       </div>

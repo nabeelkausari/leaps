@@ -18,19 +18,19 @@ const categories = [
     title: "All",
     to: "/courses"
   },
-  // {
-  //   title: "Available",
-  //   to: "/courses/available"
-  // },
-  // {
-  //   title: "Upcoming",
-  //   to: "/courses/upcoming"
-  // }
+  {
+    title: "Available",
+    to: "/courses?category=available"
+  },
+  {
+    title: "Upcoming",
+    to: "/courses?category=upcoming"
+  }
 ];
 
 const getCoursesList = props => {
   const router = useRouter();
-  switch (router.pathname) {
+  switch (router.asPath) {
     case "/courses":
       return {
         items: props.list.filter(
@@ -39,13 +39,13 @@ const getCoursesList = props => {
         loading: props.marketplace_courses_loading,
         getCourses: props.getMarketPlaceCourses
       };
-    case "/courses/available":
+    case "/courses?category=available":
       return {
         items: props.list.filter(course => IsAvailableCourse(course)),
         loading: props.marketplace_courses_loading,
         getCourses: props.getMarketPlaceCourses
       };
-    case "/courses/upcoming":
+    case "/courses?category=upcoming":
       return {
         items: props.list.filter(course => IsComingSoonCourse(course)),
         loading: props.marketplace_courses_loading,
@@ -56,13 +56,8 @@ const getCoursesList = props => {
   }
 };
 
-const CourseList = props => {
-  const router = useRouter();
+const CourseList = () => {
   const course_list = useSelector(state => state.courses);
-  const showCourseDetails = course => {
-    router.push(`/courses/[course]`, `/courses/${course}`);
-  };
-
   const courses = getCoursesList(course_list);
 
   return (
@@ -70,7 +65,6 @@ const CourseList = props => {
       <ListLayout title="Courses" categories={categories}>
         <CourseListView
           {...courses}
-          showCourseDetails={showCourseDetails}
         />
       </ListLayout>
     </Layout>
