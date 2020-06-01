@@ -24,6 +24,7 @@ import {MARKETPLACE_COURSE_COLLECTION} from "../common/api/media-types"
 // import { CloseIcon } from "../../../../common/images";
 import Footer from "../modules/home/components/Footer";
 import {FETCH_WEBINARS_SUCCEEDED} from "../modules/home/redux/types"
+import Layout from "../components/Layout"
 
 const navigateToHash = () => {
   const { hash } = window.location;
@@ -121,14 +122,9 @@ class Home extends Component {
     const { course_list, courses_loading } = this.props;
     const { mobile_display } = this.state;
     return (
-      <div
-        className={`body--scholar shl-home ${mobile_display ? "shl-home--mobile" : ""}`}
+      <Layout
+        className={`shl-home ${mobile_display ? "shl-home--mobile" : ""}`}
       >
-        {mobile_display ? (
-          <MobileHeader />
-        ) : (
-          <Header />
-        )}
         <UpSkill
           mobile_display={mobile_display}
           handleOpenModal={this.handleOpenModal}
@@ -169,7 +165,7 @@ class Home extends Component {
             <img alt="Close" src="/icons/close.svg"/>
           </button>
         </ReactModal>
-      </div>
+      </Layout>
     );
   }
 }
@@ -182,11 +178,11 @@ export async function getServerSideProps() {
   };
   const url = "https://devapi.analyttica.com/marketplace-courses";
   const dummy_url = "http://www.mocky.io/v2/5ed3e0cd340000650001f518";
-  const courses = await fetch(dummy_url).then(res => res.json())
+  const courses = await fetch(url).then(res => res.json())
 
-  const webinars_url = "https://leapsapi.analyttica.com/webinar/user/tenant/webinar";
+  const webinars_url = "https://devapi.analyttica.com/webinar/user/tenant/webinar";
   const webinars_url_dummy = "http://www.mocky.io/v2/5ed3dfae340000580001f515";
-  const webinars = await fetch(webinars_url_dummy).then(res => res.json())
+  const webinars = await fetch(webinars_url).then(res => res.json())
 
 
   store.dispatch(() => dispatch =>
