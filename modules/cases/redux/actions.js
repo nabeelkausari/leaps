@@ -1,7 +1,7 @@
 import get from "lodash/get";
 
-import { history } from "../../../../index";
-import { fetchLink, fetchLinkAs } from "../../../../common/api/helpers";
+// import { history } from "../../../../index";
+import { fetchLink, fetchLinkAs } from "../../../common/api/helpers"
 import * as types from "./types";
 import {
   CASE_LINK,
@@ -11,15 +11,13 @@ import {
   setSolveType,
   SOLVE_LINK,
   SOLVE_TYPE
-} from "../../../../common/utils/storage";
-import { dialogs } from "../../../modules/toPublish/Dialog";
+} from "../../../common/utils/storage";
+import { dialogs } from "../../toPublish/Dialog"
 
-import { notify } from "../../../../common/utils/notification";
+import { notify } from "../../../common/utils/notification";
 import Papa from "papaparse";
-import { getMaterialLink } from "../../../../common/api/material";
-import { CONFIGURED } from "../../../../common/utils/userPermissionConstants";
-import { CASE } from "../../../../common/utils/constants";
-import { rollback } from "../../solve/solve/containers/steps/steps.actions";
+import { CONFIGURED } from "../../../common/utils/userPermissionConstants";
+import { CASE } from "../../../common/utils/constants";
 
 const getCaseDetailLink = id => {
   const user_id = getUserId();

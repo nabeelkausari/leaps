@@ -29,7 +29,12 @@ const CourseDetails = props => {
   const [activeView, setActiveView] = useState(1);
   const router = useRouter();
   const dispatch = useDispatch()
-  const {single_course: course, modules: { items: modules }, marketplace_courses_loading, name} = useSelector(state => state.courses)
+  const {
+    single_course: course,
+    modules: { items: modules },
+    marketplace_courses_loading,
+    name
+  } = useSelector(state => state.courses)
 
   useEffect(() => {
     dispatch(getModules(router.query.course))

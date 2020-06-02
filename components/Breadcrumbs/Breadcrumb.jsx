@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link"
 
 class Breadcrumb extends Component {
   render() {
@@ -8,9 +8,9 @@ class Breadcrumb extends Component {
       <div className="ath-breadcrumbs">
         {crumbs.map(crumb => (
           <Fragment>
-            <NavLink className="ath-breadcrumbs__crumb" to={crumb.link}>
-              {crumb.text}
-            </NavLink>
+            <Link  href={crumb.link}>
+              <a className="ath-breadcrumbs__crumb">{crumb.text}</a>
+            </Link>
             <p>&nbsp;>&nbsp;</p>
           </Fragment>
         ))}

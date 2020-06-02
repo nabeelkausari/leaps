@@ -5,7 +5,7 @@ import authReducer from "../modules/auth/redux/reducer";
 // import quizReducer from "../../app/modules/courses/modules/quiz/redux/reducer";
 import coursesReducer from "../modules/courses/redux/reducer";
 // import scenarioReducer from "../../app/modules/solve/modules/header/createScenario/redux/reducer";
-// import collaboratorsReducer from "../../app/modules/collaborators/redux/reducer";
+import collaboratorsReducer from "../modules/collaborators/redux/reducer";
 //
 // import profileReducer from "../../app/modules/profile/redux/reducer";
 // import llaReducer from "../../precision/modules/solutions-old/reducer";
@@ -28,7 +28,7 @@ const appReducer = combineReducers({
   // profile: profileReducer,
   // largeLoan: llaReducer,
   material: materialReducer,
-  // collaborators: collaboratorsReducer,
+  collaborators: collaboratorsReducer,
   // solutions: solutionsReducer,
   // solution_creator: solutionCreatorReducer,
   // scenarios: scenarioReducer,

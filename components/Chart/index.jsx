@@ -7,7 +7,7 @@ import get from "lodash/get";
 // maps
 import World from "fusioncharts/maps/fusioncharts.world";
 import Usa from "fusioncharts/maps/fusioncharts.usa";
-import India from "fusioncharts/maps/fusioncharts.india";
+// import India from "fusioncharts/maps/fusioncharts.india";
 import Maps from "fusioncharts/fusioncharts.maps";
 import TreeMap from "fusioncharts/fusioncharts.treemap";
 import Widgets from "fusioncharts/fusioncharts.widgets";
@@ -21,7 +21,7 @@ import ZuneTheme from "fusioncharts/themes/fusioncharts.theme.zune";
 import OceanTheme from "fusioncharts/themes/fusioncharts.theme.ocean";
 import CarbonTheme from "fusioncharts/themes/fusioncharts.theme.carbon";
 
-import { fetchLinkDirectlyAs } from "../../../common/api/helpers";
+import { fetchLinkDirectlyAs } from "../../common/api/helpers"
 
 charts(FusionCharts);
 ReactFC.fcRoot(
@@ -38,7 +38,7 @@ ReactFC.fcRoot(
   TreeMap,
   Widgets,
   TimeSeries,
-  India,
+  // India,
   PowerCharts
 );
 

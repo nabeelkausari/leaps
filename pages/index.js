@@ -25,7 +25,11 @@ import {useSelector} from "react-redux"
 const Home = () => {
   const [mobileDisplay, setMobileDisplay] = useState(null);
   const [showVideoModal, setShowVideoModal] = useState(false);
-  const { list: course_list, courses_loading, ...course_props } = useSelector(state => state.courses);
+  const {
+    list: course_list,
+    courses_loading,
+    ...course_props
+  } = useSelector(state => state.courses);
   const { webinars } = useSelector(state => state.home);
 
   const handleCloseModal = () => {

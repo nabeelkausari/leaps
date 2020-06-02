@@ -1,0 +1,18 @@
+.previous-connection{
+  &__item{
+    margin-bottom: 2rem;
+  }
+}
+
+
+.new-connection{
+  display: flex;
+  justify-content: space-between;
+  &__left{
+    width: 45%;
+  }
+
+  &__right{
+    width: 45%;
+  }
+}
