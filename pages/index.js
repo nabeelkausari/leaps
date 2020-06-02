@@ -100,7 +100,7 @@ const Home = () => {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const reduxStore = initializeStore()
   const { dispatch } = reduxStore
 
