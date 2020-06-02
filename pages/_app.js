@@ -5,8 +5,6 @@ import { Provider } from 'react-redux'
 import {useStore} from "../redux-config/store"
 import IncompatibleView from "../components/IncompatibleView/IncompatibleView"
 
-import "react-grid-layout/css/styles.css";
-import "react-resizable/css/styles.css";
 import "react-vertical-timeline-component/style.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import "video-react/styles/scss/video-react.scss";

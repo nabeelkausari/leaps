@@ -2,9 +2,9 @@
   "name": "with-redux-thunk",
   "version": "1.0.0",
   "scripts": {
-    "debug": "NODE_OPTIONS='--inspect' NEXT_PUBLIC_API_GATEWAY_URL=https://devapi.analyttica.com next",
-    "dev": "NEXT_PUBLIC_API_GATEWAY_URL=https://leapsapi.analyttica.com next",
-    "build": "NEXT_PUBLIC_API_GATEWAY_URL=https://leapsapi.analyttica.com next build",
+    "debug": "NODE_OPTIONS='--inspect' yarn dev",
+    "dev": "NEXT_PUBLIC_API_GATEWAY_URL=https://leapsapi.analyttica.com NEXT_PUBLIC_APP_URL=https://leaps.analyttica.com next",
+    "build": "NEXT_PUBLIC_API_GATEWAY_URL=https://leapsapi.analyttica.com NEXT_PUBLIC_APP_URL=https://leaps.analyttica.com next build",
     "start": "next start"
   },
   "dependencies": {

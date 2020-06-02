@@ -14,7 +14,7 @@ export const DEFAULT_REQUEST_INIT = {
 };
 export const BASE_URI = process.env.NEXT_PUBLIC_API_GATEWAY_URL + "/";
 export const API_GATEWAY_URI = process.env.NEXT_PUBLIC_API_GATEWAY_URL;
-export const APP_URL = process.env.REACT_APP_APP_URL;
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL;
 
 export const Dashboard_default_sizes = {
   STEP: {

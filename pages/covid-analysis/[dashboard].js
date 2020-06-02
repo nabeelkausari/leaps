@@ -4,7 +4,7 @@ import fetch from "node-fetch"
 import moment from "moment";
 
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb";
-import { API_GATEWAY_URI } from "../../common/api/constants";
+import {API_GATEWAY_URI, APP_URL} from "../../common/api/constants";
 import Layout from "../../components/Layout"
 
 const CovidDashboardDetails = ({ title, description, date, url }) => {
@@ -36,7 +36,7 @@ const CovidDashboardDetails = ({ title, description, date, url }) => {
 
         <div className="covid-detail__dashboard">
           {typeof window !== "undefined" && <iframe
-            src={`https://leaps.analyttica.com/shared_dashboard/${url}`}
+            src={`${APP_URL}/shared_dashboard/${url}`}
           />}
         </div>
       </div>
