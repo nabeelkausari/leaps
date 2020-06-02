@@ -143,34 +143,38 @@
 
 .covid-detail {
   color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   .covid-detail-banner {
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 1rem;
     background-image: linear-gradient(
       101deg,
       #000000 14%,
       var(--highlight-primary) 69%
     );
+    flex: 1;
 
     &__left {
-      margin-top: 2rem;
+      margin-top: 0;
     }
 
     &__title {
       font-size: 2.5rem;
       font-weight: 600;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 1;
       overflow: hidden;
       text-overflow: ellipsis;
       -webkit-box-orient: vertical;
     }
 
     &__description {
-      width: 60%;
+      width: 75%;
       font-size: 1.2rem;
       display: -webkit-box;
-      -webkit-line-clamp: 5;
+      -webkit-line-clamp: 2;
       overflow: hidden;
       text-overflow: ellipsis;
       -webkit-box-orient: vertical;
@@ -179,7 +183,7 @@
     &__bottom {
       display: flex;
       justify-content: space-between;
-      margin-top: 4rem;
+      margin-top: 1rem;
     }
 
     &__support {
@@ -192,6 +196,12 @@
   }
 
   &__dashboard {
-    padding: 2rem;
+    flex: 5;
+    iframe {
+
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
   }
 }
