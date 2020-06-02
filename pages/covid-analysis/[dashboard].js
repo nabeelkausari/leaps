@@ -1,37 +1,19 @@
-import React, {useEffect, useRef, useState} from "react";
+import React from "react";
 import find from "lodash/find";
-import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb";
-// import SharedDashboardRenderer from "../../modules/solve/modules/dashboard/components/SharedDashboardRenderer";
-import { API_GATEWAY_URI } from "../../common/api/constants";
-import moment from "moment";
 import fetch from "node-fetch"
-// import { getSharedDashboard } from "../../modules/collaborators/redux/actions"
-// import {useDispatch, useSelector} from "react-redux"
+import moment from "moment";
+
+import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb";
+import { API_GATEWAY_URI } from "../../common/api/constants";
 import Layout from "../../components/Layout"
-// import {useRouter} from "next/router"
 
-const crumbs = [
-  {
-    text: "Covid Analysis",
-    link: "/covid-analysis"
-  }
-];
-
-const CovidDashboardDetails = props => {
-  const { title, description, date, url } = props
-  const [height, setHeight] = useState(1000);
-  const iframeRef = useRef(null);
-
-  const handleResize = (iframe) => {
-    if (
-      iframe.current &&
-      iframe.current.contentDocument &&
-      iframe.current.contentDocument.body.scrollHeight !== 0
-    ) {
-      setHeight(iframe.current.contentDocument.body.scrollHeight);
+const CovidDashboardDetails = ({ title, description, date, url }) => {
+  const crumbs = [
+    {
+      text: "Covid Analysis",
+      link: "/covid-analysis"
     }
-  };
-  useEffect(() => handleResize(iframeRef), [height]);
+  ];
 
   return (
     <Layout className="height-minus-header">
