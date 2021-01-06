@@ -10,7 +10,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@sentry/browser": "^5.15.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "base-64": "^0.1.0",
     "bluebird": "^3.7.2",
     "bootstrap": "^4.5.0",
