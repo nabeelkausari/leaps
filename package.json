@@ -19,7 +19,7 @@
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.15",
     "moment": "^2.26.0",
-    "moment-timezone": "^0.5.31",
+    "moment-timezone": "^0.5.35",
     "next": "latest",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.14.1",
